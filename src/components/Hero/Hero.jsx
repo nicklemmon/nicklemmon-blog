@@ -16,6 +16,8 @@ export default class Hero extends React.Component {
           <Button type='ghost' to='/contact'>Get in Touch</Button>
         </Container>
 
+        <div className='Hero-overlay' role='presentation'></div>
+
         <img className='Hero-image' src={ heroImage }/>
       </div>
     )

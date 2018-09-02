@@ -15,18 +15,29 @@
 
 .Hero-container {
   z-index: 3;
+  padding-bottom: var(--spacingXL);
 }
 
 .Hero-title {
   font-weight: 300;
 }
 
+.Hero-overlay,
 .Hero-image {
   position: absolute;
   top: 0;
   left: 0;
-  z-index: 1;
   width: 100%;
   height: 100%;
+}
+
+.Hero-overlay {
+  z-index: 2;
+  background-color: var(--limedSpruce);
+  opacity: 0.75;
+}
+
+.Hero-image {
+  z-index: 1;
   object-fit: cover;
 }
