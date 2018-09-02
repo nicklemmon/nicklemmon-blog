@@ -1,9 +1,16 @@
 @import '../../variables/global.css';
 
+:root {
+  --headerHeight: 3rem;
+}
+
 .Header {
+  height: var(--headerHeight);
   width: 100%;
   display: flex;
   justify-content: space-between;
+  position: relative;
+  z-index: 2;
 }
 
 .Header a {

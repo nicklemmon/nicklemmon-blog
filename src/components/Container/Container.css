@@ -13,3 +13,8 @@
   padding-top: var(--spacingXL);
   padding-bottom: var(--spacingXL);
 }
+
+.Container--xxl {
+  padding-top: var(--spacingXXL);
+  padding-bottom: var(--spacingXXL);
+}

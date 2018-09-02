@@ -1,10 +1,32 @@
 @import '../../variables/global.css';
+@import '../Header/Header.css';
+
+.Hero,
+.Hero-container {
+  position: relative;
+}
 
 .Hero {
   color: var(--white);
   background-color: var(--limedSpruce);
+  z-index: 1;
+  margin-top: calc(var(--headerHeight) * -1); /* one can't have a negative CSS custom property, so this works. Credit to: https://github.com/css-modules/postcss-icss-values/issues/64#issuecomment-241285628 */
+}
+
+.Hero-container {
+  z-index: 3;
 }
 
 .Hero-title {
   font-weight: 300;
+}
+
+.Hero-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
