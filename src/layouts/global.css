@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro|Source+Serif+Pro:400,600');
+
+:root {
+  --fontFamilyPrimary: 'Source Serif Pro', serif;
+  --fontFamilySecondary: 'Source Sans Pro', sans-serif;
+
+  --cerulean: #00A6E0;
+  --limedSpruce: #39444E;
+  --grayNurse: #EAECE8;
+  --white: #FFF;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+
+html {
+  font-size: 16px;
+  font-family: var(--fontFamilyPrimary);
+  color: var(--limedSpruce);
+}
