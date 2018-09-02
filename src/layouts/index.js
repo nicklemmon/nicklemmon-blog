@@ -3,7 +3,9 @@ import Link from 'gatsby-link'
 
 import Hero from '../components/Hero/Hero'
 import Header from '../components/Header/Header'
+import Main from '../components/Main/Main'
 import Footer from '../components/Footer/Footer'
+import Container from '../components/Container/Container'
 
 import './global.css'
 
@@ -24,9 +26,13 @@ class Template extends React.Component {
       <div>
         <Header/>
 
-        <Hero/>
-        
-        { children() }
+        <Main>
+          <Hero/>
+
+          <Container>
+            { children() }
+          </Container>
+        </Main>
 
         <Footer/>
       </div>

@@ -1,0 +1,18 @@
+
+:root {
+  /* typography */
+  --fontFamilyPrimary: 'Source Serif Pro', serif;
+  --fontFamilySecondary: 'Source Sans Pro', sans-serif;
+
+  /* colors */
+  --cerulean: #00A6E0;
+  --limedSpruce: #39444E;
+  --grayNurse: #EAECE8;
+  --white: #FFF;
+
+  /* spacing */
+  --spacingSM: 0.5rem;
+  --spacingMD: 1rem;
+  --spacingLG: 2rem;
+  --spacingXL: 4rem;
+}

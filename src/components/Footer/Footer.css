@@ -1,0 +1,7 @@
+@import '../../variables/global.css';
+
+.Footer {
+  background-color: var(--grayNurse);
+  color: var(--limedSpruce);
+  font-family: var(--fontFamilySecondary);
+}

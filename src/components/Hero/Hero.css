@@ -1,0 +1,10 @@
+@import '../../variables/global.css';
+
+.Hero {
+  color: var(--white);
+  background-color: var(--limedSpruce);
+}
+
+.Hero-title {
+  font-weight: 300;
+}

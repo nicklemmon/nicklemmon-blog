@@ -1,0 +1,15 @@
+@import '../../variables/global.css';
+
+.Container {
+  padding: var(--spacingMD) var(--spacingMD);
+}
+
+.Container--lg {
+  padding-top: var(--spacingLG);
+  padding-bottom: var(--spacingLG);
+}
+
+.Container--xl {
+  padding-top: var(--spacingXL);
+  padding-bottom: var(--spacingXL);
+}

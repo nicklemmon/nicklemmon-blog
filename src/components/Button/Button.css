@@ -1,5 +1,35 @@
+@import '../../variables/global.css';
+
 .Button {
-  padding: 1rem 2rem;
-  font-family: 'Source Sans Pro', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: var(--spacingMD) var(--spacingLG);
+  font-family: var(--fontFamilySecondary);
+  font-weight: 700;
   font-size: 1rem;
+  cursor: pointer;
+  width: 100%;
+}
+
+@media (min-width: 600px) {
+  .Button {
+    width: auto;
+  }
+}
+
+.Button--primary {
+  background-color: var(--cerulean);
+  color: var(--white);
+}
+
+.Button--secondary {
+  background-color: var(--white);
+  color: var(--limedSpruce);
+  border: 2px solid var(--cerulean);
+}
+
+.Button--ghost {
+  background-color: var(--white);
+  color: var(--limedSpruce);
 }

@@ -1,0 +1,23 @@
+@import '../../variables/global.css';
+
+.Header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.Header a {
+  text-decoration: none;
+}
+
+.Header-brandLink {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: var(--spacingMD);
+  font-family: var(--fontFamilySecondary);
+  font-weight: 700;
+  text-transform: uppercase;
+  color: var(--white);
+  background-color: var(--cerulean);
+}
