@@ -25,7 +25,7 @@
 }
 
 .CardArticle-readMore {
-  color: var(--cerulean);
+  color: var(--deepCerulean);
   text-decoration: underline;
   text-align: right;
 }
