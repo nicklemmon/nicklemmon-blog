@@ -8,3 +8,14 @@
   margin-top: calc(var(--spacingMD) * -1);
   background-color: var(--white);
 }
+
+.BreakoutContainer:after {
+  content: '';
+  position: absolute;
+  bottom: calc(var(--spacingLG) * -1);
+  left: 0;
+  width: 100%;
+  height: var(--spacingLG);
+  background-color: var(--white);
+  box-shadow: 0 var(--spacingSM) var(--spacingMD) rgba(0, 0, 0, 0.05);
+}
