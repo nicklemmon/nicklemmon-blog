@@ -1,6 +1,8 @@
 import React from 'react'
 
 import Container from '../Container/Container'
+import MaxWidth from '../MaxWidth/MaxWidth'
+import Heading from '../Heading/Heading'
 import Button from '../Button/Button'
 
 import './Hero.css'
@@ -10,11 +12,13 @@ export default class Hero extends React.Component {
   render() {
     return (
       <div className='Hero'>
-        <Container className='Hero-container' size='xxl'>
-          <h1 className='Hero-title'>A front end developer driven to create accessible&nbsp;user interfaces</h1>
+        <MaxWidth size='lg'>
+          <Container className='Hero-container' size='xxl'>
+            <Heading level='1' className='Hero-title'>A front end developer driven to create accessible user interfaces</Heading>
 
-          <Button type='ghost' to='/contact'>Get in Touch</Button>
-        </Container>
+            <Button type='ghost' to='/contact'>Get in Touch</Button>
+          </Container>
+        </MaxWidth>
 
         <div className='Hero-overlay' role='presentation'></div>
 

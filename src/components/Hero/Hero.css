@@ -18,8 +18,9 @@
   padding-bottom: var(--spacingXL);
 }
 
-.Hero-title {
-  font-weight: 300;
+.Hero-title.Hero-title { /* specificity waaaars */
+  font-weight: 400;
+  margin-bottom: var(--spacingLG);
 }
 
 .Hero-overlay,

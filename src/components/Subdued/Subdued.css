@@ -1,0 +1,5 @@
+@import '../../variables/global.css';
+
+.Subdued {
+  color: var(--boulder);
+}

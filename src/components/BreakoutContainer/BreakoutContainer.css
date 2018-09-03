@@ -1,0 +1,10 @@
+@import '../../variables/global.css';
+
+.BreakoutContainer {
+  position: relative;
+  z-index: 3;
+  background-color: var(--white);
+  margin: 0 auto;
+  margin-top: calc(var(--spacingMD) * -1);
+  background-color: var(--white);
+}

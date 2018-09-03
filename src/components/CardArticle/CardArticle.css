@@ -1,0 +1,31 @@
+@import '../../variables/global.css';
+
+.CardArticle {
+  color: var(--limedSpruce);
+  margin: var(--spacingMD) 0 var(--spacingLG);
+  transition: transform var(--duration) var(--easing),
+              box-shadow var(--duration) var(--easing);
+}
+
+.CardArticle:hover,
+.CardArticle:focus {
+  transform: scale(1.0125);
+  box-shadow: 0 var(--spacingXS) var(--spacingMD) rgba(0, 0, 0, 0.1);
+}
+
+.CardArticle-date {
+  font-family: var(--fontFamilySecondary);
+  font-weight: 700;
+  color: var(--boulder);
+}
+
+.CardArticle-heading {
+  font-weight: 400;
+  color: var(--limedSpruce);
+}
+
+.CardArticle-readMore {
+  color: var(--cerulean);
+  text-decoration: underline;
+  text-align: right;
+}

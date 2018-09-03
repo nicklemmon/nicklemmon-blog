@@ -5,7 +5,8 @@ import Hero from '../components/Hero/Hero'
 import Header from '../components/Header/Header'
 import Main from '../components/Main/Main'
 import Footer from '../components/Footer/Footer'
-import Container from '../components/Container/Container'
+import BreakoutContainer from '../components/BreakoutContainer/BreakoutContainer'
+import MaxWidth from '../components/MaxWidth/MaxWidth'
 
 import './global.css'
 
@@ -29,9 +30,11 @@ class Template extends React.Component {
         <Main>
           <Hero/>
 
-          <Container>
-            { children() }
-          </Container>
+          <MaxWidth size='lg'>
+            <BreakoutContainer>
+              { children() }
+            </BreakoutContainer>
+          </MaxWidth>
         </Main>
 
         <Footer/>

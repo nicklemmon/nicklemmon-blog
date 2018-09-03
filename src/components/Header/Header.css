@@ -5,16 +5,18 @@
 }
 
 .Header {
-  height: var(--headerHeight);
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
+  height: var(--headerHeight);  
   position: relative;
   z-index: 2;
 }
 
 .Header a {
   text-decoration: none;
+}
+
+.Header-container {
+  display: flex;
+  justify-content: space-between;
 }
 
 .Header-brandLink {

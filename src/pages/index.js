@@ -3,6 +3,11 @@ import Link from 'gatsby-link'
 import get from 'lodash/get'
 import Helmet from 'react-helmet'
 
+import Button from '../components/Button/Button'
+import Heading from '../components/Heading/Heading'
+import Card from '../components/Card/Card'
+import CardArticle from '../components/CardArticle/CardArticle'
+
 class BlogIndex extends React.Component {
   render() {
     const siteTitle = get(this, 'props.data.site.siteMetadata.title')
@@ -12,20 +17,28 @@ class BlogIndex extends React.Component {
       <div>
         <Helmet title={siteTitle} />
 
+        <Heading level='2'>
+          The latest
+        </Heading>
+
         {posts.map(({ node }) => {
           const title = get(node, 'frontmatter.title') || node.fields.slug
+
           return (
-            <div key={node.fields.slug}>
-              <h3>
-                <Link style={{ boxShadow: 'none' }} to={node.fields.slug}>
-                  {title}
-                </Link>
-              </h3>
-              <small>{node.frontmatter.date}</small>
+            <CardArticle
+              key={ node.fields.slug }
+              date={ node.frontmatter.date }
+              headingContent={ title }
+              linkTo={ node.fields.slug }
+            >
               <p dangerouslySetInnerHTML={{ __html: node.excerpt }} />
-            </div>
+            </CardArticle>
           )
         })}
+
+        <Button type='primary'>
+          Archives
+        </Button>
       </div>
     )
   }

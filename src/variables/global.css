@@ -8,12 +8,24 @@
   --cerulean: #00A6E0;
   --limedSpruce: #39444E;
   --grayNurse: #EAECE8;
+  --boulder: #757575;
   --white: #FFF;
 
   /* spacing */
+  --spacingXS: 0.25rem;
   --spacingSM: 0.5rem;
   --spacingMD: 1rem;
   --spacingLG: 2rem;
   --spacingXL: 4rem;
   --spacingXXL: 8rem;
+
+  /* breakpoints */
+  --breakpointSM: 400px;
+  --breakpointMD: 600px;
+  --breakpointLG: 800px;
+  --breakpointXL: 1100px;
+
+  /* animation */
+  --duration: 0.2s;
+  --easing: ease-in-out;
 }
