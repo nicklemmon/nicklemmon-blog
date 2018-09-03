@@ -16,7 +16,7 @@ export default class Hero extends React.Component {
           <Container className='Hero-container' size='xxl'>
             <Heading level='1' className='Hero-title'>A front end developer driven to create accessible user interfaces</Heading>
 
-            <Button type='ghost' to='/contact'>Get in Touch</Button>
+            <Button type='tertiary' to='/contact'>Get in Touch</Button>
           </Container>
         </MaxWidth>
 

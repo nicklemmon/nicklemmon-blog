@@ -11,6 +11,7 @@
   font-size: 1rem;
   cursor: pointer;
   width: 100%;
+  transition: background-color var(--duration) var(--easing);
 }
 
 @media (min-width: 600px) {
@@ -25,14 +26,23 @@
   border-color: var(--bahamaBlue);
 }
 
+.Button--primary:hover {
+  background-color: var(--bahamaBlue);
+}
+
 .Button--secondary {
   background-color: var(--white);
   color: var(--limedSpruce);
   border: 2px solid var(--deepCerulean);
 }
 
-.Button--ghost {
+.Button--tertiary {
   background-color: var(--white);
   color: var(--limedSpruce);
   border-color: var(--grayNurse);
+}
+
+.Button--secondary:hover,
+.Button--tertiary:hover {
+  background-color: var(--grayNurse);
 }

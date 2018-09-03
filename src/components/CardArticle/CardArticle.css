@@ -9,7 +9,7 @@
 
 .CardArticle:hover,
 .CardArticle:focus {
-  transform: scale(1.0125);
+  transform: scale(1.0125) translateY(-3px);
   box-shadow: 0 var(--spacingXS) var(--spacingMD) rgba(0, 0, 0, 0.1);
 }
 
