@@ -3,6 +3,7 @@
 .Heading {
   font-family: var(--fontFamilyPrimary);
   font-weight: 700;
+  line-height: 1.33;
 }
 
 /* 

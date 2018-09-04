@@ -15,7 +15,7 @@ body {
 }
 
 html {
-  font-size: calc(14px + 0.25vw);
+  font-size: calc(13px + 0.25vw);
   font-family: var(--fontFamilyPrimary);
   color: var(--limedSpruce);
 }
