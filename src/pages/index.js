@@ -36,7 +36,10 @@ class BlogIndex extends React.Component {
           )
         })}
 
-        <Button type='primary'>
+        <Button
+          type='primary'
+          to='/archives'
+        >
           Archives
         </Button>
       </div>
