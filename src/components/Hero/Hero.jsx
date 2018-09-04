@@ -4,6 +4,7 @@ import Container from '../Container/Container'
 import MaxWidth from '../MaxWidth/MaxWidth'
 import Heading from '../Heading/Heading'
 import Button from '../Button/Button'
+import Highlight from '../Highlight/Highlight'
 
 import './Hero.css'
 import heroImage from './hero-bg.png'
@@ -14,7 +15,7 @@ export default class Hero extends React.Component {
       <div className='Hero'>
         <MaxWidth size='lg'>
           <Container className='Hero-container' size='xxl'>
-            <Heading level='1' className='Hero-title'>A front end developer driven to create accessible user interfaces</Heading>
+            <Heading level='1' className='Hero-title'>A <Highlight>front-end</Highlight> developer driven to create <Highlight>accessible</Highlight> user interfaces</Heading>
 
             <Button type='tertiary' to='/contact'>Get in Touch</Button>
           </Container>

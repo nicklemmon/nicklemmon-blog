@@ -1,0 +1,16 @@
+@import '../../variables/global.css';
+
+.Highlight {
+  position: relative; /* allows absolute positioning within */
+}
+
+.Highlight:after {
+  content: '';
+  position: absolute;
+  bottom: 10%;
+  left: 0;
+  width: 90%;
+  height: var(--spacingMD);
+  background-color: currentColor;
+  opacity: 0.125;
+}

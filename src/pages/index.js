@@ -5,7 +5,7 @@ import Helmet from 'react-helmet'
 
 import Button from '../components/Button/Button'
 import Heading from '../components/Heading/Heading'
-import Card from '../components/Card/Card'
+import Highlight from '../components/Highlight/Highlight'
 import CardArticle from '../components/CardArticle/CardArticle'
 
 class BlogIndex extends React.Component {
@@ -15,10 +15,10 @@ class BlogIndex extends React.Component {
 
     return (
       <div>
-        <Helmet title={siteTitle} />
+        <Helmet title={ siteTitle } />
 
         <Heading level='2'>
-          The latest
+          <Highlight>The latest</Highlight>
         </Heading>
 
         {posts.map(({ node }) => {
