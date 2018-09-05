@@ -1,0 +1,56 @@
+@import '../../variables/global.css';
+
+.Navigation {
+  position: relative; /* allows absolute positioning within */
+}
+
+.Navigation-button {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: var(--headerHeight);
+  width: calc(var(--headerHeight) * 0.66);
+  padding: 0;
+  cursor: pointer;
+  background: none;
+  border: 0;
+  margin-right: var(--spacingMD); /* NOTE: must align correctly with Container component padding */
+}
+
+.Navigation-bar {
+  height: 2px;
+  width: calc(var(--headerHeight) * 0.66);
+  margin: 6px 0;
+  background-color: var(--white);
+}
+
+.Navigation-nav {
+  position: absolute;
+  top: var(--headerHeight);
+  right: var(--spacingMD);
+  z-index: 10;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: var(--spacingSM) 0;
+}
+
+.Navigation-nav.is-hidden {
+  display: none;
+}
+
+.Navigation-nav.is-visible {
+  display: block;
+}
+
+.Navigation-link {
+  font-family: var(--fontFamilySecondary);
+  font-size: 1.25rem;
+  display: block;
+  color: var(--white);
+  padding: var(--spacingXS) var(--spacingSM);
+  font-size: 1rem;
+  text-align: right;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+}

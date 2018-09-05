@@ -1,9 +1,5 @@
 @import '../../variables/global.css';
 
-:root {
-  --headerHeight: 3rem;
-}
-
 .Header {
   height: var(--headerHeight);  
   position: relative;
@@ -23,7 +19,8 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: var(--spacingMD);
+  padding: 0 var(--spacingMD);
+  height: 100%;
   font-family: var(--fontFamilySecondary);
   font-weight: 700;
   text-transform: uppercase;

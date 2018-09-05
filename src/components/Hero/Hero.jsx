@@ -13,7 +13,7 @@ export default class Hero extends React.Component {
   render() {
     return (
       <div className='Hero'>
-        <MaxWidth size='lg'>
+        <MaxWidth size='xl'>
           <Container className='Hero-container' size='xxl'>
             <Heading level='1' className='Hero-title'>A <Highlight>front-end</Highlight> developer driven to create <Highlight>accessible</Highlight> user interfaces</Heading>
 

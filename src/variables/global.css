@@ -29,4 +29,7 @@
   /* animation */
   --duration: 0.2s;
   --easing: ease-in-out;
+
+  /* misc */
+  --headerHeight: 3rem;
 }

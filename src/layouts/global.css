@@ -15,7 +15,7 @@ body {
 }
 
 html {
-  font-size: calc(13px + 0.25vw);
+  font-size: calc(15px + 0.25vw);
   font-family: var(--fontFamilyPrimary);
   color: var(--limedSpruce);
 }
@@ -26,4 +26,9 @@ a {
 
 strong {
   font-weight: 700;
+}
+
+p {
+  margin-top: 0;
+  font-size: 1rem;
 }

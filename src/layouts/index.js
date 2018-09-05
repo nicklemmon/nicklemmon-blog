@@ -30,7 +30,7 @@ class Template extends React.Component {
         <Main>
           <Hero/>
 
-          <MaxWidth size='lg'>
+          <MaxWidth size='xl'>
             <BreakoutContainer>
               { children() }
             </BreakoutContainer>

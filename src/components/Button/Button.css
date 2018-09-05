@@ -1,12 +1,13 @@
 @import '../../variables/global.css';
 
 .Button {
-  display: flex;
+  display: inline-flex;
   justify-content: center;
   align-items: center;
   padding: var(--spacingMD) var(--spacingLG);
   font-family: var(--fontFamilySecondary);
-  border-bottom: 3px solid #000; /* black is just a placeholder to be overidden */
+  border-radius: 6px;
+  border-bottom: 2px solid #000; /* black is just a placeholder to be overidden */
   font-weight: 700;
   font-size: 1rem;
   cursor: pointer;
@@ -14,15 +15,12 @@
   transition: background-color var(--duration) var(--easing);
 }
 
-@media (min-width: 600px) {
-  .Button {
-    width: auto;
-  }
-}
-
 .Button--primary {
   background-color: var(--deepCerulean);
   color: var(--white);
+  border-top-width: 1px;
+  border-right-width: 1px;
+  border-left-width: 1px;
   border-color: var(--bahamaBlue);
 }
 
@@ -32,8 +30,8 @@
 
 .Button--secondary {
   background-color: var(--white);
-  color: var(--limedSpruce);
-  border: 2px solid var(--deepCerulean);
+  color: var(--deepCerulean);
+  border-color: var(--deepCerulean);
 }
 
 .Button--tertiary {

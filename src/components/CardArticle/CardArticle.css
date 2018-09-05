@@ -2,26 +2,29 @@
 
 .CardArticle {
   color: var(--limedSpruce);
-  margin: var(--spacingMD) 0 var(--spacingLG);
+  margin: var(--spacingLG) 0;
   transition: transform var(--duration) var(--easing),
               box-shadow var(--duration) var(--easing);
 }
 
 .CardArticle:hover,
 .CardArticle:focus {
-  transform: scale(1.0125) translateY(-3px);
-  box-shadow: 0 var(--spacingXS) var(--spacingMD) rgba(0, 0, 0, 0.1);
+  transform: scale(1.01) translateY(-3px);
+  box-shadow: 0 var(--spacingMD) var(--spacingLG) rgba(0, 0, 0, 0.075);
 }
 
 .CardArticle-date {
+  float: right;
   font-family: var(--fontFamilySecondary);
   font-weight: 700;
+  font-size: 0.85rem;
   color: var(--boulder);
 }
 
 .CardArticle-heading {
   font-weight: 400;
   color: var(--limedSpruce);
+  margin-bottom: var(--spacingSM);
 }
 
 .CardArticle-readMore {
