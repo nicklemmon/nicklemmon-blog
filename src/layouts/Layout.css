@@ -1,0 +1,10 @@
+@media (min-width: 800px) {
+  .Layout-main {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .Layout-header {
+    width: 50%;
+  }
+}

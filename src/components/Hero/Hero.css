@@ -15,7 +15,6 @@
 
 .Hero-container {
   z-index: 3;
-  padding-bottom: var(--spacingXL);
 }
 
 .Hero-title.Hero-title { /* specificity waaaars */
@@ -41,4 +40,12 @@
 .Hero-image {
   z-index: 1;
   object-fit: cover;
+}
+
+@media (min-width: 800px) {
+  .Hero {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
 }

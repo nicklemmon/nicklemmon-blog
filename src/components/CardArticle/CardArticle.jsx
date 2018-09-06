@@ -1,9 +1,12 @@
 import React from 'react'
 import Link from 'gatsby-link'
+import { Icon } from 'react-icons-kit'
+import { arrowRight } from 'react-icons-kit/feather/arrowRight'
 
 import Card from '../Card/Card'
 import Subdued from '../Subdued/Subdued'
 import Heading from '../Heading/Heading'
+import ScreenReaderOnly from '../ScreenReaderOnly/ScreenReaderOnly'
 
 import './CardArticle.css'
 
@@ -33,7 +36,13 @@ export default class CardArticle extends React.Component {
           { children }
 
           <span className='CardArticle-readMore'>
-            Read More
+            <Icon
+              icon={ arrowRight }
+              size={ '100%' }
+              className='CardArticle-icon'
+            />
+
+            <ScreenReaderOnly>Read More</ScreenReaderOnly>
           </span>
         </Card>
       </Link>

@@ -21,20 +21,21 @@ class BlogIndex extends React.Component {
           <Highlight>The latest</Highlight>
         </Heading>
 
-        {posts.map(({ node }) => {
+        { posts.map(({ node }) => {
           const title = get(node, 'frontmatter.title') || node.fields.slug
 
           return (
-            <CardArticle
-              key={ node.fields.slug }
-              date={ node.frontmatter.date }
-              headingContent={ title }
-              linkTo={ node.fields.slug }
-            >
-              <p dangerouslySetInnerHTML={{ __html: node.excerpt }} />
-            </CardArticle>
-          )
-        })}
+              <CardArticle
+                key={ node.fields.slug }
+                date={ node.frontmatter.date }
+                headingContent={ title }
+                linkTo={ node.fields.slug }
+              >
+                <p dangerouslySetInnerHTML={{ __html: node.excerpt }} />
+              </CardArticle>
+            )
+          }) 
+        }
 
         <Button
           type='primary'

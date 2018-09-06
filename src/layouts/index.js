@@ -9,6 +9,7 @@ import BreakoutContainer from '../components/BreakoutContainer/BreakoutContainer
 import MaxWidth from '../components/MaxWidth/MaxWidth'
 
 import './global.css'
+import './Layout.css'
 
 class Template extends React.Component {
   render() {
@@ -24,10 +25,10 @@ class Template extends React.Component {
     }
 
     return (
-      <div>
-        <Header/>
+      <div className='Layout'>
+        <Header className='Layout-header'/>
 
-        <Main>
+        <Main className='Layout-main'>
           <Hero/>
 
           <MaxWidth size='xl'>
@@ -37,7 +38,7 @@ class Template extends React.Component {
           </MaxWidth>
         </Main>
 
-        <Footer/>
+        <Footer className='Layout-footer' />
       </div>
     )
   }

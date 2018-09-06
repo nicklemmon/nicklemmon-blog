@@ -3,7 +3,7 @@ import Helmet from 'react-helmet'
 import Link from 'gatsby-link'
 import get from 'lodash/get'
 
-import Bio from '../components/Bio'
+import Bio from '../components/Bio/Bio'
 
 class BlogPostTemplate extends React.Component {
   render() {

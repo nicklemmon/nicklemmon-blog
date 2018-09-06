@@ -1,11 +1,10 @@
 import React from 'react'
-
-import Container from '../Container/Container'
+import classNames from 'classnames'
 
 export default class Main extends React.Component {
   render() {
     return (
-      <main className='Main'>
+      <main className={ classNames( 'Main', this.props.className ) }>
         { this.props.children }
       </main>
     )
