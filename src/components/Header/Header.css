@@ -27,3 +27,10 @@
   color: var(--white);
   background-color: var(--deepCerulean);
 }
+
+@media (min-width: 800px) {
+  .Header .MaxWidth {
+    width: 100%;
+    max-width: 100%;
+  }
+}

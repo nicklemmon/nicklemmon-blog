@@ -3,6 +3,7 @@ import Link from 'gatsby-link'
 import classNames from 'classnames'
 
 import ScreenReaderOnly from '../ScreenReaderOnly/ScreenReaderOnly'
+import Highlight from '../Highlight/Highlight'
 
 import './Navigation.css'
 
@@ -20,6 +21,13 @@ export default class Navigation extends React.Component {
   handleClick( e ) {
     e.preventDefault
 
+    // DOM manipulation! 😭😭😭
+    if ( this.state.isOpen === false ) {
+      document.querySelector( 'html' ).setAttribute( 'style', 'overflow: hidden;' )
+    } else {
+      document.querySelector( 'html' ).setAttribute( 'style', 'overflow: initial;' )
+    }
+
     this.setState( prevState => ({
       isOpen: !prevState.isOpen
     }) )
@@ -32,7 +40,7 @@ export default class Navigation extends React.Component {
     return (
       <div className={ classNames( 'Navigation', className ) }>
         <button
-          className='Navigation-button'
+          className={ classNames( 'Navigation-button', isOpen ? 'is-open' : '' ) }
           aria-expanded={ isOpen } 
           aria-controls='nav-menu'
           onClick={ this.handleClick }
@@ -45,12 +53,16 @@ export default class Navigation extends React.Component {
         </button>
 
         <nav
-          className={ classNames( 'Navigation-nav', isOpen ? 'is-visible' : 'is-hidden' ) }
+          className={ classNames( 'Navigation-nav', isOpen ? 'is-open' : 'is-closed' ) }
           id='nav-menu'
         >
-          <Link className='Navigation-link' to='/about'>About</Link>
+          <Link className='Navigation-link' to='/about'>
+            <Highlight>About</Highlight>
+          </Link>
 
-          <Link className='Navigation-link' to='/contact'>Contact</Link>
+          <Link className='Navigation-link' to='/contact'>
+            <Highlight>Contact</Highlight>
+          </Link>
         </nav>
       </div>
     )

@@ -5,52 +5,89 @@
 }
 
 .Navigation-button {
+  position: relative; /* allows use of z-index */
+  z-index: 15;
   display: flex;
   flex-direction: column;
   justify-content: center;
   height: var(--headerHeight);
-  width: calc(var(--headerHeight) * 0.66);
+  width: calc(var(--headerHeight) * 0.75);
   padding: 0;
   cursor: pointer;
   background: none;
   border: 0;
   margin-right: var(--spacingMD); /* NOTE: must align correctly with Container component padding */
+  transition: transform var(--duration) var(--easing);
+}
+
+.Navigation-button.is-closed:hover,
+.Navigation-button.is-closed:focus {
+  transform: scale(0.9);
+}
+
+.Navigation-button.is-open .Navigation-bar {
+  margin: 0;
+  background-color: var(--white);
+}
+
+.Navigation-button.is-open .Navigation-bar--1 {
+  transform: translateY(1px) rotate(45deg);
+}
+
+.Navigation-button.is-open .Navigation-bar--2 {
+  transform: translateY(-1px) rotate(-45deg);
 }
 
 .Navigation-bar {
   height: 2px;
-  width: calc(var(--headerHeight) * 0.66);
+  width: calc(var(--headerHeight) * 0.75);
   margin: 6px 0;
   background-color: var(--white);
+  transition: transform var(--duration) var(--easing);
+}
+
+@media (min-width: 800px) {
+  .Navigation-bar {
+    background-color: var(--limedSpruce);
+  }
 }
 
 .Navigation-nav {
-  position: absolute;
-  top: var(--headerHeight);
-  right: var(--spacingMD);
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   z-index: 10;
   width: 100vw;
   height: 100vh;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.75);
   padding: var(--spacingSM) 0;
+  transition: transform var(--duration) var(--easing),
+              opacity var(--duration) var(--easing),
+              visibility var(--duration) var(--easing);
 }
 
-.Navigation-nav.is-hidden {
-  display: none;
+.Navigation-nav.is-closed {
+  visibility: hidden;
+  opacity: 0;
+  transform: scale(0.95) rotateX(-25deg);
 }
 
-.Navigation-nav.is-visible {
-  display: block;
+.Navigation-nav.is-open {
+  visibility: visible;
+  opacity: 1;
+  transform: scale(1) rotateX(0deg);
 }
 
 .Navigation-link {
   font-family: var(--fontFamilySecondary);
-  font-size: 1.25rem;
+  font-size: calc(1.5rem + 0.5vw);
+  letter-spacing: 0.025rem;
   display: block;
   color: var(--white);
   padding: var(--spacingXS) var(--spacingSM);
-  font-size: 1rem;
   text-align: right;
-  text-transform: uppercase;
-  letter-spacing: 0.1rem;
 }
