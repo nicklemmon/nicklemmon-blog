@@ -63,9 +63,8 @@
   z-index: 10;
   width: 100vw;
   height: 100vh;
-  background-color: rgba(0, 0, 0, 0.75);
-  padding: var(--spacingSM) 0;
-  transition: transform var(--duration) var(--easing),
+  background-color: rgba(26, 31, 36, 0.95);
+  transition: transform calc(var(--duration) * 1.25) var(--easing),
               opacity var(--duration) var(--easing),
               visibility var(--duration) var(--easing);
 }
@@ -73,7 +72,7 @@
 .Navigation-nav.is-closed {
   visibility: hidden;
   opacity: 0;
-  transform: scale(0.95) rotateX(-25deg);
+  transform: scale(0.95) rotateX(-15deg);
 }
 
 .Navigation-nav.is-open {
@@ -84,7 +83,7 @@
 
 .Navigation-link {
   font-family: var(--fontFamilySecondary);
-  font-size: calc(1.5rem + 0.5vw);
+  font-size: calc(1.75rem + 0.5vw);
   letter-spacing: 0.025rem;
   display: block;
   color: var(--white);

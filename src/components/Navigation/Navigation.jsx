@@ -80,13 +80,18 @@ export default class Navigation extends React.Component {
           className={ classNames( 'Navigation-nav', isOpen ? 'is-open' : 'is-closed' ) }
           id='nav-menu'
         >
-          <Link className='Navigation-link' to='/about'>
+          <Link
+            className='Navigation-link'
+            to='/about'
+            onClick={ this.handleClick }
+          >
             <Highlight>About</Highlight>
           </Link>
 
           <Link
             className='Navigation-link'
             to='/contact'
+            onClick={ this.handleClick }
             onKeyDown={ ( e ) => this.handleEndKeypress( e ) }
             innerRef={ ( el ) => { this.lastFocusable = el } }
           >
