@@ -40,6 +40,7 @@ class BlogIndex extends React.Component {
         <Button
           type='primary'
           to='/archives'
+          fullWidth
         >
           Archives
         </Button>

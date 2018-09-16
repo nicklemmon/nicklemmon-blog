@@ -11,8 +11,15 @@
   font-weight: 700;
   font-size: 1rem;
   cursor: pointer;
-  width: 100%;
   transition: background-color var(--duration) var(--easing);
+}
+
+.Button--full {
+  width: 100%;
+}
+
+.Button--centered {
+  margin: 0 auto;
 }
 
 .Button--primary {

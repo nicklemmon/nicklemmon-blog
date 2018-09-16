@@ -1,5 +1,6 @@
 import React from 'react'
 import Link from 'gatsby-link'
+import classNames from 'classnames'
 
 import './Button.css';
 
@@ -8,13 +9,15 @@ export default class Button extends React.Component {
     const {
       to,
       type,
-      children
+      children,
+      fullWidth,
+      centered
     } = this.props
 
     return (
       <Link
         to={ to }
-        className={ `Button Button--${type}` }
+        className={ classNames( `Button Button--${type}`, fullWidth ? 'Button--full' : '', centered ? 'Button--centered' : '' ) }
       >
         { children }
       </Link>

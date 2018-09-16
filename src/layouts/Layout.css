@@ -1,6 +1,6 @@
 @media (min-width: 800px) {
   .Layout-main {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 3fr 2fr;
   }
 }
