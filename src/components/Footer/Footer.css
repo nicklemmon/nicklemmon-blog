@@ -6,3 +6,14 @@
   font-family: var(--fontFamilySecondary);
   text-align: center;
 }
+
+.Footer-links {
+  display: flex;
+  justify-content: space-around;
+  max-width: 200px;
+  margin: 0 auto var(--spacingSM);
+}
+
+.Footer-iconLink {
+  color: currentColor;
+}
