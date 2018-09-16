@@ -69,7 +69,7 @@ export default class Navigation extends React.Component {
           onKeyDown={ ( e ) => this.handleStartKeypress( e ) }
           ref={ this.firstFocusable }
         >
-          <ScreenReaderOnly>Menu</ScreenReaderOnly>
+          <ScreenReaderOnly>{ isOpen ? 'Open' : 'Close' } Menu</ScreenReaderOnly>
 
           <div className='Navigation-bar Navigation-bar--1' role='presentation'></div>
 
