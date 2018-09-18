@@ -7,13 +7,12 @@
   text-align: center;
 }
 
-.Footer-links {
-  display: flex;
-  justify-content: space-around;
-  max-width: 200px;
-  margin: 0 auto var(--spacingSM);
+.Footer p {
+  margin: var(--spacingMD) 0;
 }
 
-.Footer-iconLink {
-  color: currentColor;
+.Footer-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
