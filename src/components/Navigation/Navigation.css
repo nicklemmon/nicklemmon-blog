@@ -66,19 +66,22 @@
   background-color: rgba(26, 31, 36, 0.95);
   transition: transform calc(var(--duration) * 1.25) var(--easing),
               opacity var(--duration) var(--easing),
-              visibility var(--duration) var(--easing);
+              visibility var(--duration) var(--easing),
+              border-radius calc(var(--duration) * 2) var(--easing);
 }
 
 .Navigation-nav.is-closed {
   visibility: hidden;
   opacity: 0;
-  transform: scale(0.95) rotateX(-15deg);
+  border-radius: 10vw;
+  transform: scale(0.9);
 }
 
 .Navigation-nav.is-open {
   visibility: visible;
   opacity: 1;
-  transform: scale(1) rotateX(0deg);
+  border-radius: 0;
+  transform: scale(1);
 }
 
 .Navigation-link {
