@@ -47,8 +47,41 @@
   justify-content: space-around;
 }
 
+.Hero-iconUnderlay {
+  position: absolute;
+  z-index: 4;
+  top: -25%;
+  left: -25%;
+  background-color: var(--deepCerulean);
+  width: 150%;
+  height: 150%;
+  border-radius: 1.5rem;
+  box-shadow: 0 var(--spacingMD) var(--spacingMD) calc(var(--spacingMD) * -1) rgba(0, 0, 0, 0.2);
+  transform: scale(0.66);
+  visibility: hidden;
+  opacity: 0;
+  transition: transform var(--duration) var(--easing),
+              visibility var(--duration) var(--easing),
+              opacity var(--duration) var(--easing),
+              border-radius calc(var(--duration) * 2) var(--easing);
+}
+
 .Hero-iconLink {
+  position: relative; /* allows absolute positioning within */
   color: currentColor;
+}
+
+.Hero-iconLink:focus .Hero-iconUnderlay,
+.Hero-iconLink:hover .Hero-iconUnderlay{
+  transform: scale(1);
+  border-radius: var(--borderRadius);
+  opacity: 1;
+  visibility: visible;
+}
+
+.Hero-icon {
+  position: relative; /* allows use of z-index */
+  z-index: 5;
 }
 
 @media (min-width: 800px) {

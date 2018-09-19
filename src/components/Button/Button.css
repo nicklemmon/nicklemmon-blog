@@ -6,7 +6,7 @@
   align-items: center;
   padding: var(--spacingMD) var(--spacingLG);
   font-family: var(--fontFamilySecondary);
-  border-radius: 6px;
+  border-radius: var(--borderRadius);
   border-bottom: 2px solid #000; /* black is just a placeholder to be overidden */
   font-weight: 700;
   font-size: 1rem;

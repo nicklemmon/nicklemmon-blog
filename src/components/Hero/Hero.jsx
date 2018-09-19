@@ -1,5 +1,5 @@
 import React from 'react'
-import { Icon } from 'react-icons-kit'
+
 import { socialCodepen } from 'react-icons-kit/ionicons/socialCodepen'
 import { socialGithub } from 'react-icons-kit/ionicons/socialGithub'
 import { socialLinkedin } from 'react-icons-kit/ionicons/socialLinkedin'
@@ -8,9 +8,11 @@ import Container from '../Container/Container'
 import MaxWidth from '../MaxWidth/MaxWidth'
 import Heading from '../Heading/Heading'
 import Highlight from '../Highlight/Highlight'
+import HeroIconLink from './HeroIconLink'
 
 import './Hero.css'
 import heroImage from './hero-bg.png'
+import HeroLinkIcon from './HeroIconLink';
 
 export default class Hero extends React.Component {
   render() {
@@ -23,29 +25,20 @@ export default class Hero extends React.Component {
             <Heading level='1' className='Hero-title'>A <Highlight>front-end</Highlight> developer driven to create <Highlight>accessible</Highlight> user interfaces</Heading>
 
             <MaxWidth size='sm' className='Hero-links'>
-              <a className='Hero-iconLink' href='http://codepen.com/nicklemmon' rel='noopener'>
-                <Icon
-                  className='Hero-icon'
-                  size={ iconSize }
-                  icon={ socialCodepen }
-                />
-              </a>
+              <HeroIconLink
+                href='http://codepen.com/nicklemmon'
+                icon={ socialCodepen }
+              />
 
-              <a className='Hero-iconLink' href='http://github.com/nicklemmon' rel='noopener'>
-                <Icon
-                  className='Hero-icon'
-                  size={ iconSize }
-                  icon={ socialGithub }
-                />
-              </a>
+              <HeroIconLink
+                href='http://github.com/nicklemmon'
+                icon={ socialGithub }
+              />
 
-              <a className='Hero-iconLink' href='http://linkedin.com/in/nicklemmon' rel='noopener'>
-                <Icon
-                  className='Hero-icon'
-                  size={ iconSize }
-                  icon={ socialLinkedin }
-                />
-              </a>
+              <HeroIconLink
+                href='http://linkedin.com/in/nicklemmon'
+                icon={ socialLinkedin }
+              />
             </MaxWidth>
           </Container>
         </MaxWidth>
