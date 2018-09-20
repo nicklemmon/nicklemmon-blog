@@ -57,7 +57,7 @@
   height: 150%;
   border-radius: 1.5rem;
   box-shadow: 0 var(--spacingMD) var(--spacingMD) calc(var(--spacingMD) * -1) rgba(0, 0, 0, 0.2);
-  transform: scale(0.66);
+  transform: scale(0);
   visibility: hidden;
   opacity: 0;
   transition: transform var(--duration) var(--easing),
@@ -69,12 +69,13 @@
 .Hero-iconLink {
   position: relative; /* allows absolute positioning within */
   color: currentColor;
+  line-height: 0;
 }
 
 .Hero-iconLink:focus .Hero-iconUnderlay,
 .Hero-iconLink:hover .Hero-iconUnderlay{
   transform: scale(1);
-  border-radius: var(--borderRadius);
+  border-radius: 50%;
   opacity: 1;
   visibility: visible;
 }
