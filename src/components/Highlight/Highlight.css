@@ -12,5 +12,6 @@
   width: 90%;
   height: var(--spacingMD);
   background-color: currentColor;
+  border-radius: 0.125rem;
   opacity: 0.125;
 }

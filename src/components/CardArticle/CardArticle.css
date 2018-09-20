@@ -12,6 +12,7 @@
   font-size: 0.9rem;
   font-family: var(--fontFamilySecondary);
   line-height: 1.5;
+  margin-bottom: var(--spacingLG);
 }
 
 .CardArticle:hover,

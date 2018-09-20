@@ -67,7 +67,7 @@
   transition: transform calc(var(--duration) * 1.25) var(--easing),
               opacity var(--duration) var(--easing),
               visibility var(--duration) var(--easing),
-              border-radius calc(var(--duration) * 2) var(--easing);
+              border-radius calc(var(--duration) * 1.5) var(--easing);
 }
 
 .Navigation-nav.is-closed {
