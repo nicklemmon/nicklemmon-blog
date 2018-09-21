@@ -12,7 +12,7 @@ export default class HeroLinkIcon extends React.Component {
       <a className='Hero-iconLink' href={ href } rel='noopener'>
         <Icon
           className='Hero-icon'
-          size={ 'calc(2rem + 1.5vw)' }
+          size={ 'calc(2.5rem + 1.5vw)' }
           icon={ icon }
         />
 
