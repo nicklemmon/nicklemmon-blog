@@ -20,7 +20,7 @@ export default class CardArticle extends React.Component {
     } = this.props
 
     return (
-      <Link to={ linkTo }>
+      <Link className='CardArticle-link' to={ linkTo }>
         <Card className='CardArticle'>
           <Subdued className='CardArticle-date'>
             { date }

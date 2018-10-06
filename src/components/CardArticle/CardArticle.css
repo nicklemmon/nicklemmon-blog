@@ -16,8 +16,13 @@
   margin-bottom: var(--spacingLG);
 }
 
-.CardArticle:hover,
-.CardArticle:focus {
+.CardArticle-link {
+  display: block; /* fixes focus styling issues */
+  outline-color: var(--blueRibbon);
+}
+
+.CardArticle-link .CardArticle:hover,
+.CardArticle-link .CardArticle:focus {
   transform: scale(1.005) translateY(-2px);
   box-shadow: 0 var(--spacingMD) var(--spacingMD) rgba(0, 0, 0, 0.075);
 }

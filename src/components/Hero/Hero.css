@@ -71,6 +71,10 @@
   line-height: 0;
 }
 
+.Hero-iconLink:focus {
+  outline: none; /* no need to have outline due to animation */
+}
+
 .Hero-iconLink:focus .Hero-iconUnderlay,
 .Hero-iconLink:hover .Hero-iconUnderlay{
   transform: scale(1);
