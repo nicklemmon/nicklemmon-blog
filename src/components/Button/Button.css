@@ -35,6 +35,10 @@
   background-color: var(--blueRibbon);
 }
 
+.Button--primary:focus {
+  outline-color: var(--blueRibbon);
+}
+
 .Button--secondary {
   background-color: var(--white);
   color: var(--blueRibbon);

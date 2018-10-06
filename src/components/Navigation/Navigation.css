@@ -25,6 +25,10 @@
   transform: scale(0.9);
 }
 
+.Navigation-button.is-open:focus {
+  outline-color: var(--white);
+}
+
 .Navigation-button.is-open .Navigation-bar {
   margin: 0;
   background-color: var(--white);
