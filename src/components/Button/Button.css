@@ -23,31 +23,31 @@
 }
 
 .Button--primary {
-  background-color: var(--deepCerulean);
+  background-color: var(--blueRibbon);
   color: var(--white);
   border-top-width: 1px;
   border-right-width: 1px;
   border-left-width: 1px;
-  border-color: var(--bahamaBlue);
+  border-color: var(--blueRibbon);
 }
 
 .Button--primary:hover {
-  background-color: var(--bahamaBlue);
+  background-color: var(--blueRibbon);
 }
 
 .Button--secondary {
   background-color: var(--white);
-  color: var(--deepCerulean);
-  border-color: var(--deepCerulean);
+  color: var(--blueRibbon);
+  border-color: var(--blueRibbon);
 }
 
 .Button--tertiary {
   background-color: var(--white);
-  color: var(--limedSpruce);
-  border-color: var(--grayNurse);
+  color: var(--outerSpace);
+  border-color: var(--seaShell);
 }
 
 .Button--secondary:hover,
 .Button--tertiary:hover {
-  background-color: var(--grayNurse);
+  background-color: var(--seaShell);
 }

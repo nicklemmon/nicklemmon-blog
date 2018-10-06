@@ -17,7 +17,7 @@ body {
 html {
   font-size: calc(15px + 0.25vw);
   font-family: var(--fontFamilyPrimary);
-  color: var(--limedSpruce);
+  color: var(--outerSpace);
 }
 
 a {

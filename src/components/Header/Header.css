@@ -24,8 +24,8 @@
   font-family: var(--fontFamilySecondary);
   font-weight: 700;
   text-transform: uppercase;
-  color: var(--white);
-  background-color: var(--deepCerulean);
+  color: var(--outerSpace);
+  background-color: var(--white);
 }
 
 @media (min-width: 800px) {

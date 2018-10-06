@@ -1,8 +1,8 @@
 @import '../../variables/global.css';
 
 .Footer {
-  background-color: var(--grayNurse);
-  color: var(--limedSpruce);
+  background-color: var(--seaShell);
+  color: var(--outerSpace);
   font-family: var(--fontFamilySecondary);
   text-align: center;
 }

@@ -2,7 +2,8 @@
 
 .CardArticle {
   position: relative; /* allows absolute positioning within */
-  color: var(--limedSpruce);
+  color: var(--outerSpace);
+  border: 1px solid var(--seaShell);
   margin: var(--spacingLG) 0;
   transition: transform var(--duration) var(--easing),
               box-shadow var(--duration) var(--easing);
@@ -18,7 +19,7 @@
 .CardArticle:hover,
 .CardArticle:focus {
   transform: scale(1.005) translateY(-2px);
-  box-shadow: 0 var(--spacingMD) var(--spacingLG) rgba(0, 0, 0, 0.075);
+  box-shadow: 0 var(--spacingMD) var(--spacingMD) rgba(0, 0, 0, 0.075);
 }
 
 .CardArticle-date {
@@ -30,21 +31,21 @@
 }
 
 .CardArticle-heading {
-  font-weight: 400;
+  font-weight: 700;
   font-size: 1.5rem;
-  color: var(--limedSpruce);
+  color: var(--outerSpace);
   margin-bottom: var(--spacingSM);
 }
 
 .CardArticle-readMore {
-  color: var(--deepCerulean);
+  color: var(--blueRibbon);
   position: absolute;
   bottom: var(--spacingMD);
   right: var(--spacingMD);
 }
 
 .CardArticle-icon {
-  fill: var(--deepCerulean);
+  fill: var(--blueRibbon);
   width: 1rem;
   height: 1rem;
 }

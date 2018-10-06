@@ -48,7 +48,7 @@
 
 @media (min-width: 800px) {
   .Navigation-bar {
-    background-color: var(--limedSpruce);
+    background-color: var(--outerSpace);
   }
 }
 
@@ -63,7 +63,7 @@
   z-index: 10;
   width: 100vw;
   height: 100vh;
-  background-color: rgba(26, 31, 36, 0.95);
+  background-color: rgba(25, 25, 25, 0.97);
   transition: transform calc(var(--duration) * 1.25) var(--easing),
               opacity var(--duration) var(--easing),
               visibility var(--duration) var(--easing),

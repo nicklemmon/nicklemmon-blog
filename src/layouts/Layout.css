@@ -1,3 +1,9 @@
+@import '../variables/global.css';
+
+.Layout {
+  border: 1vw solid var(--white);
+}
+
 @media (min-width: 800px) {
   .Layout-main {
     display: grid;

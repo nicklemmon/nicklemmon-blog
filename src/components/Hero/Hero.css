@@ -8,7 +8,6 @@
 
 .Hero {
   color: var(--white);
-  background-color: var(--limedSpruce);
   z-index: 1;
   margin-top: calc(var(--headerHeight) * -1); /* one can't have a negative CSS custom property, so this works. Credit to: https://github.com/css-modules/postcss-icss-values/issues/64#issuecomment-241285628 */
 }
@@ -18,7 +17,7 @@
 }
 
 .Hero-title.Hero-title { /* specificity waaaars */
-  font-weight: 400;
+  font-weight: 700;
   margin-bottom: var(--spacingLG);
 }
 
@@ -33,7 +32,7 @@
 
 .Hero-overlay {
   z-index: 2;
-  background-color: var(--limedSpruce);
+  background-color: var(--blueRibbon);
   opacity: 0.75;
 }
 
@@ -52,7 +51,7 @@
   z-index: 4;
   top: -25%;
   left: -25%;
-  background-color: var(--deepCerulean);
+  background-color: var(--blueRibbon);
   width: 150%;
   height: 150%;
   border-radius: 1.5rem;
