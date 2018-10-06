@@ -20,8 +20,8 @@
   transition: transform var(--duration) var(--easing);
 }
 
-.Navigation-button.is-closed:hover,
-.Navigation-button.is-closed:focus {
+.Navigation-button:hover,
+.Navigation-button:focus {
   transform: scale(0.9);
 }
 
@@ -63,7 +63,7 @@
   z-index: 10;
   width: 100vw;
   height: 100vh;
-  background-color: rgba(25, 25, 25, 0.97);
+  background-color: rgba(0, 71, 254, 0.95);
   transition: transform calc(var(--duration) * 1.25) var(--easing),
               opacity var(--duration) var(--easing),
               visibility var(--duration) var(--easing),
