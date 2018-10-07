@@ -9,6 +9,8 @@ import Container from '../components/Container/Container'
 import MaxWidth from '../components/MaxWidth/MaxWidth'
 import Heading from '../components/Heading/Heading'
 import Bio from '../components/Bio/Bio'
+import { Icon } from 'react-icons-kit'
+import { calendar } from 'react-icons-kit/ionicons/calendar'
 
 import './BlogPostTemplate.css'
 
@@ -31,7 +33,15 @@ class BlogPostTemplate extends React.Component {
 
           <Container className='BlogPostTemplate-content' size='lg'>
             <MaxWidth size='lg'>
-              <p>{post.frontmatter.date}</p>
+              <div className='BlogPostTemplate-meta'>
+                <Icon
+                  className='BlogPostTemplate-calendar'
+                  size={ '1rem' }
+                  icon={ calendar }
+                />
+
+                { post.frontmatter.date }
+              </div>
 
               <div dangerouslySetInnerHTML={{ __html: post.html }} />
               

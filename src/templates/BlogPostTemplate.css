@@ -13,3 +13,17 @@
   color: var(--white);
   margin-top: -3rem;
 }
+
+.BlogPostTemplate-meta {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--seaShell);
+  padding: var(--spacingSM) var(--spacingMD);
+  border-radius: var(--borderRadius);
+  margin-bottom: var(--spacingMD);
+}
+
+.BlogPostTemplate-calendar {
+  margin-right: var(--spacingSM);
+}

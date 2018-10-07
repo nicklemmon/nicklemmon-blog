@@ -12,7 +12,6 @@ import HeroIconLink from './HeroIconLink'
 
 import './Hero.css'
 import heroImage from './hero-bg.png'
-import HeroLinkIcon from './HeroIconLink';
 
 export default class Hero extends React.Component {
   render() {
