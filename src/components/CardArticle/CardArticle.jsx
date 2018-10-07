@@ -1,5 +1,5 @@
 import React from 'react'
-import Link from 'gatsby-link'
+import { Link } from 'gatsby'
 import { Icon } from 'react-icons-kit'
 import { arrowRight } from 'react-icons-kit/feather/arrowRight'
 

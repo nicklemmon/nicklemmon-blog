@@ -1,19 +1,20 @@
 import React from 'react'
 import get from 'lodash/get'
 import Helmet from 'react-helmet'
+import { graphql } from 'gatsby'
 
+import LandingLayout from '../components/Layouts/LandingLayout'
 import Button from '../components/Button/Button'
 import Heading from '../components/Heading/Heading'
 import Highlight from '../components/Highlight/Highlight'
 import CardArticle from '../components/CardArticle/CardArticle'
-
 class BlogIndex extends React.Component {
   render() {
     const siteTitle = get(this, 'props.data.site.siteMetadata.title')
     const posts = get(this, 'props.data.allMarkdownRemark.edges')
 
     return (
-      <div>
+      <LandingLayout>
         <Helmet title={ siteTitle } />
 
         <Heading level='2'>
@@ -43,7 +44,7 @@ class BlogIndex extends React.Component {
         >
           Archives
         </Button>
-      </div>
+      </LandingLayout>
     )
   }
 }

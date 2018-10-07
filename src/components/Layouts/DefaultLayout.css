@@ -1,0 +1,5 @@
+@import '../../variables/global.css';
+
+.DefaultLayout {
+  border: 1vw solid var(--white);
+}
