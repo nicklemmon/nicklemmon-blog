@@ -1,4 +1,5 @@
 import React from 'react'
+import classNames from 'classnames'
 
 import Header from '../Header/Header'
 import Footer from '../Footer/Footer'
@@ -20,7 +21,7 @@ class DefaultLayout extends React.Component {
     }
 
     return (
-      <div className='DefaultLayout'>
+      <div className={ classNames( 'DefaultLayout', this.props.className ) }>
         <Header className='DefaultLayout-header'/>
 
         { children }

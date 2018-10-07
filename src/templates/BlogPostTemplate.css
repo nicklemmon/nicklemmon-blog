@@ -1,0 +1,15 @@
+@import '../variables/variables.css';
+
+.BlogPostTemplate {
+  font-family: var(--fontFamilySecondary);
+
+  & .Navigation-bar {
+    background-color: var(--white);
+  }
+}
+
+.BlogPostTemplate-title {
+  background-color: var(--blueRibbon);
+  color: var(--white);
+  margin-top: -3rem;
+}

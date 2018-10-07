@@ -3,7 +3,14 @@ import Helmet from 'react-helmet'
 import { Link, graphql } from 'gatsby'
 import get from 'lodash/get'
 
+import DefaultLayout from '../components/Layouts/DefaultLayout'
+import Main from '../components/Main/Main'
+import Container from '../components/Container/Container'
+import MaxWidth from '../components/MaxWidth/MaxWidth'
+import Heading from '../components/Heading/Heading'
 import Bio from '../components/Bio/Bio'
+
+import './BlogPostTemplate.css'
 
 class BlogPostTemplate extends React.Component {
   render() {
@@ -12,48 +19,54 @@ class BlogPostTemplate extends React.Component {
     const { previous, next } = this.props.pathContext
 
     return (
-      <div>
+      <DefaultLayout className='BlogPostTemplate'>
         <Helmet title={`${post.frontmatter.title} | ${siteTitle}`} />
-        <h1>{post.frontmatter.title}</h1>
-        <p
-          style={{
-            display: 'block'
-          }}
-        >
-          {post.frontmatter.date}
-        </p>
-        <div dangerouslySetInnerHTML={{ __html: post.html }} />
-        <hr/>
-        
-        <Bio />
 
-        <ul
-          style={{
-            display: 'flex',
-            flexWrap: 'wrap',
-            justifyContent: 'space-between',
-            listStyle: 'none',
-            padding: 0,
-          }}
-        >
-          <li>
-            {
-              previous &&
-              <Link to={previous.fields.slug} rel="prev">
-                ← {previous.frontmatter.title}
-              </Link>
-            }
-          </li>
-          <li>
-            {
-              next &&
-              <Link to={next.fields.slug} rel="next">
-                {next.frontmatter.title} →
-              </Link>
-            }
-          </li>
-        </ul>
-      </div>
+        <Main className='BlogPostTemplate-main'>
+          <Container className='BlogPostTemplate-title' size='xl'>
+            <MaxWidth size='lg'>
+              <Heading level='1'>{post.frontmatter.title}</Heading>
+            </MaxWidth>
+          </Container>
+
+          <Container className='BlogPostTemplate-content' size='lg'>
+            <MaxWidth size='lg'>
+              <p>{post.frontmatter.date}</p>
+
+              <div dangerouslySetInnerHTML={{ __html: post.html }} />
+              
+              <Bio />
+
+              <ul
+                style={{
+                  display: 'flex',
+                  flexWrap: 'wrap',
+                  justifyContent: 'space-between',
+                  listStyle: 'none',
+                  padding: 0,
+                }}
+              >
+                <li>
+                  {
+                    previous &&
+                    <Link to={previous.fields.slug} rel="prev">
+                      ← {previous.frontmatter.title}
+                    </Link>
+                  }
+                </li>
+                <li>
+                  {
+                    next &&
+                    <Link to={next.fields.slug} rel="next">
+                      {next.frontmatter.title} →
+                    </Link>
+                  }
+                </li>
+              </ul>
+            </MaxWidth>
+          </Container>
+        </Main>
+      </DefaultLayout>
     )
   }
 }

@@ -15,6 +15,10 @@ Commas, wild Question Marks and devious Semikoli, but the Little Blind Text
 didn’t listen. She packed her seven versalia, put her initial into the belt and
 made herself on the way.
 
+```html
+<p>Some html</p>
+```
+
 * This however showed weasel
 * Well uncritical so misled
   * this is very interesting
