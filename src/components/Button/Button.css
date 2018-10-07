@@ -32,11 +32,11 @@
 }
 
 .Button--primary:hover {
-  background-color: var(--blueRibbon);
+  background-color: var(--blue);
 }
 
 .Button--primary:focus {
-  outline-color: var(--blueRibbon);
+  outline-color: var(--blue);
 }
 
 .Button--secondary {

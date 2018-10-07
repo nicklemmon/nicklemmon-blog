@@ -96,4 +96,9 @@
   color: var(--white);
   padding: var(--spacingXS) var(--spacingSM);
   text-align: right;
+  transition: transform var(--duration) var(--easing);
+}
+
+.Navigation-link:hover {
+  transform: translateY(-0.125rem);
 }
