@@ -1,4 +1,4 @@
-@import '../../variables/global.css';
+@import '../../variables/variables.css';
 
 .Card {
   background-color: var(--white);

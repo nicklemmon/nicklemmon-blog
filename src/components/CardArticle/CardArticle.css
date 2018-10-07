@@ -1,4 +1,4 @@
-@import '../../variables/global.css';
+@import '../../variables/variables.css';
 
 .CardArticle {
   position: relative; /* allows absolute positioning within */

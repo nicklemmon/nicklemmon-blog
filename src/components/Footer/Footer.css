@@ -1,4 +1,4 @@
-@import '../../variables/global.css';
+@import '../../variables/variables.css';
 
 .Footer {
   background-color: var(--seaShell);

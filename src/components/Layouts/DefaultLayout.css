@@ -1,4 +1,4 @@
-@import '../../variables/global.css';
+@import '../../variables/variables.css';
 
 .DefaultLayout {
   border: 1vw solid var(--white);
