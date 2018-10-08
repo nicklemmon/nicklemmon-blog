@@ -52,3 +52,11 @@
 .Button--tertiary:hover {
   background-color: var(--seaShell);
 }
+
+.Button-icon--pre {
+  margin-right: var(--spacingSM);
+}
+
+.Button-icon--post {
+  margin-left: var(--spacingSM);
+}

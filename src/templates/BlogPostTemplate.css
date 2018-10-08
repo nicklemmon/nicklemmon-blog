@@ -83,7 +83,9 @@
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
+  position: relative; /* allows absolute positioning within */
   padding-top: var(--spacingLG);
+  padding-bottom: var(--spacingXL);
 }
 
 .BlogPostTemplate-button {
@@ -93,11 +95,24 @@
     margin-top: var(--spacingSM);
   }
 
-  @media (min-width: 400px) {
+  @media (min-width: 600px) {
     width: auto;
+    position: absolute;
 
     & + .BlogPostTemplate-button {
       margin-top: 0;
     }
+  }
+}
+
+.BlogPostTemplate-button--prev {
+  @media (min-width: 600px) {
+    left: 0;
+  }
+}
+
+.BlogPostTemplate-button--next {
+  @media (min-width: 600px) {
+    right: 0;
   }
 }

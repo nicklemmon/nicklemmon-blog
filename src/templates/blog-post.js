@@ -2,6 +2,8 @@ import React from 'react'
 import Helmet from 'react-helmet'
 import { Link, graphql } from 'gatsby'
 import { Icon } from 'react-icons-kit'
+import { androidArrowBack } from 'react-icons-kit/ionicons/androidArrowBack'
+import { androidArrowForward } from 'react-icons-kit/ionicons/androidArrowForward'
 import get from 'lodash/get'
 
 import DefaultLayout from '../components/Layouts/DefaultLayout'
@@ -47,9 +49,10 @@ class BlogPostTemplate extends React.Component {
                 {
                   previous &&
                     <Button
-                      className='BlogPostTemplate-button'
+                      className='BlogPostTemplate-button BlogPostTemplate-button--prev'
                       type='secondary'
                       to={ previous.fields.slug }
+                      preIcon={ androidArrowBack }
                     >
                       { previous.frontmatter.title }
                     </Button>
@@ -58,9 +61,10 @@ class BlogPostTemplate extends React.Component {
                 {
                   next &&
                     <Button
-                      className='BlogPostTemplate-button'
+                      className='BlogPostTemplate-button BlogPostTemplate-button--next'
                       type='secondary'
                       to={ next.fields.slug }
+                      postIcon={ androidArrowForward }
                     >
                       { next.frontmatter.title }
                     </Button>
