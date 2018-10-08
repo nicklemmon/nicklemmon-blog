@@ -11,13 +11,14 @@ export default class Button extends React.Component {
       type,
       children,
       fullWidth,
-      centered
+      centered,
+      className
     } = this.props
 
     return (
       <Link
         to={ to }
-        className={ classNames( `Button Button--${type}`, fullWidth ? 'Button--full' : '', centered ? 'Button--centered' : '' ) }
+        className={ classNames( `Button Button--${type}`, fullWidth ? 'Button--full' : '', centered ? 'Button--centered' : '', className ) }
       >
         { children }
       </Link>

@@ -7,7 +7,7 @@
   padding: var(--spacingMD) var(--spacingLG);
   font-family: var(--fontFamilySecondary);
   border-radius: var(--borderRadius);
-  border-bottom: 2px solid #000; /* black is just a placeholder to be overidden */
+  border: 2px solid #000; /* black is just a placeholder to be overidden */
   font-weight: 700;
   font-size: 1rem;
   cursor: pointer;
@@ -25,9 +25,6 @@
 .Button--primary {
   background-color: var(--blueRibbon);
   color: var(--white);
-  border-top-width: 1px;
-  border-right-width: 1px;
-  border-left-width: 1px;
   border-color: var(--blueRibbon);
 }
 

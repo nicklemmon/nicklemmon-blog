@@ -43,5 +43,7 @@ h5,
 
 h6,
 .Heading--6 {
+  text-transform: uppercase;
+  letter-spacing: 0.025rem;
   font-size: 1rem;
 }

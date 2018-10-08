@@ -1,4 +1,5 @@
 import React from 'react'
+import classNames from 'classnames'
 import { Link } from 'gatsby'
 import { Icon } from 'react-icons-kit'
 import { arrowRight } from 'react-icons-kit/feather/arrowRight'
@@ -13,6 +14,7 @@ import './CardArticle.css'
 export default class CardArticle extends React.Component {
   render() {
     const {
+      className,
       date,
       headingContent,
       children,
@@ -20,7 +22,7 @@ export default class CardArticle extends React.Component {
     } = this.props
 
     return (
-      <Link className='CardArticle-link' to={ linkTo }>
+      <Link className={ classNames( 'CardArticle-link', className ) } to={ linkTo }>
         <Card className='CardArticle'>
           <Subdued className='CardArticle-date'>
             { date }
