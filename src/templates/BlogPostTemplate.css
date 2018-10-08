@@ -43,6 +43,16 @@
     }
   }
 
+  /* Elements that 'break out' of the article flow */
+  & pre,
+  & blockquote {
+    margin: var(--spacingLG) -2rem;
+
+    @media (max-width: 600px) {
+      margin: var(--spacingMD) 0;
+    }
+  }
+
   & pre {
     display: block;
     background-color: var(--outerSpace);
@@ -50,17 +60,11 @@
     color: var(--white);
     border-radius: var(--borderRadius);
     padding: var(--spacingMD);
-    margin: var(--spacingLG) -2rem;
     box-shadow: 0 1rem 1rem -1rem rgba(0, 0, 0, 0.33);
-
-    @media (max-width: 600px) {
-      margin: var(--spacingMD) 0;
-    }
   }
 
   & blockquote {
     background-color: var(--seaShell);
-    margin: 0;
     padding: var(--spacingLG);
     color: var(--outerSpace);
     border-left: 0.5vw solid var(--outerSpace);
