@@ -4,8 +4,6 @@ import Container from '../Container/Container'
 import MaxWidth from '../MaxWidth/MaxWidth'
 import Heading from '../Heading/Heading'
 import Highlight from '../Highlight/Highlight'
-import { Icon } from 'react-icons-kit'
-import { calendar } from 'react-icons-kit/ionicons/calendar'
 
 import './ArticleTitle.css'
 import articleTitleImage from './articletitle-bg.png'
@@ -27,12 +25,6 @@ export default class ArticleTitle extends React.Component {
           </Heading>
 
           <div className='ArticleTitle-meta'>
-            <Icon
-              className='ArticleTitle-calendar'
-              size={ '1rem' }
-              icon={ calendar }
-            />
-
             { date }
           </div>
         </MaxWidth>

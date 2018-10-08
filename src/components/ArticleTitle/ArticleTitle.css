@@ -8,14 +8,6 @@
   z-index: 1;
 }
 
-.ArticleTitle-maxWidth {
-  @media (min-width: 600px) {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-}
-
 .ArticleTitle-heading {
   position: relative;
   z-index: 3;
@@ -47,15 +39,10 @@
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  background-color: var(--seaShell);
-  color: var(--outerSpace);
+  color: var(--white);
+  font-size: 1.125rem;
   font-weight: 700;
-  padding: var(--spacingSM) var(--spacingMD);
   margin-top: var(--spacingMD);
-
-  @media (min-width: 600px) {
-    margin-top: 0;
-  }
 }
 
 .ArticleTitle-calendar {
