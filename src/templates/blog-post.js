@@ -42,8 +42,6 @@ class BlogPostTemplate extends React.Component {
                 className='BlogPostTemplate-content'
                 dangerouslySetInnerHTML={{ __html: post.html }}
               />
-              
-              <Bio />
 
               <div className='BlogPostTemplate-buttons'>
                 {
@@ -70,6 +68,8 @@ class BlogPostTemplate extends React.Component {
                     </Button>
                 }
               </div>
+
+              <Bio />
             </MaxWidth>
           </Container>
         </Main>
