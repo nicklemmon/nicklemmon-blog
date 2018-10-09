@@ -5,18 +5,20 @@
   padding: 0;
   display: grid;
   grid-template-columns: 1fr 5fr;
-  grid-gap: var(--spacingSM);
+  grid-gap: var(--spacingMD);
 }
 
 .Bio-imgContainer,
 .Bio-content {
-  padding: var(--spacingMD);
+  padding: var(--spacingMD) var(--spacingLG);
 }
 
 .Bio-imgContainer {
-  display: flex;
-  justify-content: center;
-  background-color: var(--seaShell);
+  padding-right: 0;
+}
+
+.Bio-content {
+  padding-left: 0;
 }
 
 .Bio-img {
