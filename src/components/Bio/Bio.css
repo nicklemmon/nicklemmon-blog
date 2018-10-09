@@ -1,0 +1,26 @@
+@import '../../variables/variables.css';
+
+.Bio {
+  margin-top: var(--spacingLG);
+  padding: 0;
+  display: grid;
+  grid-template-columns: 1fr 5fr;
+  grid-gap: var(--spacingSM);
+}
+
+.Bio-imgContainer,
+.Bio-content {
+  padding: var(--spacingMD);
+}
+
+.Bio-imgContainer {
+  display: flex;
+  justify-content: center;
+  background-color: var(--seaShell);
+}
+
+.Bio-img {
+  border-radius: 50%;
+  width: 5rem;
+  height: 5rem;
+}

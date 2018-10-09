@@ -8,6 +8,7 @@ import get from 'lodash/get'
 
 import DefaultLayout from '../components/Layouts/DefaultLayout'
 import Main from '../components/Main/Main'
+import LongForm from '../components/LongForm/LongForm'
 import ArticleTitle from '../components/ArticleTitle/ArticleTitle'
 import Container from '../components/Container/Container'
 import MaxWidth from '../components/MaxWidth/MaxWidth'
@@ -30,7 +31,6 @@ class BlogPostTemplate extends React.Component {
         <Helmet title={`${post.frontmatter.title} | ${siteTitle}`} />
 
         <Main className='BlogPostTemplate-main'>
-          
           <ArticleTitle
             headingContent={ post.frontmatter.title }
             date={ post.frontmatter.date }
@@ -38,7 +38,7 @@ class BlogPostTemplate extends React.Component {
         
           <Container size='lg'>
             <MaxWidth size='lg'>
-              <div
+              <LongForm
                 className='BlogPostTemplate-content'
                 dangerouslySetInnerHTML={{ __html: post.html }}
               />
