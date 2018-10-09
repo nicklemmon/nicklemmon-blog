@@ -15,7 +15,7 @@
   flex-wrap: wrap;
   position: relative; /* allows absolute positioning within */
   padding-top: var(--spacingXL);
-  padding-bottom: var(--spacingXL);
+  padding-bottom: 3rem;
 }
 
 .BlogPostTemplate-button {

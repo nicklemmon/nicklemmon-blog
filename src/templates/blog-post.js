@@ -48,7 +48,7 @@ class BlogPostTemplate extends React.Component {
                   previous &&
                     <Button
                       className='BlogPostTemplate-button BlogPostTemplate-button--prev'
-                      type='secondary'
+                      type='tertiary'
                       to={ previous.fields.slug }
                       preIcon={ androidArrowBack }
                     >
@@ -60,7 +60,7 @@ class BlogPostTemplate extends React.Component {
                   next &&
                     <Button
                       className='BlogPostTemplate-button BlogPostTemplate-button--next'
-                      type='secondary'
+                      type='tertiary'
                       to={ next.fields.slug }
                       postIcon={ androidArrowForward }
                     >

@@ -44,8 +44,8 @@
 
 .Button--tertiary {
   background-color: var(--white);
-  color: var(--outerSpace);
-  border-color: var(--seaShell);
+  color: var(--blueRibbon);
+  border-color: transparent;
 }
 
 .Button--secondary:hover,
