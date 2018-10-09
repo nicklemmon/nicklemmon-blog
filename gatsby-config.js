@@ -2,6 +2,7 @@ module.exports = {
   siteMetadata: {
     title: 'Nick Lemmon, Front End Web Developer',
     author: 'Nick Lemmon',
+    description: 'Blog for Nick Lemmon, front end web developer in Durham, NC.',
     siteUrl: 'https://gatsbyjs.github.io/gatsby-starter-blog/',
   },
   pathPrefix: '/gatsby-starter-blog',
