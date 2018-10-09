@@ -1,7 +1,10 @@
 @import '../../variables/variables.css';
 
 .Bio {
+  position: relative; /* enables z-index */
+  z-index: 2;
   margin-top: var(--spacingLG);
+  margin-bottom:calc(-1 * var(--spacingXL));
   padding: 0;
   display: grid;
   grid-template-columns: 1fr 5fr;
@@ -23,6 +26,6 @@
 
 .Bio-img {
   border-radius: 50%;
-  width: 5rem;
-  height: 5rem;
+  width: 6rem;
+  height: 6rem;
 }

@@ -23,7 +23,7 @@
 .CardArticle-link .CardArticle:hover,
 .CardArticle-link .CardArticle:focus {
   transform: scale(1.005) translateY(-2px);
-  box-shadow: 0 var(--spacingMD) var(--spacingLG) rgba(0, 0, 0, 0.075);
+  box-shadow: 0 calc(var(--spacingSM) * 2) var(--spacingLG) rgba(0, 0, 0, 0.075);
 }
 
 .CardArticle-date {
