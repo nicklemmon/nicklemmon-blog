@@ -5,7 +5,8 @@
   color: var(--outerSpace);
   margin: var(--spacingLG) 0;
   transition: transform var(--duration) var(--easing),
-              box-shadow var(--duration) var(--easing);
+              box-shadow var(--duration) var(--easing),
+              border-color calc(var(--duration) * 1.25) var(--easing);
 }
 
 .CardArticle p {
@@ -24,6 +25,7 @@
 .CardArticle-link .CardArticle:focus {
   transform: scale(1.005) translateY(-2px);
   box-shadow: 0 var(--spacingSM) var(--spacingLG) rgba(0, 0, 0, 0.066);
+  border-color: var(--boulder);
 }
 
 .CardArticle-date {

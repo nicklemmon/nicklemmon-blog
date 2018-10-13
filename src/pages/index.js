@@ -8,6 +8,7 @@ import Button from '../components/Button/Button'
 import Heading from '../components/Heading/Heading'
 import Highlight from '../components/Highlight/Highlight'
 import CardArticle from '../components/CardArticle/CardArticle'
+
 class BlogIndex extends React.Component {
   render() {
     const siteTitle = get(this, 'props.data.site.siteMetadata.title')

@@ -24,9 +24,11 @@ export default class ArticleTitle extends React.Component {
             </Highlight>
           </Heading>
 
-          <div className='ArticleTitle-meta'>
-            { date }
-          </div>
+          { date && 
+            <div className='ArticleTitle-meta'>
+              { date }
+            </div>
+          }
         </MaxWidth>
 
         <div className='ArticleTitle-overlay' role='presentation'></div>

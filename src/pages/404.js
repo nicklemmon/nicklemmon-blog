@@ -1,10 +1,38 @@
 import React from 'react'
+import get from 'lodash/get'
+import Helmet from 'react-helmet'
+import { graphql } from 'gatsby'
 
-const NotFoundPage = () => (
-  <div>
-    <h1>NOT FOUND</h1>
-    <p>You just hit a route that doesn&#39;t exist... the sadness.</p>
-  </div>
-)
+import DefaultLayout from '../components/Layouts/DefaultLayout'
+import ArticleTitle from '../components/ArticleTitle/ArticleTitle'
+import Container from '../components/Container/Container'
 
-export default NotFoundPage
+export default class NotFoundPage extends React.Component {
+  render() {
+    const siteTitle = get( this, 'props.data.site.siteMetadata.title' )
+
+    console.log( siteTitle )
+
+    return (
+      <DefaultLayout>
+        <Helmet title={ `Page Not Found | ${siteTitle}` } />
+  
+        <ArticleTitle headingContent='404 :('/>
+  
+        <Container size='xl'>
+          <p>Sorry, friend. No page here!</p>
+        </Container>
+      </DefaultLayout>
+    )
+  }
+}
+
+export const pageQuery = graphql`
+  query NotFoundQuery {
+    site {
+      siteMetadata {
+        title
+      }
+    }
+  }
+`
