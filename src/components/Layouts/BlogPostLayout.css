@@ -1,6 +1,6 @@
-@import '../variables/variables.css';
+@import '../../variables/variables.css';
 
-.BlogPostTemplate-buttons {
+.BlogPostLayout-buttons {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
@@ -9,10 +9,10 @@
   padding-bottom: 3rem;
 }
 
-.BlogPostTemplate-button {
+.BlogPostLayout-button {
   width: 100%;
 
-  & + .BlogPostTemplate-button {
+  & + .BlogPostLayout-button {
     margin-top: var(--spacingSM);
   }
 
@@ -20,19 +20,19 @@
     width: auto;
     position: absolute;
 
-    & + .BlogPostTemplate-button {
+    & + .BlogPostLayout-button {
       margin-top: 0;
     }
   }
 }
 
-.BlogPostTemplate-button--prev {
+.BlogPostLayout-button--prev {
   @media (min-width: 600px) {
     left: 0;
   }
 }
 
-.BlogPostTemplate-button--next {
+.BlogPostLayout-button--next {
   @media (min-width: 600px) {
     right: 0;
   }
