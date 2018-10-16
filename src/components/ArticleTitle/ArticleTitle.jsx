@@ -6,7 +6,7 @@ import Heading from '../Heading/Heading'
 import Highlight from '../Highlight/Highlight'
 
 import './ArticleTitle.css'
-import articleTitleImage from './articletitle-bg.png'
+import pageBackgroundImage from './page-bg.png'
 
 export default class ArticleTitle extends React.Component {
   render() {
@@ -33,7 +33,7 @@ export default class ArticleTitle extends React.Component {
 
         <div className='ArticleTitle-overlay' role='presentation'></div>
 
-        <img className='ArticleTitle-image' src={ articleTitleImage }/>
+        <img className='ArticleTitle-image' src={ pageBackgroundImage }/>
       </Container>
     )
   }

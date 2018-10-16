@@ -28,7 +28,7 @@ class BlogPostTemplate extends React.Component {
 
     return (
       <DefaultLayout className='BlogPostTemplate'>
-        <Helmet title={`${post.frontmatter.title} | ${siteTitle}`} />
+        <Helmet title={ `${post.frontmatter.title} | ${siteTitle}` } />
 
         <Main className='BlogPostTemplate-main'>
           <ArticleTitle

@@ -13,7 +13,7 @@
 
 .Bio-imgContainer,
 .Bio-content {
-  padding: var(--spacingMD) var(--spacingLG);
+  padding: var(--spacingLG);
 }
 
 .Bio-imgContainer {
