@@ -1,17 +1,12 @@
 import React from 'react'
 import Helmet from 'react-helmet'
-import { Link, graphql } from 'gatsby'
-import { Icon } from 'react-icons-kit'
+import { graphql } from 'gatsby'
 import { androidArrowBack } from 'react-icons-kit/ionicons/androidArrowBack'
 import { androidArrowForward } from 'react-icons-kit/ionicons/androidArrowForward'
 import get from 'lodash/get'
 
-import DefaultLayout from '../components/Layouts/DefaultLayout'
-import Main from '../components/Main/Main'
+import PageLayout from '../components/Layouts/PageLayout'
 import LongForm from '../components/LongForm/LongForm'
-import ArticleTitle from '../components/ArticleTitle/ArticleTitle'
-import Container from '../components/Container/Container'
-import MaxWidth from '../components/MaxWidth/MaxWidth'
 import Button from '../components/Button/Button'
 import Bio from '../components/Bio/Bio'
 
@@ -27,53 +22,44 @@ class BlogPostTemplate extends React.Component {
     } = this.props.pathContext
 
     return (
-      <DefaultLayout className='BlogPostTemplate'>
+      <PageLayout
+        className='BlogPostTemplate'
+        title={ post.frontmatter.title }
+        date={ post.frontmatter.date }
+      >
         <Helmet title={ `${post.frontmatter.title} | ${siteTitle}` } />
 
-        <Main className='BlogPostTemplate-main'>
-          <ArticleTitle
-            headingContent={ post.frontmatter.title }
-            date={ post.frontmatter.date }
-          />
-        
-          <Container size='lg'>
-            <MaxWidth size='lg'>
-              <LongForm
-                className='BlogPostTemplate-content'
-                dangerouslySetInnerHTML={{ __html: post.html }}
-              />
+        <LongForm
+          className='BlogPostTemplate-content'
+          dangerouslySetInnerHTML={{ __html: post.html }}
+        />
 
-              <div className='BlogPostTemplate-buttons'>
-                {
-                  previous &&
-                    <Button
-                      className='BlogPostTemplate-button BlogPostTemplate-button--prev'
-                      type='tertiary'
-                      to={ previous.fields.slug }
-                      preIcon={ androidArrowBack }
-                    >
-                      { previous.frontmatter.title }
-                    </Button>
-                }
+        <div className='BlogPostTemplate-buttons'>
+          { previous &&
+              <Button
+                className='BlogPostTemplate-button BlogPostTemplate-button--prev'
+                type='tertiary'
+                to={ previous.fields.slug }
+                preIcon={ androidArrowBack }
+              >
+                { previous.frontmatter.title }
+              </Button>
+          }
 
-                {
-                  next &&
-                    <Button
-                      className='BlogPostTemplate-button BlogPostTemplate-button--next'
-                      type='tertiary'
-                      to={ next.fields.slug }
-                      postIcon={ androidArrowForward }
-                    >
-                      { next.frontmatter.title }
-                    </Button>
-                }
-              </div>
+          { next &&
+              <Button
+                className='BlogPostTemplate-button BlogPostTemplate-button--next'
+                type='tertiary'
+                to={ next.fields.slug }
+                postIcon={ androidArrowForward }
+              >
+                { next.frontmatter.title }
+              </Button>
+          }
+        </div>
 
-              <Bio />
-            </MaxWidth>
-          </Container>
-        </Main>
-      </DefaultLayout>
+        <Bio />
+      </PageLayout>
     )
   }
 }

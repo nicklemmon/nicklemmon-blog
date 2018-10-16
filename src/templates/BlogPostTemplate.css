@@ -1,14 +1,5 @@
 @import '../variables/variables.css';
 
-.BlogPostTemplate {
-  font-family: var(--fontFamilySecondary);
-  min-height: 100vh;
-
-  & .Navigation-bar {
-    background-color: var(--white);
-  }
-}
-
 .BlogPostTemplate-buttons {
   display: flex;
   justify-content: space-between;

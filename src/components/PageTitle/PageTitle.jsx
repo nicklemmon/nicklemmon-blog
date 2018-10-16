@@ -1,39 +1,41 @@
 import React from 'react'
+import classNames from 'classnames'
 
 import Container from '../Container/Container'
 import MaxWidth from '../MaxWidth/MaxWidth'
 import Heading from '../Heading/Heading'
 import Highlight from '../Highlight/Highlight'
 
-import './ArticleTitle.css'
+import './PageTitle.css'
 import pageBackgroundImage from './page-bg.png'
 
-export default class ArticleTitle extends React.Component {
+export default class PageTitle extends React.Component {
   render() {
     const {
+      className,
       headingContent,
       date
     } = this.props
 
     return (
-      <Container className='ArticleTitle' size='xl'>
-        <MaxWidth className='ArticleTitle-maxWidth' size='lg'>
-          <Heading className='ArticleTitle-heading' level='1'>
+      <Container className={ classNames( 'PageTitle', className ) } size='xl'>
+        <MaxWidth className='PageTitle-maxWidth' size='lg'>
+          <Heading className='PageTitle-heading' level='1'>
             <Highlight>
               { headingContent }
             </Highlight>
           </Heading>
 
           { date && 
-            <div className='ArticleTitle-meta'>
+            <div className='PageTitle-meta'>
               { date }
             </div>
           }
         </MaxWidth>
 
-        <div className='ArticleTitle-overlay' role='presentation'></div>
+        <div className='PageTitle-overlay' role='presentation'></div>
 
-        <img className='ArticleTitle-image' src={ pageBackgroundImage }/>
+        <img className='PageTitle-image' src={ pageBackgroundImage }/>
       </Container>
     )
   }

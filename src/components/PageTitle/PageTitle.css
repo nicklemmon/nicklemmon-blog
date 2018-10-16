@@ -1,6 +1,6 @@
 @import '../../variables/variables.css';
 
-.ArticleTitle {
+.PageTitle {
   background-color: var(--blueRibbon);
   color: var(--white);
   margin-top: -3rem;
@@ -9,13 +9,13 @@
   z-index: 1;
 }
 
-.ArticleTitle-heading {
+.PageTitle-heading {
   position: relative;
   z-index: 3;
 }
 
-.ArticleTitle-overlay,
-.ArticleTitle-image {
+.PageTitle-overlay,
+.PageTitle-image {
   position: absolute;
   top: 0;
   left: 0;
@@ -23,18 +23,18 @@
   height: 100%;
 }
 
-.ArticleTitle-overlay {
+.PageTitle-overlay {
   z-index: 2;
   background-color: var(--blueRibbon);
   opacity: 0.85;
 }
 
-.ArticleTitle-image {
+.PageTitle-image {
   z-index: 1;
   object-fit: cover;
 }
 
-.ArticleTitle-meta {
+.PageTitle-meta {
   position: relative;
   z-index: 3;
   display: inline-flex;
@@ -46,6 +46,6 @@
   margin-top: var(--spacingMD);
 }
 
-.ArticleTitle-calendar {
+.PageTitle-calendar {
   margin-right: var(--spacingSM);
 }
