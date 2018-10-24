@@ -14,10 +14,11 @@ export default class CardArticles extends React.Component {
 
     return (
       <div className={ classNames( 'CardArticles', className ) }>
-        { posts.map(({ node }) => {
-          const title = get( node, 'frontmatter.title' )
+        { 
+          posts.map(({ node }) => {
+            const title = get( node, 'frontmatter.title' )
 
-          return (
+            return (
               <CardArticle
                 key={ node.fields.slug }
                 date={ node.frontmatter.date }
