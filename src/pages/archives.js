@@ -3,43 +3,34 @@ import get from 'lodash/get'
 import { graphql } from 'gatsby'
 import Helmet from 'react-helmet'
 
-import LandingLayout from '../components/Layouts/LandingLayout'
-import Button from '../components/Button/Button'
-import Heading from '../components/Heading/Heading'
-import Highlight from '../components/Highlight/Highlight'
+import PageLayout from '../components/Layouts/PageLayout'
 import CardArticles from '../components/CardArticles/CardArticles'
 
-class BlogIndex extends React.Component {
+import './archives.css'
+
+class ArchivesPage extends React.Component {
   render() {
     const siteTitle = get( this, 'props.data.site.siteMetadata.title' )
+    const title = 'Archives'
     const posts = get( this, 'props.data.allMarkdownRemark.edges' )
 
     return (
-      <LandingLayout>
-        <Helmet title={ siteTitle } />
+      <PageLayout title={ title }>
+        <Helmet title={ `${title} | ${siteTitle}` } />
 
-        <Heading level='2'>
-          <Highlight>The latest</Highlight>
-        </Heading>
-
-        <CardArticles posts={ posts }/>
-
-        <Button
-          type='primary'
-          to='/archives'
-          fullWidth
-        >
-          Archives
-        </Button>
-      </LandingLayout>
+        <CardArticles
+          posts={ posts }
+          className='Archives-cardArticles'
+        />
+      </PageLayout>
     )
   }
 }
 
-export default BlogIndex
+export default ArchivesPage
 
 export const pageQuery = graphql`
-  query IndexQuery {
+  query ArchivesQuery {
     site {
       siteMetadata {
         title
@@ -53,6 +44,7 @@ export const pageQuery = graphql`
             slug
           }
           frontmatter {
+            date(formatString: "DD MMMM, YYYY")
             title
           }
         }

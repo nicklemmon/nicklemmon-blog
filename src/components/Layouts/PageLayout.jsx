@@ -28,7 +28,7 @@ export default class PageLayout extends React.Component {
 
         <Main className='PageLayout-main'>
           <Container size='lg'>
-            <MaxWidth size='lg'>
+            <MaxWidth size='lg' className='PageLayout-maxWidth'>
               { children }
             </MaxWidth>
           </Container>

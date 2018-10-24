@@ -2,7 +2,7 @@
 
 .Bio {
   position: relative; /* enables z-index */
-  z-index: 2;
+  z-index: 1;
   margin-top: var(--spacingLG);
   margin-bottom:calc(-1 * var(--spacingXL));
   padding: 0;

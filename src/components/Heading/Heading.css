@@ -34,11 +34,13 @@ h3,
 h4,
 .Heading--4 {
   font-size: 1.563rem;
+  opacity: 0.85;
 }
 
 h5,
 .Heading--5 {
   font-size: 1.25rem;
+  opacity: 0.85;
 }
 
 h6,
@@ -46,4 +48,5 @@ h6,
   text-transform: uppercase;
   letter-spacing: 0.025rem;
   font-size: 1rem;
+  opacity: 0.85;
 }
