@@ -3,7 +3,6 @@
 .CardArticle {
   position: relative; /* allows absolute positioning within */
   color: var(--outerSpace);
-  margin: 0 0 var(--spacingLG) 0;
   transition: transform var(--duration) var(--easing),
               box-shadow var(--duration) var(--easing);
 }
@@ -18,6 +17,11 @@
 .CardArticle-link {
   display: block; /* fixes focus styling issues */
   outline-color: var(--blueRibbon);
+  margin: 0 0 var(--spacingLG) 0;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
 }
 
 .CardArticle-link .CardArticle:hover,

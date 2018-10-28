@@ -9,7 +9,9 @@ import Heading from '../components/Heading/Heading'
 import Highlight from '../components/Highlight/Highlight'
 import CardArticles from '../components/CardArticles/CardArticles'
 
-class BlogIndex extends React.Component {
+import './index.css'
+
+class IndexPage extends React.Component {
   render() {
     const siteTitle = get( this, 'props.data.site.siteMetadata.title' )
     const posts = get( this, 'props.data.allMarkdownRemark.edges' )
@@ -22,7 +24,7 @@ class BlogIndex extends React.Component {
           <Highlight>The latest</Highlight>
         </Heading>
 
-        <CardArticles posts={ posts }/>
+        <CardArticles className='IndexPage-cardArticles' posts={ posts }/>
 
         <Button
           type='primary'
@@ -36,7 +38,7 @@ class BlogIndex extends React.Component {
   }
 }
 
-export default BlogIndex
+export default IndexPage
 
 export const pageQuery = graphql`
   query IndexQuery {

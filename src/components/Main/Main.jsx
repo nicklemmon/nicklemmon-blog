@@ -1,6 +1,8 @@
 import React from 'react'
 import classNames from 'classnames'
 
+import './Main.css'
+
 export default class Main extends React.Component {
   render() {
     return (

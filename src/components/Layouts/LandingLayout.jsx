@@ -17,9 +17,9 @@ export default class LandingLayout extends React.Component {
     return (
       <DefaultLayout className='LandingLayout'>
         <Main className='LandingLayout-main'>
-          <Hero/>
+          <Hero className='LandingLayout-hero'/>
 
-          <MaxWidth size='xl'>
+          <MaxWidth className='LandingLayout-sidebar' size='xl'>
             <BreakoutContainer>
               { children }
             </BreakoutContainer>

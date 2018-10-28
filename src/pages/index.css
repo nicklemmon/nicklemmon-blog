@@ -1,0 +1,5 @@
+@import '../variables/variables.css';
+
+.IndexPage-cardArticles {
+  margin: var(--spacingMD) 0;
+}

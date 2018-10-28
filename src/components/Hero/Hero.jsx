@@ -1,4 +1,5 @@
 import React from 'react'
+import classNames from 'classnames'
 
 import { socialCodepen } from 'react-icons-kit/ionicons/socialCodepen'
 import { socialGithub } from 'react-icons-kit/ionicons/socialGithub'
@@ -15,10 +16,11 @@ import heroImage from './hero-bg.png'
 
 export default class Hero extends React.Component {
   render() {
-    const iconSize = '3rem';
+    const iconSize = '3rem'
+    const { className } = this.props
 
     return (
-      <div className='Hero'>
+      <div className={ classNames( 'Hero', className ) }>
         <MaxWidth size='xl'>
           <Container className='Hero-container' size='xxl'>
             <Heading level='1' className='Hero-title'>A <Highlight>front-end</Highlight> developer driven to create <Highlight>accessible</Highlight> user interfaces</Heading>
