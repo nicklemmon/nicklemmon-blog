@@ -4,7 +4,6 @@
   background-color: var(--blueRibbon);
   color: var(--white);
   margin-top: -3rem;
-  padding-top: var(--spacingXXL);
   position: relative; /* enables use of z-index */
   z-index: 1;
 }
@@ -12,6 +11,11 @@
 .PageTitle-heading {
   position: relative;
   z-index: 3;
+  text-align: center;
+
+  @media (min-width: 600px) {
+    text-align: left;
+  }
 }
 
 .PageTitle-overlay,

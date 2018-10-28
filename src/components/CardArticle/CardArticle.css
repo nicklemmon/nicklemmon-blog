@@ -3,7 +3,7 @@
 .CardArticle {
   position: relative; /* allows absolute positioning within */
   color: var(--outerSpace);
-  margin: var(--spacingLG) 0;
+  margin: 0 0 var(--spacingLG) 0;
   transition: transform var(--duration) var(--easing),
               box-shadow var(--duration) var(--easing);
 }

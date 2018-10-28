@@ -22,9 +22,9 @@ export default class Bio extends React.Component {
         <LongForm className='Bio-content'>
           <Heading level='4'>About Me</Heading>
 
-          <p>I'm a frontend developer on Durham, North Carolina who also happens to have an <a rel='noopener' href='https://en.wikipedia.org/wiki/Master_of_Social_Work'>MSW</a>.</p>
+          <p>I'm a frontend developer in Durham, North Carolina who also happens to have an <a rel='noopener' href='https://en.wikipedia.org/wiki/Master_of_Social_Work'>MSW</a>. I'm also acertified <a href='https://www.accessibilityassociation.org/wascertification' rel='noopener'>Web Accessibility Specialist</a>!</p>
 
-          <p>I like design systems, making UI that's accessible to all users, and my dog.</p>
+          <p>I'm driven to design and build accessible design systems with a great underlying developer experience in mind.</p>
         </LongForm>
       </Card>
     )

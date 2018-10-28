@@ -4,20 +4,31 @@ import { graphql } from 'gatsby'
 import Helmet from 'react-helmet'
 
 import PageLayout from '../components/Layouts/PageLayout'
+import Bio from '../components/Bio/Bio'
 
-class ContactPage extends React.Component {
+class AboutPage extends React.Component {
   render() {
     const siteTitle = get( this, 'props.data.site.siteMetadata.title' )
-    const title = 'Archives'
+    const title = 'About'
 
     return (
       <PageLayout title={ title }>
         <Helmet title={ `${title} | ${siteTitle}` } />
 
-        <p>Contact Me...</p>
+        <Bio/>
       </PageLayout>
     )
   }
 }
 
-export default ContactPage
+export default AboutPage
+
+export const pageQuery = graphql`
+  query AboutQuery {
+    site {
+      siteMetadata {
+        title
+      }
+    }
+  }
+`

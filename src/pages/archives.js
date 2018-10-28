@@ -6,8 +6,6 @@ import Helmet from 'react-helmet'
 import PageLayout from '../components/Layouts/PageLayout'
 import CardArticles from '../components/CardArticles/CardArticles'
 
-import './archives.css'
-
 class ArchivesPage extends React.Component {
   render() {
     const siteTitle = get( this, 'props.data.site.siteMetadata.title' )

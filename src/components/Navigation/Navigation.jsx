@@ -81,6 +81,14 @@ export default class Navigation extends React.Component {
         >
           <Link
             className='Navigation-link'
+            to='/'
+            onClick={ this.handleClick }
+          >
+            <Highlight className='Navigation-highlight'>Home</Highlight>
+          </Link>
+
+          <Link
+            className='Navigation-link'
             to='/archives'
             onClick={ this.handleClick }
           >
@@ -89,12 +97,12 @@ export default class Navigation extends React.Component {
 
           <Link
             className='Navigation-link'
-            to='/contact'
+            to='/about'
             onClick={ this.handleClick }
             onKeyDown={ ( e ) => this.handleEndKeypress( e ) }
             innerRef={ ( el ) => { this.lastFocusable = el } }
           >
-            <Highlight className='Navigation-highlight'>Contact</Highlight>
+            <Highlight className='Navigation-highlight'>About</Highlight>
           </Link>
         </nav>
       </div>

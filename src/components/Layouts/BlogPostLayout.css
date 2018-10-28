@@ -6,7 +6,8 @@
   flex-wrap: wrap;
   position: relative; /* allows absolute positioning within */
   padding-top: var(--spacingLG);
-  padding-bottom: 3rem;
+  margin-bottom: 2.5rem;
+  padding-bottom: 2.5rem;
 }
 
 .BlogPostLayout-button {
