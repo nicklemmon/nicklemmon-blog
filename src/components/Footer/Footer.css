@@ -15,5 +15,21 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-direction: column;
   padding-top: var(--spacingXL);
+}
+
+.Footer-socialLinks {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 1rem;
+}
+
+.Footer-socialLink,
+.Footer-link {
+  color: currentColor;
+}
+
+.Footer-link {
+  border-bottom: 2px solid currentColor;
 }

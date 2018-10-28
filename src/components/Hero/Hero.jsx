@@ -27,16 +27,19 @@ export default class Hero extends React.Component {
               <HeroIconLink
                 href='http://codepen.com/nicklemmon'
                 icon={ socialCodepen }
+                screenReaderContent='Codepen'
               />
 
               <HeroIconLink
                 href='http://github.com/nicklemmon'
                 icon={ socialGithub }
+                screenReaderContent='GitHub'
               />
 
               <HeroIconLink
                 href='http://linkedin.com/in/nicklemmon'
                 icon={ socialLinkedin }
+                screenReaderContent='LinkedIn'
               />
             </MaxWidth>
           </Container>

@@ -22,7 +22,13 @@
 
     & a {
       color: var(--blueRibbon);
-      text-decoration: underline;
+      padding-bottom: 1px;
+      border-bottom: 2px solid currentColor;
+    }
+
+    & .gatsby-resp-image-link {
+      border-bottom: 0; /* override for <a> styles */
+      padding-bottom: 0; /* override for <a> styles */
     }
   }
 

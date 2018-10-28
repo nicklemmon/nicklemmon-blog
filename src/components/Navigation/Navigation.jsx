@@ -27,7 +27,6 @@ export default class Navigation extends React.Component {
     if ( e.shiftKey && e.keyCode === 9 ) {
       e.preventDefault()
 
-      console.log( this.lastFocusable )
       this.lastFocusable.focus()
     }
   }
@@ -82,10 +81,10 @@ export default class Navigation extends React.Component {
         >
           <Link
             className='Navigation-link'
-            to='/about'
+            to='/archives'
             onClick={ this.handleClick }
           >
-            <Highlight className='Navigation-highlight'>About</Highlight>
+            <Highlight className='Navigation-highlight'>Archives</Highlight>
           </Link>
 
           <Link

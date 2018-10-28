@@ -1,11 +1,14 @@
 import React from 'react'
 import { Icon } from 'react-icons-kit'
 
+import ScreenReaderOnly from '../ScreenReaderOnly/ScreenReaderOnly'
+
 export default class HeroLinkIcon extends React.Component {
   render() {
     const {
       icon,
-      href
+      href,
+      screenReaderContent
     } = this.props
 
     return (
@@ -15,6 +18,10 @@ export default class HeroLinkIcon extends React.Component {
           size={ 'calc(2.5rem + 1.5vw)' }
           icon={ icon }
         />
+
+        <ScreenReaderOnly>
+          { screenReaderContent }
+        </ScreenReaderOnly>
 
         <span className='Hero-iconUnderlay' role='presentation'></span>
       </a>
