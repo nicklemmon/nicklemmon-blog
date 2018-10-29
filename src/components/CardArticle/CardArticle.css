@@ -19,8 +19,8 @@
   outline-color: var(--blueRibbon);
   margin: 0 0 var(--spacingLG) 0;
 
-  &:last-child {
-    margin-bottom: 0;
+  & + * {
+    margin-top: var(--spacingLG);
   }
 }
 
