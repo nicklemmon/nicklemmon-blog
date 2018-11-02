@@ -12,6 +12,8 @@ import './Footer.css'
 
 export default class Footer extends React.Component {
   render() {
+    const iconDimensions = 'calc(1.25rem + 1vw)';
+
     return (
       <footer className='Footer'>
         <Container size='lg' className='Footer-container'>
@@ -24,7 +26,7 @@ export default class Footer extends React.Component {
               <Icon
                 className='Footer-socialIcon'
                 icon={ socialCodepen }
-                size={ 'calc(1rem + 1vw)' }
+                size={ iconDimensions }
               />
 
               <ScreenReaderOnly>Codepen</ScreenReaderOnly>
@@ -38,7 +40,7 @@ export default class Footer extends React.Component {
               <Icon
                 className='Footer-socialIcon'
                 icon={ socialGithub }
-                size={ 'calc(1rem + 1vw)' }
+                size={ iconDimensions }
               />
 
               <ScreenReaderOnly>GitHub</ScreenReaderOnly>
@@ -52,7 +54,7 @@ export default class Footer extends React.Component {
               <Icon
                 className='Footer-socialIcon'
                 icon={ socialLinkedin }
-                size={ 'calc(1rem + 1vw)' }
+                size={ iconDimensions }
               />
 
               <ScreenReaderOnly>LinkedIn</ScreenReaderOnly>
