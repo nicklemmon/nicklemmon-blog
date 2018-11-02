@@ -24,7 +24,11 @@ class IndexPage extends React.Component {
           <Highlight>The latest</Highlight>
         </Heading>
 
-        <CardArticles className='IndexPage-cardArticles' posts={ posts }/>
+        <CardArticles
+          className='IndexPage-cardArticles'
+          posts={ posts }
+          postLimit={ 3 }
+        />
 
         <Button
           type='primary'

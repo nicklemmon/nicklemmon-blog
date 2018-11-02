@@ -9,16 +9,18 @@ export default class CardArticles extends React.Component {
   render() {
     const {
       className,
-      posts
+      posts,
+      postLimit
     } = this.props
+    const maxPosts = postLimit + 1 || null;
 
     return (
       <div className={ classNames( 'CardArticles', className ) }>
         { 
-          posts.map(({ node }) => {
+          posts.map(({ node }, index ) => {
             const title = get( node, 'frontmatter.title' )
-
-            return (
+            const count = index + 1;
+            const cardMarkup = (
               <CardArticle
                 key={ node.fields.slug }
                 date={ node.frontmatter.date }
@@ -28,7 +30,15 @@ export default class CardArticles extends React.Component {
                 <p dangerouslySetInnerHTML={{ __html: node.excerpt }} />
               </CardArticle>
             )
-          }) 
+            
+            if ( maxPosts != null ) {
+              if ( count < maxPosts ) {
+                return cardMarkup
+              }
+            } else {
+              return cardMarkup
+            }
+          })
         }
       </div>
     )
