@@ -3,7 +3,6 @@ import { Link } from 'gatsby'
 import classNames from 'classnames'
 
 import ScreenReaderOnly from '../ScreenReaderOnly/ScreenReaderOnly'
-import Highlight from '../Highlight/Highlight'
 
 import './Navigation.css'
 
@@ -84,7 +83,7 @@ export default class Navigation extends React.Component {
             to='/'
             onClick={ this.handleClick }
           >
-            <Highlight className='Navigation-highlight'>Home</Highlight>
+            Home
           </Link>
 
           <Link
@@ -92,7 +91,7 @@ export default class Navigation extends React.Component {
             to='/archives'
             onClick={ this.handleClick }
           >
-            <Highlight className='Navigation-highlight'>Archives</Highlight>
+            Archives
           </Link>
 
           <Link
@@ -102,7 +101,7 @@ export default class Navigation extends React.Component {
             onKeyDown={ ( e ) => this.handleEndKeypress( e ) }
             innerRef={ ( el ) => { this.lastFocusable = el } }
           >
-            <Highlight className='Navigation-highlight'>About</Highlight>
+            About
           </Link>
         </nav>
       </div>

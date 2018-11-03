@@ -91,7 +91,6 @@
 .Navigation-link {
   font-family: var(--fontFamilySecondary);
   font-size: calc(1.75rem + 0.5vw);
-  letter-spacing: 0.025rem;
   display: block;
   color: var(--white);
   padding: var(--spacingXS) var(--spacingSM);
