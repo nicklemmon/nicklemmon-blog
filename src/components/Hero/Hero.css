@@ -68,10 +68,7 @@
   position: relative; /* allows absolute positioning within */
   color: currentColor;
   line-height: 0;
-}
-
-.Hero-iconLink:focus {
-  outline: none; /* no need to have outline due to animation */
+  outline-offset: 1.5rem;
 }
 
 .Hero-iconLink:focus .Hero-iconUnderlay,
