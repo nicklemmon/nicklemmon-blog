@@ -1,5 +1,6 @@
 import React from 'react'
 import classNames from 'classnames'
+import Helmet from 'react-helmet'
 
 import Header from '../Header/Header'
 import Footer from '../Footer/Footer'
@@ -22,6 +23,11 @@ class DefaultLayout extends React.Component {
 
     return (
       <div className={ classNames( 'DefaultLayout', this.props.className ) }>
+        <Helmet>
+          {/* A weird way to set the lang attribute: https://github.com/gatsbyjs/gatsby/issues/1790 */}
+          <html lang="en" />
+        </Helmet>
+
         <Header className='DefaultLayout-header'/>
 
         { children }
