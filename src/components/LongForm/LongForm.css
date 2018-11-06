@@ -30,6 +30,12 @@
       border-bottom: 0; /* override for <a> styles */
       padding-bottom: 0; /* override for <a> styles */
     }
+
+    & code {
+      color: black;
+      background-color: transparent;
+      font-size: 0.85rem;
+    }
   }
 
   & p {
