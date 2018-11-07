@@ -49,7 +49,12 @@ export default class Hero extends React.Component {
 
         <div className='Hero-overlay' role='presentation'></div>
 
-        <img className='Hero-image' src={ heroImage }/>
+        <img
+          className='Hero-image'
+          src={ heroImage }
+          role='presentation'
+          alt=''
+        />
       </div>
     )
   }
