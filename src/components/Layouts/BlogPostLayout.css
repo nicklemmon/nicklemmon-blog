@@ -5,10 +5,10 @@
   justify-content: space-between;
   flex-wrap: wrap;
   position: relative; /* allows absolute positioning within */
-  padding: var(--spacingLG) 0 var(--spacingLG);
+  padding: 0 0 var(--spacingMD);
   
   @media (min-width: 600px) {
-    margin-bottom: 2.5rem;
+    margin-bottom: 2rem;
   }
 }
 

@@ -34,31 +34,31 @@ class BlogPostLayout extends React.Component {
           dangerouslySetInnerHTML={{ __html: post.html }}
         />
 
+        <Bio />
+
         <div className='BlogPostLayout-buttons'>
           { previous &&
-              <Button
-                className='BlogPostLayout-button BlogPostLayout-button--prev'
-                type='tertiary'
-                to={ previous.fields.slug }
-                preIcon={ androidArrowBack }
-              >
-                { previous.frontmatter.title }
-              </Button>
+            <Button
+              className='BlogPostLayout-button BlogPostLayout-button--prev'
+              type='secondary'
+              to={ previous.fields.slug }
+              preIcon={ androidArrowBack }
+            >
+              { previous.frontmatter.title }
+            </Button>
           }
 
           { next &&
-              <Button
-                className='BlogPostLayout-button BlogPostLayout-button--next'
-                type='tertiary'
-                to={ next.fields.slug }
-                postIcon={ androidArrowForward }
-              >
-                { next.frontmatter.title }
-              </Button>
+            <Button
+              className='BlogPostLayout-button BlogPostLayout-button--next'
+              type='secondary'
+              to={ next.fields.slug }
+              postIcon={ androidArrowForward }
+            >
+              { next.frontmatter.title }
+            </Button>
           }
         </div>
-
-        <Bio />
       </PageLayout>
     )
   }

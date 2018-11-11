@@ -15,6 +15,22 @@
     margin-bottom: 0;
   }
 
+  & h2 {
+    position: relative; /* allows absolute positioning within */
+    padding-bottom: var(--spacingSM);
+    margin-bottom: var(--spacingLG);
+    
+    &:after {
+      content: '';
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      width: var(--spacingLG);
+      height: var(--spacingXS);
+      background-color: rgba(0, 0, 0, 0.125);
+    }
+  }
+
   & p,
   & li {
     line-height: 1.63;
