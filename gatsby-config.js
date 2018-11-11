@@ -47,6 +47,12 @@ module.exports = {
     `gatsby-plugin-feed`,
     `gatsby-plugin-offline`,
     `gatsby-plugin-react-helmet`,
-    `gatsby-plugin-postcss`
+    `gatsby-plugin-postcss`,
+    {
+      resolve: `gatsby-plugin-favicon`,
+      options: {
+        logo: './static/favicon.png'
+      }
+    }
   ]
 }
