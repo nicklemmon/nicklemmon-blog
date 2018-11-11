@@ -18,6 +18,7 @@ export default class PageTitle extends React.Component {
 
   componentDidMount() {
     this.title.current.focus()
+    window.scrollTo( 0, 0 )
   }
 
   render() {
@@ -47,7 +48,7 @@ export default class PageTitle extends React.Component {
 
         <div className='PageTitle-overlay' role='presentation'></div>
 
-        <img className='PageTitle-image' src={ pageBackgroundImage }/>
+        <img className='PageTitle-image' src={ pageBackgroundImage } role='presentation' alt=''/>
       </Container>
     )
   }
