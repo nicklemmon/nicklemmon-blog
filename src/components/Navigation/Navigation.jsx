@@ -23,7 +23,7 @@ export default class Navigation extends React.Component {
   }
 
   handleStartKeypress( e ) {
-    if ( e.shiftKey && e.keyCode === 9 ) {
+    if ( e.shiftKey && e.keyCode === 9 && this.state.isOpen ) {
       e.preventDefault()
 
       this.lastFocusable.focus()
