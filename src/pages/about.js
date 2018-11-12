@@ -15,6 +15,8 @@ class AboutPage extends React.Component {
       <PageLayout title={ title }>
         <Helmet title={ `${title} | ${siteTitle}` } />
 
+        <p>Boo.</p>
+        
         <Bio/>
       </PageLayout>
     )
