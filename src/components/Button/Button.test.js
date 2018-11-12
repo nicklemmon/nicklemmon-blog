@@ -19,7 +19,7 @@ it('renders correctly', () => {
   className="Button Button--primary"
   href="/about"
 >
-  About
+  About Me
 </a>
 `);
 })
