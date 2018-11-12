@@ -29,7 +29,7 @@ export default class Footer extends React.Component {
                 size={ iconDimensions }
               />
 
-              <ScreenReaderOnly>Codepen</ScreenReaderOnly>
+              <ScreenReaderOnly>Nick Lemmon on Codepen</ScreenReaderOnly>
             </a>
 
             <a
@@ -43,7 +43,7 @@ export default class Footer extends React.Component {
                 size={ iconDimensions }
               />
 
-              <ScreenReaderOnly>GitHub</ScreenReaderOnly>
+              <ScreenReaderOnly>Nick Lemmon on GitHub</ScreenReaderOnly>
             </a>
 
             <a
@@ -57,7 +57,7 @@ export default class Footer extends React.Component {
                 size={ iconDimensions }
               />
 
-              <ScreenReaderOnly>LinkedIn</ScreenReaderOnly>
+              <ScreenReaderOnly>Nick Lemmon on LinkedIn</ScreenReaderOnly>
             </a>
           </div>
 
