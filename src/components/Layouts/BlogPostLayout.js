@@ -9,6 +9,8 @@ import PageLayout from '../Layouts/PageLayout'
 import LongForm from '../LongForm/LongForm'
 import Button from '../Button/Button'
 import Bio from '../Bio/Bio'
+import Heading from '../Heading/Heading'
+import ScreenReaderOnly from '../ScreenReaderOnly/ScreenReaderOnly'
 
 import './BlogPostLayout.css'
 
@@ -36,6 +38,12 @@ class BlogPostLayout extends React.Component {
 
         <Bio />
 
+        <ScreenReaderOnly>
+          <Heading level='4'>
+            More Articles
+          </Heading>
+        </ScreenReaderOnly>
+        
         <div className='BlogPostLayout-buttons'>
           { previous &&
             <Button
