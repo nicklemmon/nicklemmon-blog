@@ -2,11 +2,25 @@ import React from 'react'
 import Button from './Button.jsx'
 import renderer from 'react-test-renderer'
 
-it('renders correctly', () => {
+it( 'renders button type correctly', () => {
   const tree = renderer
     .create(
       <Button 
-        type='primary' 
+        type='primary'
+      >
+        About
+      </Button>
+    )
+    .toJSON()
+
+  expect( tree ).toMatchSnapshot()
+});
+
+it( 'renders button href correctly', () => {
+  const tree = renderer
+    .create(
+      <Button 
+        type='primary'
         to='/about'
       >
         About
@@ -14,12 +28,6 @@ it('renders correctly', () => {
     )
     .toJSON()
 
-  expect( tree ).toMatchInlineSnapshot(`
-<a
-  className="Button Button--primary"
-  href="/about"
->
-  About
-</a>
-`);
-})
+  expect( tree ).toMatchSnapshot()
+});
+
