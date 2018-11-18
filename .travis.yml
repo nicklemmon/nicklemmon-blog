@@ -17,7 +17,6 @@ defaults: &defaults
   script:
     #   ## print all Travis environment variables for debugging
     - npm run test
-    - $(npm bin)/print-env TRAVIS
     - npm start -- --silent &
     - npm run cy:run -- --record --parallel --group $STAGE_NAME
     # after all tests finish running we need
