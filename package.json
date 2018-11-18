@@ -73,7 +73,6 @@
     "test:e2e": "start-server-and-test dev http://localhost:8000 test:cypress",
     "dev": "gatsby develop",
     "build": "gatsby build",
-    "deploy": "gatsby build --prefix-paths && gh-pages -d public",
-    "netlify": "npm run lint && npm run test && npm run build"
+    "deploy": "gatsby build --prefix-paths && gh-pages -d public"
   }
 }
