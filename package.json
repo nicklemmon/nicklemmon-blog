@@ -64,11 +64,11 @@
     "url": "git+https://github.com/nicklemmon/nicklemmon-blog.git"
   },
   "scripts": {
-    "dev": "gatsby develop",
     "fix-semi": "eslint --quiet --ignore-pattern node_modules --ignore-pattern public --parser babel-eslint --no-eslintrc --rule '{\"semi\": [2, \"never\"], \"no-extra-semi\": [2]}' --fix gatsby-node.js",
     "format": "prettier --trailing-comma es5 --no-semi --single-quote --write 'src/**/*.js' 'src/**/*.jsx' 'src/**/*.md'",
     "lint": "./node_modules/.bin/eslint --ext .js,.jsx --ignore-pattern public .",
     "test": "jest --config ./jest.config.js",
+    "dev": "gatsby develop",
     "build": "gatsby build",
     "deploy": "gatsby build --prefix-paths && gh-pages -d public",
     "netlify": "npm run lint && npm run test && npm run build"
