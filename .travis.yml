@@ -11,14 +11,13 @@ cache:
     - ~/.cache
   override:
     - npm ci
-    - npm run cy:verify
+    - npx cypress verify
 
 defaults: &defaults
   script:
     #   ## print all Travis environment variables for debugging
-    - npm run test
-    - npm run dev -- --silent
-    - npx cypress run --record --parallel --group $STAGE_NAME
+    - npm run test:jest
+    - npm run test:e2e --record --parallel --group $STAGE_NAME
     # after all tests finish running we need
     # to kill all background jobs (like "npm start &")
     - kill $(jobs -p) || true

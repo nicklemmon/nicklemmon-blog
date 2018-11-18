@@ -51,7 +51,8 @@
     "identity-obj-proxy": "^3.0.0",
     "jest": "^23.6.0",
     "prettier": "^1.14.3",
-    "react-test-renderer": "^16.6.1"
+    "react-test-renderer": "^16.6.1",
+    "start-server-and-test": "^1.7.9"
   },
   "homepage": "https://github.com/gatsbyjs/gatsby-starter-blog#readme",
   "keywords": [
@@ -67,7 +68,9 @@
     "fix-semi": "eslint --quiet --ignore-pattern node_modules --ignore-pattern public --parser babel-eslint --no-eslintrc --rule '{\"semi\": [2, \"never\"], \"no-extra-semi\": [2]}' --fix gatsby-node.js",
     "format": "prettier --trailing-comma es5 --no-semi --single-quote --write 'src/**/*.js' 'src/**/*.jsx' 'src/**/*.md'",
     "lint": "./node_modules/.bin/eslint --ext .js,.jsx --ignore-pattern public .",
-    "test": "jest --config ./jest.config.js",
+    "test:jest": "jest --config ./jest.config.js",
+    "test:cypress": "npx cypress run",
+    "test:e2e": "start-server-and-test dev http://localhost:8000 test:cypress",
     "dev": "gatsby develop",
     "build": "gatsby build",
     "deploy": "gatsby build --prefix-paths && gh-pages -d public",
