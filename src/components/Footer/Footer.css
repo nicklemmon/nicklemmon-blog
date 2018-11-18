@@ -24,6 +24,11 @@
   grid-gap: 1rem;
 }
 
+.Footer-socialIcon {
+  width: calc(1.25rem + 1vw);
+  height: calc(1.25rem + 1vw);
+}
+
 .Footer-socialLink,
 .Footer-link {
   color: currentColor;

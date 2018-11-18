@@ -82,6 +82,8 @@
 .Hero-icon {
   position: relative; /* allows use of z-index */
   z-index: 5;
+  width: calc(2.5rem + 1.5vw);
+  height: calc(2.5rem + 1.5vw);
 }
 
 @media (min-width: 800px) {
