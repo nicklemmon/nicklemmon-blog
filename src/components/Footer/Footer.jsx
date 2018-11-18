@@ -12,49 +12,49 @@ import './Footer.css'
 
 export default class Footer extends React.Component {
   render() {
-    const iconDimensions = 'calc(1.25rem + 1vw)';
+    const iconDimensions = 'calc(1.25rem + 1vw)'
 
     return (
-      <footer className='Footer'>
-        <Container size='lg' className='Footer-container'>
-          <div className='Footer-socialLinks'>
+      <footer className="Footer">
+        <Container size="lg" className="Footer-container">
+          <div className="Footer-socialLinks">
             <a
-              href='http://codepen.com/nicklemmon'
-              className='Footer-socialLink'
-              rel='noopener'
+              href="http://codepen.com/nicklemmon"
+              className="Footer-socialLink"
+              rel="noopener"
             >
               <Icon
-                className='Footer-socialIcon'
-                icon={ socialCodepen }
-                size={ iconDimensions }
+                className="Footer-socialIcon"
+                icon={socialCodepen}
+                size={iconDimensions}
               />
 
               <ScreenReaderOnly>Nick Lemmon on Codepen</ScreenReaderOnly>
             </a>
 
             <a
-              href='http://github.com/nicklemmon'
-              className='Footer-socialLink'
-              rel='noopener'
+              href="http://github.com/nicklemmon"
+              className="Footer-socialLink"
+              rel="noopener"
             >
               <Icon
-                className='Footer-socialIcon'
-                icon={ socialGithub }
-                size={ iconDimensions }
+                className="Footer-socialIcon"
+                icon={socialGithub}
+                size={iconDimensions}
               />
 
               <ScreenReaderOnly>Nick Lemmon on GitHub</ScreenReaderOnly>
             </a>
 
             <a
-              href='http://linkedin.com/in/nicklemmon'
-              className='Footer-socialLink'
-              rel='noopener'
+              href="http://linkedin.com/in/nicklemmon"
+              className="Footer-socialLink"
+              rel="noopener"
             >
               <Icon
-                className='Footer-socialIcon'
-                icon={ socialLinkedin }
-                size={ iconDimensions }
+                className="Footer-socialIcon"
+                icon={socialLinkedin}
+                size={iconDimensions}
               />
 
               <ScreenReaderOnly>Nick Lemmon on LinkedIn</ScreenReaderOnly>
@@ -62,7 +62,13 @@ export default class Footer extends React.Component {
           </div>
 
           <div>
-            <p>All rights reserved, <Link className='Footer-link' to='/'><strong>Nick Lemmon</strong></Link> { new Date().getFullYear() }</p>
+            <p>
+              All rights reserved,{' '}
+              <Link className="Footer-link" to="/">
+                <strong>Nick Lemmon</strong>
+              </Link>{' '}
+              {new Date().getFullYear()}
+            </p>
           </div>
         </Container>
       </footer>

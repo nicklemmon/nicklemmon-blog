@@ -10,11 +10,8 @@ import './DefaultLayout.css'
 
 class DefaultLayout extends React.Component {
   render() {
-    const {
-      location, 
-      children 
-    } = this.props
-    
+    const { location, children } = this.props
+
     let rootPath = `/`
 
     if (typeof __PREFIX_PATHS__ !== `undefined` && __PREFIX_PATHS__) {
@@ -22,17 +19,17 @@ class DefaultLayout extends React.Component {
     }
 
     return (
-      <div className={ classNames( 'DefaultLayout', this.props.className ) }>
+      <div className={classNames('DefaultLayout', this.props.className)}>
         <Helmet>
           {/* A weird way to set the lang attribute: https://github.com/gatsbyjs/gatsby/issues/1790 */}
           <html lang="en" />
         </Helmet>
 
-        <Header className='DefaultLayout-header'/>
+        <Header className="DefaultLayout-header" />
 
-        { children }
+        {children}
 
-        <Footer className='DefaultLayout-footer' />
+        <Footer className="DefaultLayout-footer" />
       </div>
     )
   }

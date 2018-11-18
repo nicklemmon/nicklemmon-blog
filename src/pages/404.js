@@ -7,13 +7,13 @@ import PageLayout from '../components/Layouts/PageLayout'
 
 export default class NotFoundPage extends React.Component {
   render() {
-    const siteTitle = get( this, 'props.data.site.siteMetadata.title' )
+    const siteTitle = get(this, 'props.data.site.siteMetadata.title')
 
-    console.log( siteTitle )
+    console.log(siteTitle)
 
     return (
-      <PageLayout title='404 :('>
-        <Helmet title={ `Page Not Found | ${siteTitle}` } />
+      <PageLayout title="404 :(">
+        <Helmet title={`Page Not Found | ${siteTitle}`} />
 
         <p>Sorry, friend. No page here!</p>
       </PageLayout>

@@ -8,18 +8,15 @@ import CardArticles from '../components/CardArticles/CardArticles'
 
 class ArchivesPage extends React.Component {
   render() {
-    const siteTitle = get( this, 'props.data.site.siteMetadata.title' )
+    const siteTitle = get(this, 'props.data.site.siteMetadata.title')
     const title = 'Archives'
-    const posts = get( this, 'props.data.allMarkdownRemark.edges' )
+    const posts = get(this, 'props.data.allMarkdownRemark.edges')
 
     return (
-      <PageLayout title={ title }>
-        <Helmet title={ `${title} | ${siteTitle}` } />
+      <PageLayout title={title}>
+        <Helmet title={`${title} | ${siteTitle}`} />
 
-        <CardArticles
-          posts={ posts }
-          className='Archives-cardArticles'
-        />
+        <CardArticles posts={posts} className="Archives-cardArticles" />
       </PageLayout>
     )
   }

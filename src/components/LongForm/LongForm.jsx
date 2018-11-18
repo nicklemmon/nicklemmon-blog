@@ -5,18 +5,11 @@ import './LongForm.css'
 
 export default class LongForm extends React.Component {
   render() {
-    const {
-      className,
-      children,
-      ...props
-    } = this.props
+    const { className, children, ...props } = this.props
 
     return (
-      <article
-        className={ classNames( 'LongForm', className ) }
-        { ...props }
-      >
-        { children }
+      <article className={classNames('LongForm', className)} {...props}>
+        {children}
       </article>
     )
   }

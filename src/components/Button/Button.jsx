@@ -3,7 +3,7 @@ import { Link } from 'gatsby'
 import { Icon } from 'react-icons-kit'
 import classNames from 'classnames'
 
-import './Button.css';
+import './Button.css'
 
 export default class Button extends React.Component {
   render() {
@@ -15,31 +15,36 @@ export default class Button extends React.Component {
       centered,
       className,
       preIcon,
-      postIcon
+      postIcon,
     } = this.props
 
     return (
       <Link
-        to={ to }
-        className={ classNames( `Button Button--${type}`, fullWidth ? 'Button--full' : '', centered ? 'Button--centered' : '', className ) }
+        to={to}
+        className={classNames(
+          `Button Button--${type}`,
+          fullWidth ? 'Button--full' : '',
+          centered ? 'Button--centered' : '',
+          className
+        )}
       >
-        { preIcon &&
+        {preIcon && (
           <Icon
-            className='Button-icon Button-icon--pre'
-            size='1rem'
-            icon={ preIcon }
+            className="Button-icon Button-icon--pre"
+            size="1rem"
+            icon={preIcon}
           />
-        }
+        )}
 
-        { children }
+        {children}
 
-        { postIcon &&
+        {postIcon && (
           <Icon
-            className='Button-icon Button-icon--post'
-            size='1rem'
-            icon={ postIcon }
+            className="Button-icon Button-icon--post"
+            size="1rem"
+            icon={postIcon}
           />
-        }
+        )}
       </Link>
     )
   }

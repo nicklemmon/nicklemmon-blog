@@ -17,55 +17,50 @@ import './BlogPostLayout.css'
 class BlogPostLayout extends React.Component {
   render() {
     const post = this.props.data.markdownRemark
-    const siteTitle = get( this.props, 'data.site.siteMetadata.title' )
-    const {
-      previous,
-      next
-    } = this.props.pathContext
+    const siteTitle = get(this.props, 'data.site.siteMetadata.title')
+    const { previous, next } = this.props.pathContext
 
     return (
       <PageLayout
-        className='BlogPostLayout'
-        title={ post.frontmatter.title }
-        date={ post.frontmatter.date }
+        className="BlogPostLayout"
+        title={post.frontmatter.title}
+        date={post.frontmatter.date}
       >
-        <Helmet title={ `${post.frontmatter.title} | ${siteTitle}` } />
+        <Helmet title={`${post.frontmatter.title} | ${siteTitle}`} />
 
         <LongForm
-          className='BlogPostLayout-content'
+          className="BlogPostLayout-content"
           dangerouslySetInnerHTML={{ __html: post.html }}
         />
 
         <Bio />
 
         <ScreenReaderOnly>
-          <Heading level='4'>
-            More Articles
-          </Heading>
+          <Heading level="4">More Articles</Heading>
         </ScreenReaderOnly>
-        
-        <div className='BlogPostLayout-buttons'>
-          { previous &&
-            <Button
-              className='BlogPostLayout-button BlogPostLayout-button--prev'
-              type='secondary'
-              to={ previous.fields.slug }
-              preIcon={ androidArrowBack }
-            >
-              { previous.frontmatter.title }
-            </Button>
-          }
 
-          { next &&
+        <div className="BlogPostLayout-buttons">
+          {previous && (
             <Button
-              className='BlogPostLayout-button BlogPostLayout-button--next'
-              type='secondary'
-              to={ next.fields.slug }
-              postIcon={ androidArrowForward }
+              className="BlogPostLayout-button BlogPostLayout-button--prev"
+              type="secondary"
+              to={previous.fields.slug}
+              preIcon={androidArrowBack}
             >
-              { next.frontmatter.title }
+              {previous.frontmatter.title}
             </Button>
-          }
+          )}
+
+          {next && (
+            <Button
+              className="BlogPostLayout-button BlogPostLayout-button--next"
+              type="secondary"
+              to={next.fields.slug}
+              postIcon={androidArrowForward}
+            >
+              {next.frontmatter.title}
+            </Button>
+          )}
         </div>
       </PageLayout>
     )

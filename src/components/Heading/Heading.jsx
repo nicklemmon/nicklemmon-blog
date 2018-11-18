@@ -5,19 +5,15 @@ import './Heading.css'
 
 export default class Heading extends React.Component {
   render() {
-    const {
-      level,
-      children,
-      className
-    } = this.props
+    const { level, children, className } = this.props
 
     return (
       <div
-        className={ classNames( `Heading Heading--${level}`, className ) }
-        role='heading'
-        aria-level={ level }
+        className={classNames(`Heading Heading--${level}`, className)}
+        role="heading"
+        aria-level={level}
       >
-        { children }
+        {children}
       </div>
     )
   }

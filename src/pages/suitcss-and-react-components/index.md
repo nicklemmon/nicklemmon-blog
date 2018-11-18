@@ -1,6 +1,6 @@
 ---
 title: SuitCSS and Styling React Components
-date: "2018-11-05"
+date: '2018-11-05'
 ---
 
 [SuitCSS](https://github.com/suitcss/suit/blob/master/doc/naming-conventions.md) is a popular CSS naming convention that has been overshadowed by its more popular cousin, [BEM](http://getbem.com/naming/). Prior to the rise of modern frontend frameworks like React and Vue, BEM gets the job done in a clear (if a bit verbose) manner. However, it feels ill-suited to the structure that these frameworks provide now provide.
@@ -24,8 +24,8 @@ import './my-button.css'
 export default class MyButton extends React.Component {
   render() {
     return (
-      <button className={ `my-button my-button--${this.props.type}` }>
-        <span className='my-button__content'>{ this.props.children }</span>
+      <button className={`my-button my-button--${this.props.type}`}>
+        <span className="my-button__content">{this.props.children}</span>
       </button>
     )
   }
@@ -52,7 +52,7 @@ export default class MyButton extends React.Component {
 }
 ```
 
-This certainly works! The CSS is clearly structured and has a low level of specificity. But it *feels* a little funky. Our files are a little messier for one:
+This certainly works! The CSS is clearly structured and has a low level of specificity. But it _feels_ a little funky. Our files are a little messier for one:
 
 ```
 +-- MyButton/
@@ -82,9 +82,9 @@ import './MyButton.css'
 
 export default class MyButton extends React.Component {
   render() {
-    return ( 
-      <button className={ `MyButton MyButton--${this.props.type}` }>
-        <span className='MyButton-content'>{ this.props.children }</span>
+    return (
+      <button className={`MyButton MyButton--${this.props.type}`}>
+        <span className="MyButton-content">{this.props.children}</span>
       </button>
     )
   }
@@ -124,5 +124,3 @@ Not only do our class names map 1 to 1 with our component name, our files look r
 ## Conclusion
 
 Choosing between BEM and SuitCSS isn't going to make or break a project. That being said, next time you're styling React components, give SuitCSS a whirl and see how it feels! From a [code smell](https://en.wikipedia.org/wiki/Code_smell) perspective, SuitCSS meets a need that BEM doesn't, particularly when paired with React.
-
-

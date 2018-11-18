@@ -5,3 +5,5 @@ public
 .intermediate-representation/
 .cache/
 yarn.lock
+cypress/videos
+cypress/screenshots

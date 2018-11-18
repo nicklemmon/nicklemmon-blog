@@ -7,39 +7,33 @@ import CardArticle from '../CardArticle/CardArticle'
 
 export default class CardArticles extends React.Component {
   render() {
-    const {
-      className,
-      posts,
-      postLimit
-    } = this.props
-    const maxPosts = postLimit + 1 || null;
+    const { className, posts, postLimit } = this.props
+    const maxPosts = postLimit + 1 || null
 
     return (
-      <div className={ classNames( 'CardArticles', className ) }>
-        { 
-          posts.map(({ node }, index ) => {
-            const title = get( node, 'frontmatter.title' )
-            const count = index + 1;
-            const cardMarkup = (
-              <CardArticle
-                key={ node.fields.slug }
-                date={ node.frontmatter.date }
-                headingContent={ title }
-                linkTo={ node.fields.slug }
-              >
-                <p dangerouslySetInnerHTML={{ __html: node.excerpt }} />
-              </CardArticle>
-            )
-            
-            if ( maxPosts != null ) {
-              if ( count < maxPosts ) {
-                return cardMarkup
-              }
-            } else {
+      <div className={classNames('CardArticles', className)}>
+        {posts.map(({ node }, index) => {
+          const title = get(node, 'frontmatter.title')
+          const count = index + 1
+          const cardMarkup = (
+            <CardArticle
+              key={node.fields.slug}
+              date={node.frontmatter.date}
+              headingContent={title}
+              linkTo={node.fields.slug}
+            >
+              <p dangerouslySetInnerHTML={{ __html: node.excerpt }} />
+            </CardArticle>
+          )
+
+          if (maxPosts != null) {
+            if (count < maxPosts) {
               return cardMarkup
             }
-          })
-        }
+          } else {
+            return cardMarkup
+          }
+        })}
       </div>
     )
   }

@@ -1,6 +1,6 @@
 ---
 title: Building an Accessible Collapsible Element
-date: "2018-11-10"
+date: '2018-11-10'
 ---
 
 When it comes to JavaScript-based interactions, an accessible user experience is not a given. Even simple interactions require a certain structure.
@@ -43,7 +43,7 @@ And another example, this time in the expanded state:
 
 ### Using the aria-controls Attribute
 
-`aria-controls` can be used in conjunction with `aria-expanded` to properly associate the content of the expanding and collapsing element with the triggering button element. `aria-controls` must have a value that matches the `id` of the controlled element. *Remember* it is *critical* that *every* ID on a page is unique!
+`aria-controls` can be used in conjunction with `aria-expanded` to properly associate the content of the expanding and collapsing element with the triggering button element. `aria-controls` must have a value that matches the `id` of the controlled element. _Remember_ it is _critical_ that _every_ ID on a page is unique!
 
 ```html
 <div class='accordion'>
@@ -59,11 +59,9 @@ And another example, this time in the expanded state:
 
 ### Working Examples
 
-* The WAI-ARIA authoring group has provided [this example](https://www.w3.org/TR/wai-aria-practices/examples/disclosure/disclosure-img-long-description.html)
-* and I built an example [on CodePen](https://codepen.io/nicklemmon/pen/wJXadm) awhile back using [Pug.js](https://pugjs.org/).
+- The WAI-ARIA authoring group has provided [this example](https://www.w3.org/TR/wai-aria-practices/examples/disclosure/disclosure-img-long-description.html)
+- and I built an example [on CodePen](https://codepen.io/nicklemmon/pen/wJXadm) awhile back using [Pug.js](https://pugjs.org/).
 
 ## Conclusion
 
-When building stateful components, its important to ensure that these states are adequately perceivable for all users. In fact, in order to meet the standards set out by the Web Content Accessibility Guidelines (WCAG), all page behavior and content *must* first be [perceivable](https://www.w3.org/TR/WCAG21/#perceivable) to all users.
-
-
+When building stateful components, its important to ensure that these states are adequately perceivable for all users. In fact, in order to meet the standards set out by the Web Content Accessibility Guidelines (WCAG), all page behavior and content _must_ first be [perceivable](https://www.w3.org/TR/WCAG21/#perceivable) to all users.

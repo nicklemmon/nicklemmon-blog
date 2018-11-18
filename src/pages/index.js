@@ -13,28 +13,24 @@ import './index.css'
 
 class IndexPage extends React.Component {
   render() {
-    const siteTitle = get( this, 'props.data.site.siteMetadata.title' )
-    const posts = get( this, 'props.data.allMarkdownRemark.edges' )
+    const siteTitle = get(this, 'props.data.site.siteMetadata.title')
+    const posts = get(this, 'props.data.allMarkdownRemark.edges')
 
     return (
       <LandingLayout>
-        <Helmet title={ siteTitle } />
+        <Helmet title={siteTitle} />
 
-        <Heading level='2'>
+        <Heading level="2">
           <Highlight>The latest</Highlight>
         </Heading>
 
         <CardArticles
-          className='IndexPage-cardArticles'
-          posts={ posts }
-          postLimit={ 3 }
+          className="IndexPage-cardArticles"
+          posts={posts}
+          postLimit={3}
         />
 
-        <Button
-          type='primary'
-          to='/archives'
-          fullWidth
-        >
+        <Button type="primary" to="/archives" fullWidth>
           Archives
         </Button>
       </LandingLayout>

@@ -10,19 +10,15 @@ import './LandingLayout.css'
 
 export default class LandingLayout extends React.Component {
   render() {
-    const {
-      children
-    } = this.props
+    const { children } = this.props
 
     return (
-      <DefaultLayout className='LandingLayout'>
-        <Main className='LandingLayout-main'>
-          <Hero className='LandingLayout-hero'/>
+      <DefaultLayout className="LandingLayout">
+        <Main className="LandingLayout-main">
+          <Hero className="LandingLayout-hero" />
 
-          <MaxWidth className='LandingLayout-sidebar' size='xl'>
-            <BreakoutContainer>
-              { children }
-            </BreakoutContainer>
+          <MaxWidth className="LandingLayout-sidebar" size="xl">
+            <BreakoutContainer>{children}</BreakoutContainer>
           </MaxWidth>
         </Main>
       </DefaultLayout>

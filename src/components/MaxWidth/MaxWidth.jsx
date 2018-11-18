@@ -5,15 +5,11 @@ import './MaxWidth.css'
 
 export default class MaxWidth extends React.Component {
   render() {
-    const {
-      children,
-      className,
-      size
-    } = this.props
+    const { children, className, size } = this.props
 
     return (
-      <div className={ classNames( `MaxWidth MaxWidth--${size}`, className ) }>
-        { children }
+      <div className={classNames(`MaxWidth MaxWidth--${size}`, className)}>
+        {children}
       </div>
     )
   }

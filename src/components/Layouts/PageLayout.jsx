@@ -11,25 +11,20 @@ import './PageLayout.css'
 
 export default class PageLayout extends React.Component {
   render() {
-    const {
-      className,
-      title,
-      date,
-      children
-    } = this.props
+    const { className, title, date, children } = this.props
 
     return (
-      <DefaultLayout className={ classNames( 'PageLayout', className ) }>
-        <Main className='PageLayout-main'>
+      <DefaultLayout className={classNames('PageLayout', className)}>
+        <Main className="PageLayout-main">
           <PageTitle
-            className='PageLayout-pageTitle'
-            headingContent={ title }
-            date={ date }
+            className="PageLayout-pageTitle"
+            headingContent={title}
+            date={date}
           />
 
-          <Container size='lg'>
-            <MaxWidth size='lg' className='PageLayout-maxWidth'>
-              { children }
+          <Container size="lg">
+            <MaxWidth size="lg" className="PageLayout-maxWidth">
+              {children}
             </MaxWidth>
           </Container>
         </Main>

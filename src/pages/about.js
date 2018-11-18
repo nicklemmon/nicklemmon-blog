@@ -8,14 +8,14 @@ import Bio from '../components/Bio/Bio'
 
 class AboutPage extends React.Component {
   render() {
-    const siteTitle = get( this, 'props.data.site.siteMetadata.title' )
+    const siteTitle = get(this, 'props.data.site.siteMetadata.title')
     const title = 'About'
 
     return (
-      <PageLayout title={ title }>
-        <Helmet title={ `${title} | ${siteTitle}` } />
-        
-        <Bio/>
+      <PageLayout title={title}>
+        <Helmet title={`${title} | ${siteTitle}`} />
+
+        <Bio />
       </PageLayout>
     )
   }

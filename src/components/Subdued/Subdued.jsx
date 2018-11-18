@@ -5,15 +5,8 @@ import './Subdued.css'
 
 export default class Subdued extends React.Component {
   render() {
-    const {
-      className,
-      children
-    } = this.props
+    const { className, children } = this.props
 
-    return (
-      <span className={ classNames( 'Subdued', className ) }>
-        { children }
-      </span>
-    )
+    return <span className={classNames('Subdued', className)}>{children}</span>
   }
 }

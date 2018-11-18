@@ -5,15 +5,10 @@ import './Highlight.css'
 
 export default class Highlight extends React.Component {
   render() {
-    const {
-      children,
-      className
-    } = this.props
-    
+    const { children, className } = this.props
+
     return (
-      <span className={ classNames( `Highlight`, className ) }>
-        { children }
-      </span>
+      <span className={classNames(`Highlight`, className)}>{children}</span>
     )
   }
 }
