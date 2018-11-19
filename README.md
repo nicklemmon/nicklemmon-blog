@@ -1,9 +1,16 @@
-# gatsby-starter-blog
-Gatsby starter for creating a blog
+[![Build Status](https://travis-ci.org/nicklemmon/nicklemmon-blog.svg?branch=master)](https://travis-ci.org/nicklemmon/nicklemmon-blog)
 
-Install this starter (assuming Gatsby is installed) by running from your CLI:
+## Development
 
-`gatsby new gatsby-blog https://github.com/gatsbyjs/gatsby-starter-blog`
+To get started:
 
-## Running in development
-`gatsby develop`
+1. Run `npm install`
+2. Run `npm run dev`
+
+## Production
+
+Pushing to `master` should trigger a [Travis CI](https://travis-ci.org) pipeline. If the pipeline succeeds, the site will deploy to production. The CI/CD pipeline runs on all branches though only deploys from `master`.
+
+## Testing
+
+After installing dev dependencies, run `npm run test` to run a series of unit and integration tests built with [Jest](https://jestjs.io) and [Cypress](https://cypress.io).

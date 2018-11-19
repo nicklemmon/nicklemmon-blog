@@ -68,6 +68,7 @@
     "fix-semi": "eslint --quiet --ignore-pattern node_modules --ignore-pattern public --parser babel-eslint --no-eslintrc --rule '{\"semi\": [2, \"never\"], \"no-extra-semi\": [2]}' --fix gatsby-node.js",
     "format": "prettier --trailing-comma es5 --no-semi --single-quote --write 'src/**/*.js' 'src/**/*.jsx' 'src/**/*.md'",
     "lint": "./node_modules/.bin/eslint --ext .js,.jsx --ignore-pattern public .",
+    "test": "npm run test:jest && npm run test:e2e",
     "test:jest": "jest --config ./jest.config.js",
     "test:cypress": "npx cypress run",
     "test:e2e": "start-server-and-test dev http://localhost:8000 test:cypress",
