@@ -49,7 +49,7 @@
 
     & code {
       color: black;
-      background-color: transparent;
+      background-color: transparent !important; // 🙏 Forgive me for my sins - this prevents PrismJS styles from ever overriding these styles in the event of a package update on their end
       font-size: 0.85rem;
     }
   }
