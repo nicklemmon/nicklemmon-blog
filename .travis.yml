@@ -49,6 +49,7 @@ jobs:
       <<: *defaults
 
 before_deploy:
+  - rm -rf public
   - npm install netlify-cli -g
   - npm run build
 
