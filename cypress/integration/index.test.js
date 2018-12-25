@@ -1,5 +1,6 @@
 function beforeSteps() {
   cy.visit( '/' );
+  cy.injectAxe();
 }
 
 describe( 'The index page renders', () => {
@@ -27,7 +28,11 @@ describe( 'The initial state of the page', () => {
 
   it( 'Has a footer', () => {
     cy.get( '[data-cy="footer"]' ).should( 'be.visible' );
-  })
+  });
+
+  it( 'Has no axe violations', () => {
+    cy.checkA11y();
+  });
 });
 
 describe( 'The card articles', () => {
