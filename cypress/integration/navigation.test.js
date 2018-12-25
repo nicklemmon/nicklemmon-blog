@@ -21,3 +21,16 @@ describe( 'The navigation behavior', () => {
     cy.get( '[data-cy="navigation-menu"]' ).should( 'not.be.visible' );
   });
 });
+
+describe( 'The navigation links', () => {
+  it( 'Do not 404 when clicked', () => {
+    cy.get( '[data-cy="navigation-link"]' ).each( ( $el, index ) => {
+      beforeSteps();
+
+      cy.get( '[data-cy="navigation-button"]' ).click();
+      $el.click();
+
+      cy.contains( '404' ).should( 'not.be.visible' );
+    });
+  });
+});

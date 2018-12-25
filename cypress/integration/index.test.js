@@ -37,7 +37,7 @@ describe( 'The card articles', () => {
 
       $el.click();
 
-      cy.url().should( 'not.include', '404' );
+      cy.contains( '404' ).should( 'not.be.visible' );
     });
   });
 });
