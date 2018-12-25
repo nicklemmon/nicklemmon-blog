@@ -1,9 +1,33 @@
+function beforeSteps() {
+  cy.visit( '/' );
+}
+
 describe( 'The index page renders', () => {
   before(() => {
-    cy.visit( '/' );
+    beforeSteps();
   });
 
   it( 'Loads!', () => {
     cy.get( 'html' ).should( 'be.visible' );
   });
 });
+
+describe( 'The initial state of the page', () => {
+  before(() => {
+    beforeSteps();
+  });
+
+  it( 'Has article cards', () => {
+    cy.get( '[data-cy="card-articles"]' ).should( 'be.visible' );
+  });
+
+  it( 'Has a header', () => {
+    cy.get( '[data-cy="header"]' ).should( 'be.visible' );
+  });
+
+  it( 'Has a footer', () => {
+    cy.get( '[data-cy="footer"]' ).should( 'be.visible' );
+  })
+});
+
+

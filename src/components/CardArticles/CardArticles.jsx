@@ -11,7 +11,7 @@ export default class CardArticles extends React.Component {
     const maxPosts = postLimit + 1 || null
 
     return (
-      <div className={classNames('CardArticles', className)}>
+      <div className={classNames('CardArticles', className)} data-cy="card-articles">
         {posts.map(({ node }, index) => {
           const title = get(node, 'frontmatter.title')
           const count = index + 1

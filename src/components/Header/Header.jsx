@@ -10,7 +10,7 @@ import './Header.css'
 export default class Header extends React.Component {
   render() {
     return (
-      <header className={classNames('Header', this.props.className)}>
+      <header className={classNames('Header', this.props.className)} data-cy="header">
         <MaxWidth size="xl" className="Header-container">
           <div className="Header-brand">
             <Link className="Header-brandLink" to="/">

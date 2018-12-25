@@ -15,7 +15,7 @@ export default class Footer extends React.Component {
     const iconDimensions = 'calc(1.25rem + 1vw)'
 
     return (
-      <footer className="Footer">
+      <footer className="Footer" data-cy="footer">
         <Container size="lg" className="Footer-container">
           <div className="Footer-socialLinks">
             <a
