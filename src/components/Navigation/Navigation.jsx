@@ -66,6 +66,7 @@ export default class Navigation extends React.Component {
           onClick={this.handleClick}
           onKeyDown={e => this.handleStartKeypress(e)}
           ref={this.firstFocusable}
+          data-cy="navigation-button"
         >
           <ScreenReaderOnly>{isOpen ? 'Open' : 'Close'} Menu</ScreenReaderOnly>
 
@@ -86,8 +87,14 @@ export default class Navigation extends React.Component {
             isOpen ? 'is-open' : 'is-closed'
           )}
           id="nav-menu"
+          data-cy="navigation-menu"
         >
-          <Link className="Navigation-link" to="/" onClick={this.handleClick}>
+          <Link
+            className="Navigation-link"
+            to="/"
+            onClick={this.handleClick}
+            data-cy="navigation-link"
+          >
             Home
           </Link>
 
@@ -95,6 +102,7 @@ export default class Navigation extends React.Component {
             className="Navigation-link"
             to="/archives"
             onClick={this.handleClick}
+            data-cy="navigation-link"
           >
             Archives
           </Link>
@@ -107,6 +115,7 @@ export default class Navigation extends React.Component {
             innerRef={el => {
               this.lastFocusable = el
             }}
+            data-cy="navigation-link"
           >
             About
           </Link>

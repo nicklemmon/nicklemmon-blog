@@ -40,6 +40,8 @@ describe( 'The card articles', () => {
       cy.url().should( 'not.include', '404' );
     });
   });
-})
+});
+
+
 
 
