@@ -16,7 +16,7 @@ export default class CardArticle extends React.Component {
     const { className, date, headingContent, children, linkTo } = this.props
 
     return (
-      <Link className={classNames('CardArticle-link', className)} to={linkTo}>
+      <Link className={classNames('CardArticle-link', className)} to={linkTo} data-cy="card-article">
         <Card className="CardArticle">
           <Subdued className="CardArticle-date">{date}</Subdued>
 

@@ -30,4 +30,16 @@ describe( 'The initial state of the page', () => {
   })
 });
 
+describe( 'The card articles', () => {
+  it( 'Each card has a valid link that does not 404', () => {
+    cy.get( '[data-cy="card-article"]' ).each( ( $el, index ) => {
+      beforeSteps();
+
+      $el.click();
+
+      cy.url().should( 'not.include', '404' );
+    });
+  });
+})
+
 
