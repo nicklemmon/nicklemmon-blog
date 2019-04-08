@@ -3,5 +3,6 @@
 .DefaultLayout {
   background-color: var(--seaShell); /* gives impression of footer 'stretching' to bottom of the window when content doesn't stretch */
   border: 1vw solid var(--white);
+  min-height: 100vh;
 }
   
