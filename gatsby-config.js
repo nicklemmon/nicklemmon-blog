@@ -1,3 +1,5 @@
+const path = require( 'path' )
+
 module.exports = {
   siteMetadata: {
     title: 'Nick Lemmon, Front End Web Developer',
@@ -29,6 +31,15 @@ module.exports = {
             options: {
               wrapperStyle: `margin-bottom: 1.0725rem`,
             },
+          },
+          {
+            resolve: `gatsby-plugin-alias-imports`,
+            options: {
+              alias: {
+                '@components': path.resolve( __dirname, 'src/components' )
+              },
+              extensions: []
+            }
           },
           'gatsby-remark-prismjs',
           'gatsby-remark-copy-linked-files',

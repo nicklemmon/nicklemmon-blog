@@ -3,28 +3,25 @@ import get from 'lodash/get'
 import { graphql } from 'gatsby'
 import Helmet from 'react-helmet'
 
-import PageLayout from '../components/Layouts/PageLayout'
-import Bio from '../components/Bio/Bio'
+import PageLayout from '@components/Layouts/PageLayout'
 
-class AboutPage extends React.Component {
+class ResumePage extends React.Component {
   render() {
     const siteTitle = get( this, 'props.data.site.siteMetadata.title' )
-    const title = 'About'
+    const title = 'Resume'
 
     return (
-      <PageLayout title={title}>
+      <PageLayout>
         <Helmet title={`${title} | ${siteTitle}`} />
-
-        <Bio />
       </PageLayout>
     )
   }
 }
 
-export default AboutPage
+export default ResumePage
 
 export const pageQuery = graphql`
-  query AboutQuery {
+  query ResumeQuery {
     site {
       siteMetadata {
         title
