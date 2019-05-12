@@ -5,12 +5,12 @@ import { androidArrowBack } from 'react-icons-kit/ionicons/androidArrowBack'
 import { androidArrowForward } from 'react-icons-kit/ionicons/androidArrowForward'
 import get from 'lodash/get'
 
-import PageLayout from '../Layouts/PageLayout'
-import LongForm from '../LongForm/LongForm'
-import Button from '../Button/Button'
-import Bio from '../Bio/Bio'
-import Heading from '../Heading/Heading'
-import ScreenReaderOnly from '../ScreenReaderOnly/ScreenReaderOnly'
+import PageLayout from '@components/Layouts/PageLayout'
+import LongForm from '@components/LongForm/LongForm'
+import Button from '@components/Button/Button'
+import Bio from '@components/Bio/Bio'
+import Heading from '@components/Heading/Heading'
+import ScreenReaderOnly from '@components/ScreenReaderOnly/ScreenReaderOnly'
 
 import './BlogPostLayout.css'
 

@@ -1,8 +1,8 @@
 import React from 'react'
 
-import Card from '../Card/Card'
-import Heading from '../Heading/Heading'
-import LongForm from '../LongForm/LongForm'
+import Card from '@components/Card/Card'
+import Heading from '@components/Heading/Heading'
+import LongForm from '@components/LongForm/LongForm'
 
 import Me from './me.png'
 import './Bio.css'

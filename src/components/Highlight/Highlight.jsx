@@ -8,7 +8,7 @@ export default class Highlight extends React.Component {
     const { children, className } = this.props
 
     return (
-      <span className={classNames(`Highlight`, className)}>{children}</span>
+      <span className={classNames( `Highlight`, className )}>{children}</span>
     )
   }
 }

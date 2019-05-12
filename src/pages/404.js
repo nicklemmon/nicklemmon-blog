@@ -3,13 +3,11 @@ import get from 'lodash/get'
 import Helmet from 'react-helmet'
 import { graphql } from 'gatsby'
 
-import PageLayout from '../components/Layouts/PageLayout'
+import PageLayout from '@components/Layouts/PageLayout'
 
 export default class NotFoundPage extends React.Component {
   render() {
-    const siteTitle = get(this, 'props.data.site.siteMetadata.title')
-
-    console.log(siteTitle)
+    const siteTitle = get( this, 'props.data.site.siteMetadata.title' )
 
     return (
       <PageLayout title="404 :(">

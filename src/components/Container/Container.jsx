@@ -8,7 +8,7 @@ export default class Container extends React.Component {
     const { size, children, className } = this.props
 
     return (
-      <div className={classNames(`Container Container--${size}`, className)}>
+      <div className={classNames( `Container Container--${size}`, className )}>
         {children}
       </div>
     )

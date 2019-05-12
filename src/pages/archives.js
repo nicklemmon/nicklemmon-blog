@@ -3,14 +3,14 @@ import get from 'lodash/get'
 import { graphql } from 'gatsby'
 import Helmet from 'react-helmet'
 
-import PageLayout from '../components/Layouts/PageLayout'
-import CardArticles from '../components/CardArticles/CardArticles'
+import PageLayout from '@components/Layouts/PageLayout'
+import CardArticles from '@components/CardArticles/CardArticles'
 
 class ArchivesPage extends React.Component {
   render() {
-    const siteTitle = get(this, 'props.data.site.siteMetadata.title')
+    const siteTitle = get( this, 'props.data.site.siteMetadata.title' )
     const title = 'Archives'
-    const posts = get(this, 'props.data.allMarkdownRemark.edges')
+    const posts = get( this, 'props.data.allMarkdownRemark.edges' )
 
     return (
       <PageLayout title={title}>

@@ -3,8 +3,8 @@ import get from 'lodash/get'
 import { graphql } from 'gatsby'
 import Helmet from 'react-helmet'
 
-import PageLayout from '../components/Layouts/PageLayout'
-import Bio from '../components/Bio/Bio'
+import PageLayout from '@components/Layouts/PageLayout'
+import Bio from '@components/Bio/Bio'
 
 class AboutPage extends React.Component {
   render() {

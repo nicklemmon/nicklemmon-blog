@@ -11,7 +11,7 @@ class ResumePage extends React.Component {
     const title = 'Resume'
 
     return (
-      <PageLayout>
+      <PageLayout title={ title }>
         <Helmet title={`${title} | ${siteTitle}`} />
       </PageLayout>
     )
