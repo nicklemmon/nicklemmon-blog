@@ -4,6 +4,7 @@ import { graphql } from 'gatsby'
 import Helmet from 'react-helmet'
 
 import PageLayout from '@components/Layouts/PageLayout'
+import Resume from '@components/Resume/Resume'
 
 class ResumePage extends React.Component {
   render() {
@@ -13,6 +14,8 @@ class ResumePage extends React.Component {
     return (
       <PageLayout title={ title }>
         <Helmet title={`${title} | ${siteTitle}`} />
+
+        <Resume/>
       </PageLayout>
     )
   }

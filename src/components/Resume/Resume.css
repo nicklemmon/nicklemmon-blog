@@ -1,0 +1,64 @@
+@import '../../variables/variables.css';
+
+.Resume-card + .Resume-card {
+  margin-top: var(--spacingLG);
+}
+
+.Resume-skills {
+  @media (min-width: 800px) {
+    columns: 2;
+    max-height: 20rem;
+    column-gap: var(--spacingLG);
+  }
+}
+
+.Resume-position {
+  display: grid;
+  grid-gap: var(--spacingLG);
+  padding: var(--spacingLG) 0;
+
+  @media (min-width: 600px) {
+    grid-template-columns: 3fr 4fr;
+  }
+}
+
+.Resume-positionHeadingWrapper,
+.Resume-dateRange {
+  display: inline-block;
+}
+
+.Resume-positionSuperheading {
+  display: inline-flex;
+  padding: var(--spacingSM) var(--spacingSM);
+  padding-right: var(--spacingLG);
+  font-family: var(--fontFamilySecondary);
+  font-size: 1rem;
+  font-weight: 400;
+  color: var(--white);
+  margin-bottom: var(--spacingMD);
+  background-color: var(--blueRibbon);
+  -webkit-clip-path: polygon(0 0, 0 0, 90% 0, 100% 50%, 90% 100%, 0 100%, 0 100%);
+  clip-path: polygon(0 0, 0 0, 90% 0, 100% 50%, 90% 100%, 0 100%, 0 100%);
+
+  @media (min-width: 600px) {
+    transform: translateX(-1.75rem);
+  }
+}
+
+.Resume-dateRange {
+  margin-top: var(--spacingSM);
+  font-weight: 700;
+  font-size: 0.85rem;
+}
+
+.Resume-positionSecondHalf {
+  margin: 0;
+  
+  & ul {
+    margin: 0;
+  }
+  
+  @media (min-width: 600px) {
+    border-left: 1px solid var(--semiTransparentBlack);
+  }
+}
