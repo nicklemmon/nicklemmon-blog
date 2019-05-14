@@ -15,10 +15,10 @@
 .Resume-position {
   display: grid;
   grid-gap: var(--spacingLG);
-  padding: var(--spacingLG) 0;
+  padding: var(--spacingMD) 0 var(--spacingLG);
 
   @media (min-width: 600px) {
-    grid-template-columns: 3fr 4fr;
+    grid-template-columns: 3fr 5fr;
   }
 }
 

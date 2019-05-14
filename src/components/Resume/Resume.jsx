@@ -58,7 +58,7 @@ export default class Resume extends React.Component {
 
               <li>Design prototyping in Sketch</li>
 
-              <li>and people skills!</li>
+              <li><em>and</em> people skills!</li>
             </ul>
           </LongForm>
         </Card>
@@ -82,6 +82,10 @@ export default class Resume extends React.Component {
               <li>Providing insight and input regarding company merger with regards to accessibility standards</li>
 
               <li>Providing frontend development training for team members</li>
+
+              <li>Presented to CEO and Executive Management to showcase new DevOps capability available at BB&amp;T</li>
+
+              <li>Providing ongoing mentorship and support for junior developers</li>
             </ul>
           </ResumePosition>
 
@@ -94,7 +98,7 @@ export default class Resume extends React.Component {
             <ul>
               <li>Design team lead for online banking platform with 1 million plus users</li>
 
-              <li>Providing leadership from an accessibility standpoint with regards to component design and development</li>
+              <li>Provided leadership from an accessibility standpoint with regards to component design and development</li>
 
               <li>Developed first pattern library within BB&amp;T</li>
             </ul>
@@ -141,7 +145,7 @@ export default class Resume extends React.Component {
             <ul>
               <li>Vice Chair of the <a href="https://www.ncceh.org/">North Carolina Coalition to End Homelessness</a> Board of Directors</li>
 
-              <li>Half a decade of civic service experience including intensive homeless outreach and AmeriCorps service</li>
+              <li>Over half a decade of service experience including intensive homeless outreach and a year of AmeriCorps service</li>
             </ul>
           </LongForm>
         </Card>
