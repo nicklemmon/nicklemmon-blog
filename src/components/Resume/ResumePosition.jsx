@@ -20,7 +20,13 @@ function ResumePosition( props ) {
     <div className="Resume-position">
       <div className="Resume-positionFirstHalf">
         <div className="Resume-positionHeadingWrapper">
-          <Heading level="4" className="Resume-positionSuperheading">{ subheading }</Heading>
+          <div className="Resume-positionSuperheadingWrapper">
+            <Heading level="4" className="Resume-positionSuperheading">
+              { subheading }
+            </Heading>
+
+            <span role="presentation" className="Resume-positionSuberHeadingShadow"></span>
+          </div>
 
           <Heading level="5" className="Resume-positionHeading">{ heading }</Heading>
         </div>

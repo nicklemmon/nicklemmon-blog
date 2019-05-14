@@ -31,6 +31,13 @@
   --duration: 0.2s;
   --easing: ease-in-out;
 
+  /* layering */
+  --layerXS: -10;
+  --layerSM: -5;
+  --layerMD: 0;
+  --layerLG: 5;
+  --layerXL: 10;
+  
   /* misc */
   --headerHeight: 3rem;
   --borderRadius: 6px;
