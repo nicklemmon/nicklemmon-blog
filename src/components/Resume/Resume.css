@@ -7,7 +7,7 @@
 .Resume-skills {
   @media (min-width: 800px) {
     columns: 2;
-    max-height: 20rem;
+    max-height: 30rem;
     column-gap: var(--spacingLG);
   }
 }

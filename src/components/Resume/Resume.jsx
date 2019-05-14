@@ -30,33 +30,37 @@ export default class Resume extends React.Component {
             </Heading>
 
             <ul className="Resume-skills">
-              <li>WCAG AA compliant HTML</li>
+              <li>Extensive experience authoring WCAG AA compliant HTML</li>
 
-              <li>CSS, Sass, and Post CSS - including experience with Flexbox, CSS Grid, and CSS Custom Properties</li>
+              <li>Extensive experience authoring CSS, Sass, and Post CSS - including experience with Flexbox, CSS Grid, and CSS Custom Properties</li>
 
-              <li>Responsive interface design</li>
+              <li>Extensive responsive interface design experience</li>
 
-              <li>Design, development, and documentation of component-driven design systems</li>
+              <li>Significant experience developing component-driven design systems</li>
 
-              <li>Experience with BEM, SuitCSS, CSS Modules, and Atomic CSS</li>
+              <li>Experience with BEM, SuitCSS, and Atomic CSS architecture</li>
 
               <li>ES6 JavaScript</li>
 
-              <li>Command line git and GUI experience</li>
+              <li>Command line git and git GUI experience</li>
 
               <li>Jest and Cypress testing experience</li>
 
-              <li>Webpack, Parcel JS, NPM scripts, Gulp, and Grunt</li>
+              <li>Experience automating builds with Webpack, Parcel JS, NPM scripts, Gulp, and Grunt</li>
 
-              <li>jQuery, React and Vue.js</li>
+              <li>Substantial jQuery, React and Vue.js experience</li>
 
               <li>GitLab CI and Travis CI continuous integration and deployment experience</li>
+
+              <li>Some experience with bash scripting</li>
 
               <li>Adobe Illustrator and Photoshop Experience</li>
 
               <li>SVG illustration and animation experience</li>
 
               <li>Design prototyping in Sketch</li>
+
+              <li>Substantial experience training and coaching junior developers</li>
 
               <li><em>and</em> people skills!</li>
             </ul>
@@ -127,7 +131,7 @@ export default class Resume extends React.Component {
             <ul>
               <li><a href="https://www.accessibilityassociation.org/wascertification">Web Accessibility Specialist (WAS)</a> certified</li>
 
-              <li>BB&amp;t Olympian Award winner</li>
+              <li>BB&amp;T Olympian Award winner</li>
 
               <li>Master's of Social Work from the University of North Carolina at Chapel Hill</li>
 
