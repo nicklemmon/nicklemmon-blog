@@ -5,8 +5,8 @@ import { socialCodepen } from 'react-icons-kit/ionicons/socialCodepen'
 import { socialGithub } from 'react-icons-kit/ionicons/socialGithub'
 import { socialLinkedin } from 'react-icons-kit/ionicons/socialLinkedin'
 
-import Container from '../Container/Container'
-import ScreenReaderOnly from '../ScreenReaderOnly/ScreenReaderOnly'
+import Container from '@components/Container/Container'
+import ScreenReaderOnly from '@components/ScreenReaderOnly/ScreenReaderOnly'
 
 import './Footer.css'
 

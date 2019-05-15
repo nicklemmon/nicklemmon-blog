@@ -4,10 +4,10 @@ import { Link } from 'gatsby'
 import { Icon } from 'react-icons-kit'
 import { arrowRight } from 'react-icons-kit/feather/arrowRight'
 
-import Card from '../Card/Card'
-import Subdued from '../Subdued/Subdued'
-import Heading from '../Heading/Heading'
-import ScreenReaderOnly from '../ScreenReaderOnly/ScreenReaderOnly'
+import Card from '@components/Card/Card'
+import Subdued from '@components/Subdued/Subdued'
+import Heading from '@components/Heading/Heading'
+import ScreenReaderOnly from '@components/ScreenReaderOnly/ScreenReaderOnly'
 
 import './CardArticle.css'
 
@@ -16,7 +16,7 @@ export default class CardArticle extends React.Component {
     const { className, date, headingContent, children, linkTo } = this.props
 
     return (
-      <Link className={classNames('CardArticle-link', className)} to={linkTo} data-cy="card-article">
+      <Link className={classNames( 'CardArticle-link', className )} to={linkTo} data-cy="card-article">
         <Card className="CardArticle">
           <Subdued className="CardArticle-date">{date}</Subdued>
 

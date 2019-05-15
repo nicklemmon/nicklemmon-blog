@@ -1,26 +1,30 @@
 import React from 'react'
 import get from 'lodash/get'
-import Helmet from 'react-helmet'
 import { graphql } from 'gatsby'
+import Helmet from 'react-helmet'
 
 import PageLayout from '@components/Layouts/PageLayout'
+import Resume from '@components/Resume/Resume'
 
-export default class NotFoundPage extends React.Component {
+class ResumePage extends React.Component {
   render() {
     const siteTitle = get( this, 'props.data.site.siteMetadata.title' )
+    const title = 'Resume'
 
     return (
-      <PageLayout title="404 :(">
-        <Helmet title={`Page Not Found | ${siteTitle}`} />
+      <PageLayout title={ title }>
+        <Helmet title={`${title} | ${siteTitle}`} />
 
-        <p>Sorry, friend. No page here!</p>
+        <Resume/>
       </PageLayout>
     )
   }
 }
 
+export default ResumePage
+
 export const pageQuery = graphql`
-  query NotFoundQuery {
+  query ResumeQuery {
     site {
       siteMetadata {
         title

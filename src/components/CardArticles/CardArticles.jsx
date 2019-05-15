@@ -3,7 +3,7 @@ import get from 'lodash/get'
 import { graphql } from 'gatsby'
 import classNames from 'classnames'
 
-import CardArticle from '../CardArticle/CardArticle'
+import CardArticle from '@components/CardArticle/CardArticle'
 
 export default class CardArticles extends React.Component {
   render() {
@@ -11,9 +11,9 @@ export default class CardArticles extends React.Component {
     const maxPosts = postLimit + 1 || null
 
     return (
-      <div className={classNames('CardArticles', className)} data-cy="card-articles">
-        {posts.map(({ node }, index) => {
-          const title = get(node, 'frontmatter.title')
+      <div className={classNames( 'CardArticles', className )} data-cy="card-articles">
+        {posts.map( ( { node }, index ) => {
+          const title = get( node, 'frontmatter.title' )
           const count = index + 1
           const cardMarkup = (
             <CardArticle
@@ -26,14 +26,14 @@ export default class CardArticles extends React.Component {
             </CardArticle>
           )
 
-          if (maxPosts != null) {
-            if (count < maxPosts) {
+          if ( maxPosts != null ) {
+            if ( count < maxPosts ) {
               return cardMarkup
             }
           } else {
             return cardMarkup
           }
-        })}
+        } )}
       </div>
     )
   }

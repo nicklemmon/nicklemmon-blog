@@ -9,7 +9,7 @@ export default class Heading extends React.Component {
 
     return (
       <div
-        className={classNames(`Heading Heading--${level}`, className)}
+        className={classNames( `Heading Heading--${level}`, className )}
         role="heading"
         aria-level={level}
       >

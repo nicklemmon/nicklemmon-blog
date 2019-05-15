@@ -5,10 +5,10 @@ import { socialCodepen } from 'react-icons-kit/ionicons/socialCodepen'
 import { socialGithub } from 'react-icons-kit/ionicons/socialGithub'
 import { socialLinkedin } from 'react-icons-kit/ionicons/socialLinkedin'
 
-import Container from '../Container/Container'
-import MaxWidth from '../MaxWidth/MaxWidth'
-import Heading from '../Heading/Heading'
-import Highlight from '../Highlight/Highlight'
+import Container from '@components/Container/Container'
+import MaxWidth from '@components/MaxWidth/MaxWidth'
+import Heading from '@components/Heading/Heading'
+import Highlight from '@components/Highlight/Highlight'
 import HeroIconLink from './HeroIconLink'
 
 import './Hero.css'
@@ -20,7 +20,7 @@ export default class Hero extends React.Component {
     const { className } = this.props
 
     return (
-      <div className={classNames('Hero', className)}>
+      <div className={classNames( 'Hero', className )}>
         <MaxWidth size="xl">
           <Container className="Hero-container" size="xxl">
             <Heading level="1" className="Hero-title">

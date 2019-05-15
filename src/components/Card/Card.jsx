@@ -7,6 +7,6 @@ export default class Card extends React.Component {
   render() {
     const { className, children } = this.props
 
-    return <div className={classNames('Card', className)}>{children}</div>
+    return <div className={classNames( 'Card', className )}>{children}</div>
   }
 }

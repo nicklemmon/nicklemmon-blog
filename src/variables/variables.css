@@ -9,6 +9,7 @@
   --blue: #0C0FE7;
   --outerSpace: #293038;
   --seaShell: #F1F1F1;
+  --semiTransparentBlack: rgba(0, 0, 0, 0.125);
   --boulder: #757575;
   --white: #FFF;
 
@@ -30,6 +31,13 @@
   --duration: 0.2s;
   --easing: ease-in-out;
 
+  /* layering */
+  --layerXS: -10;
+  --layerSM: -5;
+  --layerMD: 0;
+  --layerLG: 5;
+  --layerXL: 10;
+  
   /* misc */
   --headerHeight: 3rem;
   --borderRadius: 6px;

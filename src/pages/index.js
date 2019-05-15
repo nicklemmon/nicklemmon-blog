@@ -3,18 +3,18 @@ import get from 'lodash/get'
 import { graphql } from 'gatsby'
 import Helmet from 'react-helmet'
 
-import LandingLayout from '../components/Layouts/LandingLayout'
-import Button from '../components/Button/Button'
-import Heading from '../components/Heading/Heading'
-import Highlight from '../components/Highlight/Highlight'
-import CardArticles from '../components/CardArticles/CardArticles'
+import LandingLayout from '@components/Layouts/LandingLayout'
+import Button from '@components/Button/Button'
+import Heading from '@components/Heading/Heading'
+import Highlight from '@components/Highlight/Highlight'
+import CardArticles from '@components/CardArticles/CardArticles'
 
 import './index.css'
 
 class IndexPage extends React.Component {
   render() {
-    const siteTitle = get(this, 'props.data.site.siteMetadata.title')
-    const posts = get(this, 'props.data.allMarkdownRemark.edges')
+    const siteTitle = get( this, 'props.data.site.siteMetadata.title' )
+    const posts = get( this, 'props.data.allMarkdownRemark.edges' )
 
     return (
       <LandingLayout>

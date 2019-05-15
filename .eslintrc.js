@@ -9,6 +9,9 @@ module.exports = {
   "globals": {
     "graphql": false,
   },
+  "rules": {
+    "space-in-parens": ["error", "always"]
+  },
   "parserOptions": {
     "sourceType": "module",
     "ecmaFeatures": {
