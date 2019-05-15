@@ -97,7 +97,7 @@ export default class Resume extends React.Component {
           <ResumePosition
             heading="Senior UI Designer"
             subheading="BB&T Digital Services"
-            startDate="May 2016"
+            startDate="December 2016"
             endDate="May 2018"
           >
             <ul>
