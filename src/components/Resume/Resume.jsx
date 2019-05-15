@@ -3,6 +3,7 @@ import React from 'react'
 import Card from '@components/Card/Card'
 import Heading from '@components/Heading/Heading'
 import LongForm from '@components/LongForm/LongForm'
+import Highlight from '@components/Highlight/Highlight'
 import ResumePosition from './ResumePosition'
 
 import './Resume.css'
