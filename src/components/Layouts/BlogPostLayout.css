@@ -1,42 +1,14 @@
 @import '../../variables/variables.css';
 
 .BlogPostLayout-buttons {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  position: relative; /* allows absolute positioning within */
-  padding: 0 0 var(--spacingMD);
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-gap: var(--spacingMD);
   
   @media (min-width: 600px) {
     margin-bottom: 2rem;
-  }
-}
-
-.BlogPostLayout-button {
-  width: 100%;
-
-  & + .BlogPostLayout-button {
-    margin-top: var(--spacingSM);
-  }
-
-  @media (min-width: 600px) {
-    width: auto;
-    position: absolute;
-
-    & + .BlogPostLayout-button {
-      margin-top: 0;
-    }
-  }
-}
-
-.BlogPostLayout-button--prev {
-  @media (min-width: 600px) {
-    left: 0;
-  }
-}
-
-.BlogPostLayout-button--next {
-  @media (min-width: 600px) {
-    right: 0;
+    grid-template-columns: 1fr 1fr; 
+    grid-template-rows: 1fr;
   }
 }
