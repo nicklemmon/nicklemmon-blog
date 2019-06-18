@@ -4,6 +4,11 @@ node_js:
   # Node 10.3+ includes npm@6 which has good "npm ci" command
   - 10.8
 
+addons:
+  apt:
+    packages:
+      - libgconf-2-4
+
 cache:
   # cache both npm modules and Cypress binary
   directories:
