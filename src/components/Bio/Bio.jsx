@@ -19,7 +19,7 @@ export default class Bio extends React.Component {
           <Heading level="4">About Me</Heading>
 
           <p>
-            I'm a frontend developer in Durham, North Carolina who also happens
+            I'm a frontend developer in Columbia, Maryland who also happens
             to have an{' '}
             <a
               rel="noopener"
