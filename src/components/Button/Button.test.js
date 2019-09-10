@@ -1,21 +1,10 @@
 import React from 'react'
-import Button from './Button.jsx'
-import renderer from 'react-test-renderer'
+import { render } from '@testing-library/react'
+import '@testing-library/jest-dom/extend-expect'
+import Button from './Button'
 
-it('renders button type correctly', () => {
-  const tree = renderer.create(<Button type="primary">About</Button>).toJSON()
+test( 'Button', async () => {
+  const { getByText } = render( <Button to="/">Click Me</Button> )
 
-  expect(tree).toMatchSnapshot()
-})
-
-it('renders button href correctly', () => {
-  const tree = renderer
-    .create(
-      <Button type="primary" to="/about">
-        About
-      </Button>
-    )
-    .toJSON()
-
-  expect(tree).toMatchSnapshot()
-})
+  expect( getByText( 'Click Me' ) ).not.toBeNull()
+} )
