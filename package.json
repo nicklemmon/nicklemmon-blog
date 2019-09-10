@@ -1,11 +1,7 @@
 {
-  "name": "gatsby-starter-blog",
-  "description": "Starter Gatsby Blog",
+  "name": "nicklemmon-blog",
   "version": "1.0.0",
-  "author": "Kyle Mathews <mathews.kyle@gmail.com>",
-  "bugs": {
-    "url": "https://github.com/gatsbyjs/gatsby-starter-blog/issues"
-  },
+  "author": "Nick Lemmon <nick.lemmon@gmail.com?",
   "dependencies": {
     "classnames": "^2.2.6",
     "gatsby": "^2.4.3",
@@ -32,14 +28,16 @@
     "postcss-reporter": "^6.0.0",
     "prism-themes": "^1.0.1",
     "prismjs": "^1.15.0",
-    "react": "^16.5.2",
-    "react-dom": "^16.5.2",
+    "react": "^16.9.0",
+    "react-dom": "^16.9.0",
     "react-helmet": "^5.2.0",
     "react-icons-kit": "^1.1.7"
   },
   "devDependencies": {
     "@babel/core": "^7.1.5",
     "@babel/preset-react": "^7.0.0",
+    "@testing-library/jest-dom": "^4.1.0",
+    "@testing-library/react": "^9.1.4",
     "axe-core": "^3.1.2",
     "babel-core": "^7.0.0-bridge.0",
     "babel-jest": "^23.6.0",

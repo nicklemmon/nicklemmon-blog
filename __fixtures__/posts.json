@@ -1,0 +1,62 @@
+[
+  {
+    "node": {
+      "excerpt": "Vue.js is a pretty remarkable frontend framework that is simultaneously powerful and relatively straightforward to wrap one’s mind around. I…",
+      "fields": {
+        "slug": "/four-reasons-why-vuejs-is-pretty-great/"
+      },
+      "frontmatter": {
+        "date": "07 April, 2019",
+        "title": "Four Reasons why VueJS is Pretty Great"
+      }
+    }
+  },
+  {
+    "node": {
+      "excerpt": "I was inspired to finally bite the bullet and try out Typescript after listening to NPM’s Laurie Voss on Shop Talk Show Episode 345. The…",
+      "fields": {
+        "slug": "/a-typescript-monster-battler/"
+      },
+      "frontmatter": {
+        "date": "12 February, 2019",
+        "title": "A Typescript Monster Battler"
+      }
+    }
+  },
+  {
+    "node": {
+      "excerpt": "When it comes to JavaScript-based interactions, an accessible user experience is not a given. Even simple interactions require a certain…",
+      "fields": {
+        "slug": "/building-an-accessible-collapsible-element/"
+      },
+      "frontmatter": {
+        "date": "10 November, 2018",
+        "title": "Building an Accessible Collapsible Element"
+      }
+    }
+  },
+  {
+    "node": {
+      "excerpt": "SuitCSS is a popular CSS naming convention that has been overshadowed by its more popular cousin, BEM. Prior to the rise of modern frontend…",
+      "fields": {
+        "slug": "/suitcss-and-react-components/"
+      },
+      "frontmatter": {
+        "date": "05 November, 2018",
+        "title": "SuitCSS and Styling React Components"
+      }
+    }
+  },
+  {
+    "node": {
+      "excerpt": "From where I stand,  is an underutilized HTML attribute. That being said, when used incorrectly, it can prove disastrous! Let’s talk about…",
+      "fields": {
+        "slug": "/using-tabindex-effectively/"
+      },
+      "frontmatter": {
+        "date": "03 November, 2018",
+        "title": "Using tabindex Effectively"
+      }
+    }
+  }
+]
