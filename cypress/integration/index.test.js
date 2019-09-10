@@ -1,39 +1,41 @@
+/// <reference types="Cypress" />
+
 function beforeSteps() {
   cy.visit( '/' );
   cy.injectAxe();
 }
 
 describe( 'The index page renders', () => {
-  before(() => {
+  before( () => {
     beforeSteps();
-  });
+  } )
 
   it( 'Loads!', () => {
     cy.get( 'html' ).should( 'be.visible' );
-  });
-});
+  } )
+} )
 
 describe( 'The initial state of the page', () => {
-  before(() => {
+  before( () => {
     beforeSteps();
-  });
+  } )
 
   it( 'Has article cards', () => {
     cy.get( '[data-cy="card-articles"]' ).should( 'be.visible' );
-  });
+  } )
 
   it( 'Has a header', () => {
     cy.get( '[data-cy="header"]' ).should( 'be.visible' );
-  });
+  } )
 
   it( 'Has a footer', () => {
     cy.get( '[data-cy="footer"]' ).should( 'be.visible' );
-  });
+  } )
 
   it( 'Has no axe violations', () => {
     cy.checkA11y();
-  });
-});
+  } )
+} )
 
 describe( 'The card articles', () => {
   it( 'Each card has a valid link that does not 404', () => {
@@ -43,9 +45,9 @@ describe( 'The card articles', () => {
       $el.click();
 
       cy.contains( '404' ).should( 'not.be.visible' );
-    });
-  });
-});
+    } )
+  } )
+} )
 
 
 
