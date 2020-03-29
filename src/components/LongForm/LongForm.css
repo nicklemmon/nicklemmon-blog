@@ -33,7 +33,7 @@
 
   & p,
   & li {
-    line-height: 1.63;
+    line-height: 1.75;
     color: var(--boulder);
 
     & a {
