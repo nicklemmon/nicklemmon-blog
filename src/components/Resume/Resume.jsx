@@ -74,23 +74,40 @@ export default class Resume extends React.Component {
           </Heading>
 
           <ResumePosition
+            heading="Frontend Engineer"
+            subheading="SparkPost"
+            startDate="August 2019"
+            endDate="Current"
+          >
+            <ul>
+              <li>Frontend development for the SparkPost web application built with React and Redux</li>
+
+              <li>Providing expertise with regards to accessibility and testing automation best practices</li>
+
+              <li>Leading the development of an application redesign</li>
+
+              <li>Received the Q1 2020 TLC Award</li>
+            </ul>
+          </ResumePosition>
+
+          <ResumePosition
             heading="Principal UI Designer"
             subheading="BB&T Digital Services"
             startDate="May 2018"
-            endDate="current"
+            endDate="August 2019"
           >
             <ul>
               <li>Design and frontend development for a commercial application management platform</li>
 
               <li>Team leadership for frontend developers within the project and outside the project</li>
 
-              <li>Providing insight and input regarding company merger with regards to accessibility standards</li>
+              <li>Provided insight and input regarding company merger with regards to accessibility standards</li>
 
-              <li>Providing frontend development training for team members</li>
+              <li>Provided frontend development training for team members</li>
 
               <li>Presented to CEO and Executive Management to showcase new DevOps capability available at BB&amp;T</li>
 
-              <li>Providing ongoing mentorship and support for junior developers</li>
+              <li>Provided ongoing mentorship and support for junior developers</li>
             </ul>
           </ResumePosition>
 
