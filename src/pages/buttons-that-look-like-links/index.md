@@ -74,7 +74,7 @@ function ButtonLink({ children, onClick }) {
 }
 ```
 
-Critically, this component provides a valid `href`, though the default browser scrolling behavior must be prevented. In this example, we are simply passing in the click event and invoking `e.preventDefault()` before invoking the passed in `onClick` handler.
+Critically, this component provides a valid `href` making it keyboard accessible. Unfortunately, any anchor elements with `#` do come with some default behavior in the browser. In this example, we avoid the problem by passing in the click event and invoking `e.preventDefault()` before invoking the passed in `onClick` handler.
 
 ### Prevent Future Mistakes
 
