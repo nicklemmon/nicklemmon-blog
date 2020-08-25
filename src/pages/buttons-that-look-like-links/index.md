@@ -54,8 +54,8 @@ In these scenarios, creating a re-usable component is the best way to prevent th
 
 In order for a button to be interpreted correctly by screen readers _and_ be usable for keyboard-only users, our `ButtonLink` component must have two key features:
 
-1. It must be a button semantically and
-2. It must be keyboard focusable by having a valid `href` attribute
+1. It must be a button semantically by adding `role="button"` and
+2. It must be keyboard accessible by having a valid `href` attribute
 
 ```jsx
 import React from 'react'
