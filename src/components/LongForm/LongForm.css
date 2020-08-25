@@ -19,7 +19,7 @@
     position: relative; /* allows absolute positioning within */
     padding-bottom: var(--spacingSM);
     margin-bottom: var(--spacingLG);
-    
+
     &:after {
       content: '';
       position: absolute;
@@ -54,11 +54,27 @@
     }
   }
 
+  & p,
+  & .gatsby-highlight,
+  & ul,
+  & ol {
+    & + h2 {
+      margin-top: var(--spacingXL);
+    }
+  }
+
   & p {
     margin-bottom: 0;
-    
+
     & + p {
-      margin-top: var(--spacingSM);
+      margin-top: var(--spacingMD);
+    }
+
+    & + h3,
+    & + h4,
+    & + h5,
+    & + h6 {
+      margin-top: var(--spacingLG);
     }
   }
 
