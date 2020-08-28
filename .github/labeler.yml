@@ -1,2 +1,6 @@
 content:
   - 'src/pages/**/*.md'
+
+devops:
+  - '.travis.yml'
+  - './github/workflows/**/*.yml'
