@@ -2,7 +2,7 @@
 # paths that are modified in the pull request.
 
 name: Labeler
-on: [push, pull_request]
+on: [pull_request]
 
 jobs:
   label:
