@@ -1,6 +1,6 @@
 [![Build Status](https://travis-ci.org/nicklemmon/nicklemmon-blog.svg?branch=master)](https://travis-ci.org/nicklemmon/nicklemmon-blog)
 
-## Development!
+## Development
 
 To get started:
 
