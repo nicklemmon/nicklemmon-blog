@@ -1,0 +1,21 @@
+name: PRs reviews reminder
+
+on:
+  schedule:
+    # Runs every minute of every day
+    - cron: '* * * * *'
+    # Every weekday every 2 hours during working hours, send notification
+    # - cron: '0 8-17/1 * * 1-5'
+
+jobs:
+  pr-reviews-reminder:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: davideviolante/pr-reviews-reminder-action@v1.3.0
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          webhook-url: ${{ secrets.SLACK_WEBHOOK_URL }} # Required
+          provider: 'slack' # Required (slack or msteams)
+          channel: '#hackathon' # Optional, eg: #general
+          github-provider-map: 'nicklemmon:U01A2NSMCQH' # Optional, eg: "DavideViolante:UEABCDEFG,foobar:UAABCDEFG"
