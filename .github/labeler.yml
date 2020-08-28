@@ -1,9 +1,2 @@
-testing:
-  - any: ['./**/*.spec.js', '/**/*.test.js']
-
 content:
-  - any: ['src/pages/**/*.md']
-
-devops:
-  - any: [github/**/*.yml]
-  - .travis.yml
+  - 'src/pages/**/*.md'
