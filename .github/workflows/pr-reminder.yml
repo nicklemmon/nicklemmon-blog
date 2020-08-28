@@ -3,6 +3,10 @@ name: PRs reviews reminder
 on:
   workflow_dispatch:
     inputs:
+      name:
+        description: 'PR Review Reminder'
+        required: true
+        default: 'Mona the Octocat'
       home:
         description: 'location'
         required: false
