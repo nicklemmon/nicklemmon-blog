@@ -3,4 +3,4 @@ content:
 
 devops:
   - '.travis.yml'
-  - './github/workflows/**/*.yml'
+  - '.github/workflows/**/*.yml'
