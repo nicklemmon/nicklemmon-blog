@@ -1,0 +1,6 @@
+testing:
+  - ./**/*.spec.js
+  - ./**/*.test.js
+
+content:
+  - ./src/pages/**/*.md
