@@ -15,9 +15,9 @@ From my perspective, inline styles are not as offensive as the frontend communit
 
 ## Trying out BEM
 
-BEM works just fine with traditional HTML or other templating languages. When applied to React, however, it just doesn't 'feel' right! The React docs dictate that custom component names [must be capitalized](https://reactjs.org/docs/jsx-in-depth.html#user-defined-components-must-be-capitalized), yet BEM [discourages this practice](https://en.bem.info/methodology/naming-convention/#naming-rules). This misalignment could result in code that looks like this.
+BEM works just fine with traditional HTML or other templating languages. When applied to React, however, it just doesn't 'feel' right! The React docs dictate that custom component names [must be capitalized](https://reactjs.org/docs/js-in-depth.html#user-defined-components-must-be-capitalized), yet BEM [discourages this practice](https://en.bem.info/methodology/naming-convention/#naming-rules). This misalignment could result in code that looks like this.
 
-```jsx
+```js
 import React from 'react'
 import './my-button.css'
 
@@ -56,7 +56,7 @@ This certainly works! The CSS is clearly structured and has a low level of speci
 
 ```
 +-- MyButton/
-|   +-- MyButton.jsx
+|   +-- MyButton.js
 |   +-- my-button.css
 ```
 
@@ -64,7 +64,7 @@ Let's say we then go on to introduce some tests and some component documentation
 
 ```
 +-- MyButton/
-|   +-- MyButton.jsx
+|   +-- MyButton.js
 |   +-- MyButton.test.js
 |   +-- MyButton.md
 |   +-- my-button.css
@@ -76,7 +76,7 @@ Our little friend `my-button.css` is the odd man out!
 
 Let's try that again with the same component, but using SuitCSS instead of BEM.
 
-```jsx
+```js
 import React from 'react'
 import './MyButton.css'
 
@@ -115,7 +115,7 @@ Not only do our class names map 1 to 1 with our component name, our files look r
 
 ```
 +-- MyButton/
-|   +-- MyButton.jsx
+|   +-- MyButton.js
 |   +-- MyButton.test.js
 |   +-- MyButton.md
 |   +-- MyButton.css

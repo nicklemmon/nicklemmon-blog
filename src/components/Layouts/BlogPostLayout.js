@@ -15,8 +15,9 @@ import ScreenReaderOnly from '@components/ScreenReaderOnly/ScreenReaderOnly'
 
 import './BlogPostLayout.css'
 
-class BlogPostLayout extends React.Component {
+export default class BlogPostLayout extends React.Component {
   render() {
+    console.log('props', this.props)
     const post = this.props.pageResources.json.data.mdx
     const siteTitle = get(this.props, 'data.site.siteMetadata.title')
     const { previous, next } = this.props.pathContext
@@ -66,8 +67,6 @@ class BlogPostLayout extends React.Component {
     )
   }
 }
-
-export default BlogPostLayout
 
 export const pageQuery = graphql`
   query BlogPostBySlug($slug: String!) {
