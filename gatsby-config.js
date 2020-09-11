@@ -1,4 +1,4 @@
-const path = require( 'path' )
+const path = require('path')
 
 module.exports = {
   siteMetadata: {
@@ -17,9 +17,19 @@ module.exports = {
       },
     },
     {
-      resolve: `gatsby-transformer-remark`,
+      resolve: `gatsby-plugin-alias-imports`,
       options: {
-        plugins: [
+        alias: {
+          '@components': path.resolve(__dirname, 'src/components'),
+        },
+        extensions: [],
+      },
+    },
+    {
+      resolve: `gatsby-plugin-mdx`,
+      options: {
+        extensions: [`.mdx`, `.md`],
+        gatsbyRemarkPlugins: [
           {
             resolve: `gatsby-remark-images`,
             options: {
@@ -27,19 +37,19 @@ module.exports = {
             },
           },
           {
+            resolve: `gatsby-plugin-alias-imports`,
+            options: {
+              alias: {
+                '@components': path.resolve(__dirname, 'src/components'),
+              },
+              extensions: [],
+            },
+          },
+          {
             resolve: `gatsby-remark-responsive-iframe`,
             options: {
               wrapperStyle: `margin-bottom: 1.0725rem`,
             },
-          },
-          {
-            resolve: `gatsby-plugin-alias-imports`,
-            options: {
-              alias: {
-                '@components': path.resolve( __dirname, 'src/components' )
-              },
-              extensions: []
-            }
           },
           'gatsby-remark-prismjs',
           'gatsby-remark-copy-linked-files',
@@ -55,15 +65,15 @@ module.exports = {
         //trackingId: `ADD YOUR TRACKING ID HERE`,
       },
     },
-    `gatsby-plugin-feed`,
+    `gatsby-plugin-feed-mdx`,
     `gatsby-plugin-offline`,
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-postcss`,
     {
       resolve: `gatsby-plugin-favicon`,
       options: {
-        logo: './static/favicon.png'
-      }
-    }
-  ]
+        logo: './static/favicon.png',
+      },
+    },
+  ],
 }

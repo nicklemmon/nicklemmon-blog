@@ -1,6 +1,7 @@
 import React from 'react'
 import Helmet from 'react-helmet'
 import { graphql } from 'gatsby'
+import { MDXRenderer } from 'gatsby-plugin-mdx'
 import { androidArrowBack } from 'react-icons-kit/ionicons/androidArrowBack'
 import { androidArrowForward } from 'react-icons-kit/ionicons/androidArrowForward'
 import get from 'lodash/get'
@@ -16,7 +17,7 @@ import './BlogPostLayout.css'
 
 class BlogPostLayout extends React.Component {
   render() {
-    const post = this.props.data.markdownRemark
+    const post = this.props.pageResources.json.data.mdx
     const siteTitle = get(this.props, 'data.site.siteMetadata.title')
     const { previous, next } = this.props.pathContext
 
@@ -28,10 +29,9 @@ class BlogPostLayout extends React.Component {
       >
         <Helmet title={`${post.frontmatter.title} | ${siteTitle}`} />
 
-        <LongForm
-          className="BlogPostLayout-content"
-          dangerouslySetInnerHTML={{ __html: post.html }}
-        />
+        <LongForm className="BlogPostLayout-content">
+          <MDXRenderer>{post.body}</MDXRenderer>
+        </LongForm>
 
         <Bio />
 
@@ -77,9 +77,9 @@ export const pageQuery = graphql`
         author
       }
     }
-    markdownRemark(fields: { slug: { eq: $slug } }) {
+    mdx(fields: { slug: { eq: $slug } }) {
       id
-      html
+      body
       frontmatter {
         title
         date(formatString: "MMMM DD, YYYY")

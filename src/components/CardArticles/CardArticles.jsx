@@ -11,9 +11,12 @@ export default class CardArticles extends React.Component {
     const maxPosts = postLimit + 1 || null
 
     return (
-      <div className={classNames( 'CardArticles', className )} data-cy="card-articles">
-        {posts.map( ( { node }, index ) => {
-          const title = get( node, 'frontmatter.title' )
+      <div
+        className={classNames('CardArticles', className)}
+        data-cy="card-articles"
+      >
+        {posts.map(({ node }, index) => {
+          const title = get(node, 'frontmatter.title')
           const count = index + 1
           const cardMarkup = (
             <CardArticle
@@ -26,14 +29,14 @@ export default class CardArticles extends React.Component {
             </CardArticle>
           )
 
-          if ( maxPosts != null ) {
-            if ( count < maxPosts ) {
+          if (maxPosts != null) {
+            if (count < maxPosts) {
               return cardMarkup
             }
           } else {
             return cardMarkup
           }
-        } )}
+        })}
       </div>
     )
   }
@@ -46,7 +49,7 @@ export const pageQuery = graphql`
         title
       }
     }
-    allMarkdownRemark(sort: { fields: [frontmatter___date], order: DESC }) {
+    allMdx(sort: { fields: [frontmatter___date], order: DESC }) {
       edges {
         node {
           excerpt
