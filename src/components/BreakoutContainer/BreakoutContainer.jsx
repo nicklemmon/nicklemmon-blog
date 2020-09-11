@@ -4,12 +4,14 @@ import Container from '@components/Container/Container'
 
 import './BreakoutContainer.css'
 
-export default class BreakoutContainer extends React.Component {
-  render() {
-    return (
-      <div className="BreakoutContainer">
-        <Container size="lg">{this.props.children}</Container>
-      </div>
-    )
-  }
+export default function BreakoutContainer(
+  {
+    children,
+  },
+) {
+  return (
+    <div className="BreakoutContainer">
+      <Container size="lg">{children}</Container>
+    </div>
+  );
 }

@@ -11,32 +11,30 @@ import ScreenReaderOnly from '@components/ScreenReaderOnly/ScreenReaderOnly'
 
 import './CardArticle.css'
 
-export default class CardArticle extends React.Component {
-  render() {
-    const { className, date, headingContent, children, linkTo } = this.props
+export default function CardArticle(props) {
+  const { className, date, headingContent, children, linkTo } = props
 
-    return (
-      <Link className={classNames( 'CardArticle-link', className )} to={linkTo} data-cy="card-article">
-        <Card className="CardArticle">
-          <Subdued className="CardArticle-date">{date}</Subdued>
+  return (
+    <Link className={classNames( 'CardArticle-link', className )} to={linkTo} data-cy="card-article">
+      <Card className="CardArticle">
+        <Subdued className="CardArticle-date">{date}</Subdued>
 
-          <Heading level="3" className="CardArticle-heading">
-            {headingContent}
-          </Heading>
+        <Heading level="3" className="CardArticle-heading">
+          {headingContent}
+        </Heading>
 
-          {children}
+        {children}
 
-          <span className="CardArticle-readMore">
-            <Icon
-              icon={arrowRight}
-              size={'100%'}
-              className="CardArticle-icon"
-            />
+        <span className="CardArticle-readMore">
+          <Icon
+            icon={arrowRight}
+            size={'100%'}
+            className="CardArticle-icon"
+          />
 
-            <ScreenReaderOnly>Read More</ScreenReaderOnly>
-          </span>
-        </Card>
-      </Link>
-    )
-  }
+          <ScreenReaderOnly>Read More</ScreenReaderOnly>
+        </span>
+      </Card>
+    </Link>
+  )
 }

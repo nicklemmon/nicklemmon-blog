@@ -3,14 +3,12 @@ import classNames from 'classnames'
 
 import './Container.css'
 
-export default class Container extends React.Component {
-  render() {
-    const { size, children, className } = this.props
+export default function Container(props) {
+  const { size, children, className } = props
 
-    return (
-      <div className={classNames( `Container Container--${size}`, className )}>
-        {children}
-      </div>
-    )
-  }
+  return (
+    <div className={classNames( `Container Container--${size}`, className )}>
+      {children}
+    </div>
+  )
 }

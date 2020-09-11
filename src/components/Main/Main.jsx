@@ -3,12 +3,15 @@ import classNames from 'classnames'
 
 import './Main.css'
 
-export default class Main extends React.Component {
-  render() {
-    return (
-      <main className={classNames('Main', this.props.className)}>
-        {this.props.children}
-      </main>
-    )
-  }
+export default function Main(
+  {
+    className,
+    children,
+  },
+) {
+  return (
+    <main className={classNames('Main', className)}>
+      {children}
+    </main>
+  );
 }

@@ -3,14 +3,12 @@ import classNames from 'classnames'
 
 import './MaxWidth.css'
 
-export default class MaxWidth extends React.Component {
-  render() {
-    const { children, className, size } = this.props
+export default function MaxWidth(props) {
+  const { children, className, size } = props
 
-    return (
-      <div className={classNames(`MaxWidth MaxWidth--${size}`, className)}>
-        {children}
-      </div>
-    )
-  }
+  return (
+    <div className={classNames(`MaxWidth MaxWidth--${size}`, className)}>
+      {children}
+    </div>
+  )
 }

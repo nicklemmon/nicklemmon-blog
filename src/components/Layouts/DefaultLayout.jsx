@@ -8,29 +8,27 @@ import Footer from '../Footer/Footer'
 import './global.css'
 import './DefaultLayout.css'
 
-class DefaultLayout extends React.Component {
-  render() {
-    const { children } = this.props
+function DefaultLayout(props) {
+  const { children } = props
 
-    let rootPath = `/`
+  let rootPath = `/`
 
-    if ( typeof __PREFIX_PATHS__ !== `undefined` && __PREFIX_PATHS__ ) rootPath = __PATH_PREFIX__ + `/`
+  if ( typeof __PREFIX_PATHS__ !== `undefined` && __PREFIX_PATHS__ ) rootPath = __PATH_PREFIX__ + `/`
 
-    return (
-      <div className={ classNames( 'DefaultLayout', this.props.className ) }>
-        <Helmet>
-          {/* A weird way to set the lang attribute: https://github.com/gatsbyjs/gatsby/issues/1790 */}
-          <html lang="en" />
-        </Helmet>
+  return (
+    <div className={ classNames( 'DefaultLayout', props.className ) }>
+      <Helmet>
+        {/* A weird way to set the lang attribute: https://github.com/gatsbyjs/gatsby/issues/1790 */}
+        <html lang="en" />
+      </Helmet>
 
-        <Header className="DefaultLayout-header" />
+      <Header className="DefaultLayout-header" />
 
-        { children }
+      { children }
 
-        <Footer className="DefaultLayout-footer" />
-      </div>
-    )
-  }
+      <Footer className="DefaultLayout-footer" />
+    </div>
+  );
 }
 
 export default DefaultLayout

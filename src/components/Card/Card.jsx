@@ -3,10 +3,8 @@ import classNames from 'classnames'
 
 import './Card.css'
 
-export default class Card extends React.Component {
-  render() {
-    const { className, children } = this.props
+export default function Card(props) {
+  const { className, children } = props
 
-    return <div className={classNames( 'Card', className )}>{children}</div>
-  }
+  return <div className={classNames( 'Card', className )}>{children}</div>
 }

@@ -5,47 +5,45 @@ import classNames from 'classnames'
 
 import './Button.css'
 
-export default class Button extends React.Component {
-  render() {
-    const {
-      to,
-      type,
-      children,
-      fullWidth,
-      centered,
-      className,
-      preIcon,
-      postIcon,
-    } = this.props
+export default function Button(props) {
+  const {
+    to,
+    type,
+    children,
+    fullWidth,
+    centered,
+    className,
+    preIcon,
+    postIcon,
+  } = props
 
-    return (
-      <Link
-        to={to}
-        className={classNames(
-          `Button Button--${type}`,
-          fullWidth ? 'Button--full' : '',
-          centered ? 'Button--centered' : '',
-          className
-        )}
-      >
-        {preIcon && (
-          <Icon
-            className="Button-icon Button-icon--pre"
-            size="1rem"
-            icon={preIcon}
-          />
-        )}
+  return (
+    <Link
+      to={to}
+      className={classNames(
+        `Button Button--${type}`,
+        fullWidth ? 'Button--full' : '',
+        centered ? 'Button--centered' : '',
+        className
+      )}
+    >
+      {preIcon && (
+        <Icon
+          className="Button-icon Button-icon--pre"
+          size="1rem"
+          icon={preIcon}
+        />
+      )}
 
-        {children}
+      {children}
 
-        {postIcon && (
-          <Icon
-            className="Button-icon Button-icon--post"
-            size="1rem"
-            icon={postIcon}
-          />
-        )}
-      </Link>
-    )
-  }
+      {postIcon && (
+        <Icon
+          className="Button-icon Button-icon--post"
+          size="1rem"
+          icon={postIcon}
+        />
+      )}
+    </Link>
+  )
 }

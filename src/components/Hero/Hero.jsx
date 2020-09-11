@@ -14,51 +14,49 @@ import HeroIconLink from './HeroIconLink'
 import './Hero.css'
 import heroImage from './hero-bg.png'
 
-export default class Hero extends React.Component {
-  render() {
-    const iconSize = '3rem'
-    const { className } = this.props
+export default function Hero(props) {
+  const iconSize = '3rem'
+  const { className } = props
 
-    return (
-      <div className={classNames( 'Hero', className )}>
-        <MaxWidth size="xl">
-          <Container className="Hero-container" size="xxl">
-            <Heading level="1" className="Hero-title">
-              A <Highlight>front-end</Highlight> developer driven to create{' '}
-              <Highlight>accessible</Highlight> user interfaces
-            </Heading>
+  return (
+    <div className={classNames( 'Hero', className )}>
+      <MaxWidth size="xl">
+        <Container className="Hero-container" size="xxl">
+          <Heading level="1" className="Hero-title">
+            A <Highlight>front-end</Highlight> developer driven to create{' '}
+            <Highlight>accessible</Highlight> user interfaces
+          </Heading>
 
-            <MaxWidth size="sm" className="Hero-links">
-              <HeroIconLink
-                href="http://codepen.com/nicklemmon"
-                icon={socialCodepen}
-                screenReaderContent="Nick Lemmon on CodePen"
-              />
+          <MaxWidth size="sm" className="Hero-links">
+            <HeroIconLink
+              href="http://codepen.com/nicklemmon"
+              icon={socialCodepen}
+              screenReaderContent="Nick Lemmon on CodePen"
+            />
 
-              <HeroIconLink
-                href="http://github.com/nicklemmon"
-                icon={socialGithub}
-                screenReaderContent="Nick Lemmon on GitHub"
-              />
+            <HeroIconLink
+              href="http://github.com/nicklemmon"
+              icon={socialGithub}
+              screenReaderContent="Nick Lemmon on GitHub"
+            />
 
-              <HeroIconLink
-                href="http://linkedin.com/in/nicklemmon"
-                icon={socialLinkedin}
-                screenReaderContent="Nick Lemmon on LinkedIn"
-              />
-            </MaxWidth>
-          </Container>
-        </MaxWidth>
+            <HeroIconLink
+              href="http://linkedin.com/in/nicklemmon"
+              icon={socialLinkedin}
+              screenReaderContent="Nick Lemmon on LinkedIn"
+            />
+          </MaxWidth>
+        </Container>
+      </MaxWidth>
 
-        <div className="Hero-overlay" role="presentation" />
+      <div className="Hero-overlay" role="presentation" />
 
-        <img
-          className="Hero-image"
-          src={heroImage}
-          role="presentation"
-          alt=""
-        />
-      </div>
-    )
-  }
+      <img
+        className="Hero-image"
+        src={heroImage}
+        role="presentation"
+        alt=""
+      />
+    </div>
+  )
 }

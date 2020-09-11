@@ -8,20 +8,18 @@ import MaxWidth from '../MaxWidth/MaxWidth'
 
 import './LandingLayout.css'
 
-export default class LandingLayout extends React.Component {
-  render() {
-    const { children } = this.props
+export default function LandingLayout(props) {
+  const { children } = props
 
-    return (
-      <DefaultLayout className="LandingLayout">
-        <Main className="LandingLayout-main">
-          <Hero className="LandingLayout-hero" />
+  return (
+    <DefaultLayout className="LandingLayout">
+      <Main className="LandingLayout-main">
+        <Hero className="LandingLayout-hero" />
 
-          <MaxWidth className="LandingLayout-sidebar" size="xl">
-            <BreakoutContainer>{children}</BreakoutContainer>
-          </MaxWidth>
-        </Main>
-      </DefaultLayout>
-    )
-  }
+        <MaxWidth className="LandingLayout-sidebar" size="xl">
+          <BreakoutContainer>{children}</BreakoutContainer>
+        </MaxWidth>
+      </Main>
+    </DefaultLayout>
+  )
 }
