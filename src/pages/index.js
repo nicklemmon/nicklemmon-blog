@@ -13,8 +13,8 @@ import './index.css'
 
 class IndexPage extends React.Component {
   render() {
-    const siteTitle = get( this, 'props.data.site.siteMetadata.title' )
-    const posts = get( this, 'props.data.allMarkdownRemark.edges' )
+    const siteTitle = get(this, 'props.data.site.siteMetadata.title')
+    const posts = get(this, 'props.data.allMdx.edges')
 
     return (
       <LandingLayout>
@@ -47,7 +47,7 @@ export const pageQuery = graphql`
         title
       }
     }
-    allMarkdownRemark(sort: { fields: [frontmatter___date], order: DESC }) {
+    allMdx(sort: { fields: [frontmatter___date], order: DESC }) {
       edges {
         node {
           excerpt
