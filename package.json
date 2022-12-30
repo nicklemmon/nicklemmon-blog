@@ -6,7 +6,7 @@
     "@mdx-js/mdx": "^1.6.16",
     "@mdx-js/react": "^1.6.16",
     "classnames": "^2.2.6",
-    "gatsby": "^2.4.3",
+    "gatsby": "^2.32.13",
     "gatsby-plugin-alias-imports": "^1.0.5",
     "gatsby-plugin-favicon": "^3.1.6",
     "gatsby-plugin-feed-mdx": "^1.0.1",
